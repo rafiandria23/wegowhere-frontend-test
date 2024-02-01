@@ -5,7 +5,17 @@ import { IPaymentCard } from '../interfaces/payment.interface';
 const initialState: IPaymentState = {
   loading: false,
   error: null,
-  cards: [],
+  cards: [
+    {
+      _id: 'asdasdasd',
+      number: '1234567891234567',
+      holder: 'Ty Lee',
+      expiry_date: '12/12',
+      cvv: '123',
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+  ],
 };
 
 export const setCardsAsync = createAsyncThunk<

@@ -1,37 +1,50 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { SafeAreaView } from 'react-native';
-import { Text, Button } from 'react-native-paper';
-import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
+import {
+  ScrollView,
+  VStack,
+  Text,
+  Button,
+  ButtonText,
+} from '@gluestack-ui/themed';
+import { useAppSelector } from '../hooks/redux.hook';
 import PaymentCard from '../components/PaymentCard.component';
+import Layout from '../components/Layout.component';
 
 const PaymentCardListScreen: FC = () => {
-  const dispatch = useAppDispatch();
   const { cards } = useAppSelector((state) => state.payment);
   const navigation = useNavigation();
 
-  const handleNavigateAddCard = useCallback(() => {
-    navigation.navigate('/payment/cards/add' as never);
-  }, [navigation]);
-
   return (
-    <SafeAreaView>
+    <Layout>
       {cards.length ? (
-        <>
-          {cards.map((card) => (
-            <PaymentCard key={card._id} />
-          ))}
-        </>
+        <ScrollView>
+          <VStack>
+            {cards.map((card) => (
+              <PaymentCard key={card._id} card={card} />
+            ))}
+          </VStack>
+        </ScrollView>
       ) : (
-        <>
-          <Text>No Cards Found</Text>
-          <Text>We recommend adding a card for easy payment</Text>
-          <Button mode='text' onPress={handleNavigateAddCard}>
-            Add New Card
+        <VStack justifyContent='center' alignItems='center' space='xl'>
+          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+          <Text size='5xl'>💳</Text>
+
+          <Text size='lg'>No Cards Found</Text>
+
+          <Text textAlign='center' size='lg'>
+            We recommend adding a card for easy payment
+          </Text>
+
+          <Button
+            variant='link'
+            onPress={() => navigation.navigate('PaymentCardAddScreen' as never)}
+          >
+            <ButtonText size='lg'>Add New Card</ButtonText>
           </Button>
-        </>
+        </VStack>
       )}
-    </SafeAreaView>
+    </Layout>
   );
 };
 
