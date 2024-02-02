@@ -21,7 +21,12 @@
     "dayjs": "*",
     "@reduxjs/toolkit": "*",
     "@gluestack-ui/themed": "*",
-    "@gluestack-ui/config": "*"
+    "@gluestack-ui/config": "*",
+    "lodash": "*",
+    "axios": "*",
+    "omise": "*",
+    "omise-react-native": "*",
+    "expo-constants": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp package-lock.json apps/mobile",

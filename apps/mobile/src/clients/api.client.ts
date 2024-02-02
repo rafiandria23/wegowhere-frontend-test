@@ -1,56 +1,62 @@
 import _ from 'lodash';
+import expoConstants from 'expo-constants';
 import axios, { AxiosInstance } from 'axios';
 import OmiseClient from './omise.client';
-import { IPaymentCard } from '../interfaces/payment.interface';
+import {
+  IPaymentCard,
+  IPaymentCardAddPayload,
+} from '../interfaces/payment.interface';
 
 class ApiClient {
   private readonly client: AxiosInstance;
   private readonly omiseClient: OmiseClient;
 
   constructor() {
+    if (!process.env.EXPO_PUBLIC_API_URL) {
+      throw new Error('EXPO_PUBLIC_API_URL env has to be set!');
+    }
+
+    const expoHostUri = _.get(expoConstants, 'expoConfig.hostUri');
+    const apiPort = _.defaultTo(
+      process.env.EXPO_PUBLIC_API_URL?.split(':').pop(),
+      3000
+    );
+
     this.client = axios.create({
-      baseURL: `${process.env.EXPO_PUBLIC_API_URL}/api/v1/payment`,
+      baseURL: `${
+        expoHostUri
+          ? `http://${expoHostUri.split(':').shift()}:${apiPort}`
+          : process.env.EXPO_PUBLIC_API_URL
+      }/api/v1/payment`,
     });
 
     this.omiseClient = new OmiseClient();
   }
 
-  async savePaymentCard(
-    payload: Omit<IPaymentCard, 'created_at' | 'updated_at'>
-  ): Promise<IPaymentCard> {
-    const { data: savedPaymentCard } = await this.client.post<{
+  async addPaymentCard(payload: IPaymentCardAddPayload): Promise<IPaymentCard> {
+    const { data: addedPaymentCard } = await this.client.post<{
       data: IPaymentCard;
     }>('/cards', payload);
 
-    return savedPaymentCard.data;
+    return addedPaymentCard.data;
   }
 
   async createPayment(
-    payload: Omit<IPaymentCard, 'created_at' | 'updated_at'> & {
+    payload: IPaymentCardAddPayload & {
       amount: number;
     }
   ) {
     const createdOmiseCharge = await this.omiseClient.createCharge(payload);
-    const { data: createdPayment } = await this.client.post<{ data: any }>(
-      '/',
-      createdOmiseCharge
-    );
 
-    return createdPayment.data;
+    return createdOmiseCharge;
   }
 
-  async getPaymentCards(): Promise<IPaymentCard[]> {
+  async findAllPaymentCards(): Promise<IPaymentCard[]> {
     const { data: paymentCards } = await this.client.get<{
       data: IPaymentCard[];
     }>('/cards');
 
     return paymentCards.data;
-  }
-
-  async getPayments(): Promise<any[]> {
-    const { data: payments } = await this.client.get<{ data: any[] }>('/');
-
-    return payments.data;
   }
 }
 

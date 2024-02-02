@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {
   ScrollView,
@@ -7,13 +7,19 @@ import {
   Button,
   ButtonText,
 } from '@gluestack-ui/themed';
-import { useAppSelector } from '../hooks/redux.hook';
+import { setCardsAsync } from '../redux/payment.slice';
+import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
 import PaymentCard from '../components/PaymentCard.component';
 import Layout from '../components/Layout.component';
 
 const PaymentCardListScreen: FC = () => {
+  const dispatch = useAppDispatch();
   const { cards } = useAppSelector((state) => state.payment);
   const navigation = useNavigation();
+
+  useEffect(() => {
+    dispatch(setCardsAsync());
+  }, [dispatch]);
 
   return (
     <Layout>

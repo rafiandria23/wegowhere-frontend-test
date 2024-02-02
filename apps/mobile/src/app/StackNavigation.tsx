@@ -39,7 +39,7 @@ export const StackNavigation: FC = () => {
       <Stack.Screen
         name='PaymentCardAddScreen'
         options={{
-          title: 'Add a Card',
+          title: '',
         }}
         component={PaymentCardAddScreen}
       />

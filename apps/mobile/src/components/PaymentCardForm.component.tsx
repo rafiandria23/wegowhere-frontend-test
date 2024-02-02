@@ -60,7 +60,7 @@ const PaymentCardForm: FC = () => {
 
       <Controller
         control={control}
-        name='holder'
+        name='name'
         rules={{
           required: true,
         }}
@@ -86,7 +86,7 @@ const PaymentCardForm: FC = () => {
       <HStack justifyContent='space-between'>
         <Controller
           control={control}
-          name='expiry_date'
+          name='expiration'
           rules={{
             required: true,
           }}
@@ -105,7 +105,7 @@ const PaymentCardForm: FC = () => {
                   onBlur={field.onBlur}
                   onChangeText={(newValue) => {
                     field.onChange(
-                      formatter.card.expiryDate(field.value, newValue)
+                      formatter.card.expiration(field.value, newValue)
                     );
                   }}
                 />
@@ -116,7 +116,7 @@ const PaymentCardForm: FC = () => {
 
         <Controller
           control={control}
-          name='cvv'
+          name='security_code'
           rules={{
             required: true,
           }}
@@ -132,7 +132,11 @@ const PaymentCardForm: FC = () => {
                   autoComplete='cc-csc'
                   value={field.value}
                   onBlur={field.onBlur}
-                  onChangeText={field.onChange}
+                  onChangeText={(newValue) => {
+                    field.onChange(
+                      formatter.card.securityCode(field.value, newValue)
+                    );
+                  }}
                 />
               </Input>
             </FormControl>

@@ -39,12 +39,12 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
         <HStack mt='$5' space='4xl' justifyContent='space-between'>
           <VStack space='md'>
             <Text>Name on Card</Text>
-            <Text>{card.holder}</Text>
+            <Text>{card.name}</Text>
           </VStack>
 
           <VStack space='md'>
             <Text>Expires</Text>
-            <Text>{card.expiry_date.toString()}</Text>
+            <Text>{`${card.expiration_month}/${card.expiration_year}`}</Text>
           </VStack>
         </HStack>
       </VStack>

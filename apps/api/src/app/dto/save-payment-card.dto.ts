@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString, MinLength, MaxLength } from 'class-validator';
 
-export class SavePaymentCardDto {
+export class AddPaymentCardDto {
   @ApiProperty({
     required: true,
     minLength: 16,

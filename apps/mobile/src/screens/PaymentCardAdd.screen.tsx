@@ -20,9 +20,9 @@ const PaymentCardAddScreen: FC = () => {
     mode: 'onBlur',
     defaultValues: {
       number: '',
-      holder: '',
-      expiry_date: '',
-      cvv: '',
+      name: '',
+      expiration: '',
+      security_code: '',
     },
   });
 

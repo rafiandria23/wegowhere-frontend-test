@@ -14,6 +14,14 @@ export interface IPaymentCard {
 export interface IPaymentCardFormInput {
   number: string;
   name: string;
-  expiration_date: string;
+  expiration: string;
+  security_code: string;
+}
+
+export interface IPaymentCardAddPayload {
+  number: string;
+  name: string;
+  expiration_month: string;
+  expiration_year: string;
   security_code: string;
 }

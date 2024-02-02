@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import dayjs from 'dayjs';
 
 import { PaymentCard } from './schemas/payment-card.schema';
-import { SavePaymentCardDto } from './dto/save-payment-card.dto';
+import { AddPaymentCardDto } from './dto/save-payment-card.dto';
 
 @Injectable()
 export class AppService {
@@ -28,7 +28,7 @@ export class AppService {
     };
   }
 
-  async savePaymentCard(payload: SavePaymentCardDto) {
+  async addPaymentCard(payload: AddPaymentCardDto) {
     const foundCard = await this.paymentCardModel.findOne({
       number: payload.number,
     });
@@ -39,7 +39,7 @@ export class AppService {
       );
     }
 
-    const savedPaymentCard = (
+    const addedPaymentCard = (
       await this.paymentCardModel.create({
         number: payload.number,
         name: payload.name,
@@ -49,10 +49,8 @@ export class AppService {
       })
     ).toObject();
 
-    return this.successTimestamp({ data: savedPaymentCard });
+    return this.successTimestamp({ data: addedPaymentCard });
   }
-
-  async createPayment() {}
 
   async findAllPaymentCards() {
     const paymentCards = (await this.paymentCardModel.find()).map(
@@ -63,6 +61,4 @@ export class AppService {
       data: paymentCards,
     });
   }
-
-  async getPayments() {}
 }

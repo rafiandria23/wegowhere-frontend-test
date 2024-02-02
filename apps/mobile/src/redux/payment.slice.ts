@@ -1,38 +1,46 @@
+import _ from 'lodash';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { IRootState, IPaymentState } from '../interfaces/redux.interface';
-import { IPaymentCard } from '../interfaces/payment.interface';
+import {
+  IPaymentCard,
+  IPaymentCardAddPayload,
+} from '../interfaces/payment.interface';
+import ApiClient from '../clients/api.client';
+
+const apiClient = new ApiClient();
 
 const initialState: IPaymentState = {
   loading: false,
   error: null,
-  cards: [
-    {
-      _id: 'asdasdasd',
-      number: '1234567891234567',
-      name: 'Ty Lee',
-      expiration_month: '12',
-      expiration_year: '12',
-      security_code: '123',
-      created_at: new Date(),
-      updated_at: new Date(),
-    },
-  ],
+  cards: [],
 };
 
 export const setCardsAsync = createAsyncThunk<
   IPaymentCard[],
   void,
   { state: IRootState }
->('payment/setCards', async (_: void) => {
-  return [];
+>('payment/setCards', async (__: void) => {
+  try {
+    const paymentCards = await apiClient.findAllPaymentCards();
+
+    return paymentCards;
+  } catch (err) {
+    throw _.get(err, 'response.data.data');
+  }
 });
 
 export const addCardAsync = createAsyncThunk<
   IPaymentCard,
-  void,
+  IPaymentCardAddPayload,
   { state: IRootState }
->('payment/addCard', async (_: void) => {
-  return {} as IPaymentCard;
+>('payment/addCard', async (payload) => {
+  try {
+    const addedPaymentCard = await apiClient.addPaymentCard(payload);
+
+    return addedPaymentCard;
+  } catch (err) {
+    throw _.get(err, 'response.data.data');
+  }
 });
 
 const slice = createSlice({

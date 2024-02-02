@@ -1,19 +1,18 @@
 import _ from 'lodash';
-import omise, { IOmise } from 'omise';
-import { IPaymentCard } from '../interfaces/payment.interface';
+import omise from 'omise-react-native';
+import { IPaymentCardAddPayload } from '../interfaces/payment.interface';
 
 export class OmiseClient {
-  private readonly client: IOmise;
-
   constructor() {
-    this.client = omise({
-      publicKey: process.env.EXPO_PUBLIC_OMISE_PUBLIC_KEY,
-      secretKey: process.env.EXPO_PUBLIC_OMISE_SECRET_KEY,
-    });
+    omise.config(
+      process.env.EXPO_PUBLIC_OMISE_PUBLIC_KEY,
+      process.env.EXPO_PUBLIC_OMISE_SECRET_KEY,
+      '2017-11-12'
+    );
   }
 
-  async createToken(payload: Omit<IPaymentCard, 'created_at' | 'updated_at'>) {
-    const createdToken = await this.client.tokens.create({
+  async createToken(payload: IPaymentCardAddPayload) {
+    const createdToken = await omise.createToken({
       card: {
         number: payload.number,
         name: payload.name,
@@ -29,17 +28,17 @@ export class OmiseClient {
   }
 
   async createCharge(
-    payload: Omit<IPaymentCard, 'created_at' | 'updated_at'> & {
+    payload: IPaymentCardAddPayload & {
       amount: number;
     }
   ) {
     const createdToken = await this.createToken(_.omit(payload, ['amount']));
 
-    const createdCharge = await this.client.charges.create({
-      amount: payload.amount,
-      currency: 'THB',
+    const createdCharge = await omise.createCharge.create({
       capture: true,
+      currency: 'THB',
       card: createdToken.id,
+      amount: payload.amount,
     });
 
     return createdCharge;

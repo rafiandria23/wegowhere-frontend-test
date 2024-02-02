@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 
 import { AppService } from './app.service';
-import { SavePaymentCardDto } from './dto/save-payment-card.dto';
+import { AddPaymentCardDto } from './dto/save-payment-card.dto';
 
 @Controller('/api/v1/payment')
 export class AppController {
@@ -16,10 +16,10 @@ export class AppController {
 
   @Post('/cards')
   @HttpCode(HttpStatus.CREATED)
-  async savePaymentCard(@Body() payload: SavePaymentCardDto) {
-    const savedPaymentCard = await this.appService.savePaymentCard(payload);
+  async addPaymentCard(@Body() payload: AddPaymentCardDto) {
+    const addedPaymentCard = await this.appService.addPaymentCard(payload);
 
-    return savedPaymentCard;
+    return addedPaymentCard;
   }
 
   @Get('/cards')

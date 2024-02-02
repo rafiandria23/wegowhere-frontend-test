@@ -9,7 +9,7 @@ function formatCardNumber(oldValue: string, newValue: string): string {
     .substring(0, 19);
 }
 
-function formatCardExpiryDate(oldValue: string, newValue: string): string {
+function formatCardExpiration(oldValue: string, newValue: string): string {
   if (oldValue.length > newValue.length) {
     return newValue;
   }
@@ -20,6 +20,14 @@ function formatCardExpiryDate(oldValue: string, newValue: string): string {
     .substring(0, 5);
 }
 
+function formatCardSecurityCode(oldValue: string, newValue: string): string {
+  if (oldValue.length > newValue.length) {
+    return newValue;
+  }
+
+  return newValue.replace(/\W/gi, '').substring(0, 3);
+}
+
 function parseCardNumber(value: string): string[] {
   return value.match(/(.{4})/g) as string[];
 }
@@ -27,7 +35,8 @@ function parseCardNumber(value: string): string[] {
 export const formatter = {
   card: {
     number: formatCardNumber,
-    expiryDate: formatCardExpiryDate,
+    expiration: formatCardExpiration,
+    securityCode: formatCardSecurityCode,
   },
 };
 
