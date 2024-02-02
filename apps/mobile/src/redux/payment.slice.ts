@@ -9,9 +9,10 @@ const initialState: IPaymentState = {
     {
       _id: 'asdasdasd',
       number: '1234567891234567',
-      holder: 'Ty Lee',
-      expiry_date: '12/12',
-      cvv: '123',
+      name: 'Ty Lee',
+      expiration_month: '12',
+      expiration_year: '12',
+      security_code: '123',
       created_at: new Date(),
       updated_at: new Date(),
     },
