@@ -21,7 +21,7 @@ export class ExceptionFilter
     private readonly appService: AppService
   ) {}
 
-  catch(exception: HttpException | Error, host: ArgumentsHost) {
+  public catch(exception: HttpException | Error, host: ArgumentsHost) {
     const httpHost = host.switchToHttp();
 
     const { httpAdapter } = this.httpAdapterHost;

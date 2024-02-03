@@ -27,7 +27,8 @@
     "omise": "*",
     "omise-react-native": "*",
     "expo-constants": "*",
-    "react-native-quick-base64": "*"
+    "react-native-quick-base64": "*",
+    "@faker-js/faker": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp package-lock.json apps/mobile",

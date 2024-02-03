@@ -10,11 +10,11 @@ import {
   ButtonSpinner,
   ButtonText,
 } from '@gluestack-ui/themed';
+
 import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
 import { addCardAsync } from '../redux/payment.slice';
 import { IPaymentCardFormInput } from '../interfaces/payment.interface';
 import PaymentCardForm from '../components/PaymentCardForm.component';
-import Layout from '../components/Layout.component';
 import VerifiedByVisaIcon from '../../assets/verified-by-visa-grey.svg';
 import MasterCardSecureCodeIcon from '../../assets/mastercard-securecode-grey.svg';
 import OmiseIcon from '../../assets/omise-grey.svg';
@@ -56,32 +56,33 @@ const PaymentCardAddScreen: FC = () => {
 
   return (
     <FormProvider {...form}>
-      <Layout>
-        <KeyboardAvoidingView>
-          <ScrollView>
-            <VStack space='4xl'>
-              <PaymentCardForm />
+      <KeyboardAvoidingView flex={1}>
+        <ScrollView>
+          <VStack p='$6' space='4xl'>
+            <PaymentCardForm />
 
-              <HStack justifyContent='center' space='2xl'>
-                <VerifiedByVisaIcon width={56} height={56} />
-                <MasterCardSecureCodeIcon width={56} height={56} />
-                <OmiseIcon width={56} height={56} />
-              </HStack>
+            <HStack justifyContent='center' space='2xl'>
+              <VerifiedByVisaIcon width={56} height={56} />
+              <MasterCardSecureCodeIcon width={56} height={56} />
+              <OmiseIcon width={56} height={56} />
+            </HStack>
 
-              <Button
-                isDisabled={loading}
-                onPress={form.handleSubmit(handleAddPaymentCard)}
-              >
-                {loading && <ButtonSpinner mr='$3' />}
+            <Button
+              isDisabled={loading}
+              size='xl'
+              borderRadius='$full'
+              bgColor='$cyan400'
+              onPress={form.handleSubmit(handleAddPaymentCard)}
+            >
+              {loading && <ButtonSpinner mr='$3' />}
 
-                <ButtonText>
-                  {loading ? 'Please wait...' : 'Add Card'}
-                </ButtonText>
-              </Button>
-            </VStack>
-          </ScrollView>
-        </KeyboardAvoidingView>
-      </Layout>
+              <ButtonText size='md'>
+                {loading ? 'Please wait...' : 'Add Card'}
+              </ButtonText>
+            </Button>
+          </VStack>
+        </ScrollView>
+      </KeyboardAvoidingView>
     </FormProvider>
   );
 };

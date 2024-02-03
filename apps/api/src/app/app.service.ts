@@ -13,7 +13,7 @@ export class AppService {
     private readonly paymentCardModel: Model<PaymentCard>
   ) {}
 
-  successTimestamp({ success = true, data = undefined } = {}) {
+  public successTimestamp({ success = true, data = undefined } = {}) {
     if (data || data === null) {
       return {
         success,
@@ -28,7 +28,7 @@ export class AppService {
     };
   }
 
-  async addPaymentCard(payload: AddPaymentCardDto) {
+  public async addPaymentCard(payload: AddPaymentCardDto) {
     const foundCard = await this.paymentCardModel.findOne({
       number: payload.number,
     });
@@ -52,7 +52,7 @@ export class AppService {
     return this.successTimestamp({ data: addedPaymentCard });
   }
 
-  async findAllPaymentCards() {
+  public async findAllPaymentCards() {
     const paymentCards = (await this.paymentCardModel.find()).map(
       (payentCard) => payentCard.toObject()
     );

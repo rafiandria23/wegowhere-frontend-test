@@ -16,7 +16,7 @@ export class AppController {
 
   @Post('/cards')
   @HttpCode(HttpStatus.CREATED)
-  async addPaymentCard(@Body() payload: AddPaymentCardDto) {
+  public async addPaymentCard(@Body() payload: AddPaymentCardDto) {
     const addedPaymentCard = await this.appService.addPaymentCard(payload);
 
     return addedPaymentCard;
@@ -24,7 +24,7 @@ export class AppController {
 
   @Get('/cards')
   @HttpCode(HttpStatus.OK)
-  async findAllPaymentCards() {
+  public async findAllPaymentCards() {
     const paymentCards = await this.appService.findAllPaymentCards();
 
     return paymentCards;

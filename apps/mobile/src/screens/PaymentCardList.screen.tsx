@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useCallback } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {
+  SafeAreaView,
   ScrollView,
   RefreshControl,
   VStack,
@@ -8,10 +9,10 @@ import {
   Button,
   ButtonText,
 } from '@gluestack-ui/themed';
+
 import { fetchCardsAsync } from '../redux/payment.slice';
 import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
 import PaymentCard from '../components/PaymentCard.component';
-import Layout from '../components/Layout.component';
 
 const PaymentCardListScreen: FC = () => {
   const dispatch = useAppDispatch();
@@ -27,41 +28,53 @@ const PaymentCardListScreen: FC = () => {
   }, [handleFetchCards]);
 
   return (
-    <Layout>
-      <ScrollView
-        refreshControl={
-          <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
-        }
-      >
-        {cards.length ? (
-          <VStack space='4xl'>
+    <SafeAreaView flex={1}>
+      {cards.length ? (
+        <ScrollView
+          refreshControl={
+            <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
+          }
+        >
+          <VStack p='$6' space='2xl'>
             {cards.map((card) => (
               <PaymentCard key={card._id} card={card} />
             ))}
           </VStack>
-        ) : (
-          <VStack justifyContent='center' alignItems='center' space='xl'>
+        </ScrollView>
+      ) : (
+        <ScrollView
+          refreshControl={
+            <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
+          }
+          contentContainerStyle={{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <VStack alignItems='center' p='$6' space='xl'>
             {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
             <Text size='5xl'>💳</Text>
 
             <Text size='lg'>No Cards Found</Text>
 
-            <Text textAlign='center' size='lg'>
-              We recommend adding a card for easy payment
-            </Text>
+            <Text size='lg'>We recommend adding a card for easy payment</Text>
 
             <Button
               variant='link'
+              size='xl'
               onPress={() =>
                 navigation.navigate('PaymentCardAddScreen' as never)
               }
             >
-              <ButtonText size='lg'>Add New Card</ButtonText>
+              <ButtonText size='lg' color='$cyan400'>
+                Add New Card
+              </ButtonText>
             </Button>
           </VStack>
-        )}
-      </ScrollView>
-    </Layout>
+        </ScrollView>
+      )}
+    </SafeAreaView>
   );
 };
 

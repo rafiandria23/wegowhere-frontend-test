@@ -45,10 +45,14 @@ export const createAsync = createAsyncThunk<
   return createdPayment;
 });
 
-const slice = createSlice({
+const paymentSlice = createSlice({
   name: 'payment',
   initialState,
-  reducers: {},
+  reducers: {
+    setError(state, action) {
+      state.error = action.payload;
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchCardsAsync.fulfilled, (state, action) => {
@@ -94,4 +98,6 @@ const slice = createSlice({
   },
 });
 
-export default slice.reducer;
+export const { setError } = paymentSlice.actions;
+
+export default paymentSlice.reducer;

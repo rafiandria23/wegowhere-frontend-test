@@ -1,5 +1,7 @@
 import React, { FC, useCallback, useMemo } from 'react';
 import { Pressable, Box, HStack, VStack, Text } from '@gluestack-ui/themed';
+import { faker } from '@faker-js/faker';
+
 import { IPaymentCard } from '../interfaces/payment.interface';
 import { parser } from '../utils/payment';
 import VisaIcon from '../../assets/visa.svg';
@@ -25,7 +27,10 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
         expiration_month,
         expiration_year,
         security_code,
-        amount: 500000,
+        amount: faker.number.int({
+          min: 20,
+          max: 150000,
+        }),
       })
     );
   }, [dispatch, card]);
@@ -41,36 +46,44 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
         pt='$4'
         pr='$20'
         pb='$8'
-        elevation='$1'
+        elevation='$10'
         borderColor='$borderLight200'
         borderRadius='$xl'
         borderWidth='$1'
       >
         <VStack>
-          <VisaIcon width={64} height={64} />
+          <VisaIcon width={72} height={72} />
 
           <HStack
-            space='4xl'
+            space='2xl'
             justifyContent='space-between'
             alignItems='center'
           >
-            <Text size='2xl'>••••</Text>
-            <Text size='2xl'>••••</Text>
-            <Text size='2xl'>••••</Text>
-            <Text size='md'>
+            <Text size='2xl' bold>
+              ••••
+            </Text>
+            <Text size='2xl' bold>
+              ••••
+            </Text>
+            <Text size='2xl' bold>
+              ••••
+            </Text>
+            <Text size='lg'>
               {parsedCardNumbers[parsedCardNumbers.length - 1]}
             </Text>
           </HStack>
 
           <HStack mt='$5' space='4xl' justifyContent='space-between'>
             <VStack space='md'>
-              <Text>Name on Card</Text>
-              <Text>{card.name}</Text>
+              <Text size='xs'>Name on Card</Text>
+              <Text size='md'>{card.name}</Text>
             </VStack>
 
             <VStack space='md'>
-              <Text>Expires</Text>
-              <Text>{`${card.expiration_month}/${card.expiration_year}`}</Text>
+              <Text size='xs'>Expires</Text>
+              <Text size='md'>
+                {`${card.expiration_month}/${card.expiration_year}`}
+              </Text>
             </VStack>
           </HStack>
         </VStack>
