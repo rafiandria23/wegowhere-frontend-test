@@ -6,6 +6,7 @@ Frontend Test for WeGoWhere. Full stack app that connects to the [Omise](https:/
 
 - [Node.js](https://nodejs.org)
 - [TypeScript](https://typescriptlang.org)
+- [Nx](https://nx.dev)
 - [Nest.js](https://nestjs.com)
 - [MongoDB](https://mongodb.com)
 - [React Native](https://reactnative.dev)
@@ -24,7 +25,7 @@ Environment variables are available in `.env.template` file.
 ## Installation
 
 ```zsh
-# Install NX CLI
+# Install Nx CLI
 yarn add --global nx
 
 # Install project dependencies
