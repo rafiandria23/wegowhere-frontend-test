@@ -1,5 +1,4 @@
-import _ from 'lodash';
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { IRootState, IPaymentState } from '../interfaces/redux.interface';
 import {
   IPaymentCard,
@@ -13,20 +12,17 @@ const initialState: IPaymentState = {
   loading: false,
   error: null,
   cards: [],
+  payments: [],
 };
 
-export const setCardsAsync = createAsyncThunk<
+export const fetchCardsAsync = createAsyncThunk<
   IPaymentCard[],
   void,
   { state: IRootState }
->('payment/setCards', async (__: void) => {
-  try {
-    const paymentCards = await apiClient.findAllPaymentCards();
+>('payment/fetchCards', async (__: void) => {
+  const paymentCards = await apiClient.findAllPaymentCards();
 
-    return paymentCards;
-  } catch (err) {
-    throw _.get(err, 'response.data.data');
-  }
+  return paymentCards;
 });
 
 export const addCardAsync = createAsyncThunk<
@@ -34,13 +30,19 @@ export const addCardAsync = createAsyncThunk<
   IPaymentCardAddPayload,
   { state: IRootState }
 >('payment/addCard', async (payload) => {
-  try {
-    const addedPaymentCard = await apiClient.addPaymentCard(payload);
+  const addedPaymentCard = await apiClient.addPaymentCard(payload);
 
-    return addedPaymentCard;
-  } catch (err) {
-    throw _.get(err, 'response.data.data');
-  }
+  return addedPaymentCard;
+});
+
+export const createAsync = createAsyncThunk<
+  object,
+  IPaymentCardAddPayload & { amount: number },
+  { state: IRootState }
+>('/payment/create', async (payload) => {
+  const createdPayment = await apiClient.createPayment(payload);
+
+  return createdPayment;
 });
 
 const slice = createSlice({
@@ -49,28 +51,46 @@ const slice = createSlice({
   reducers: {},
   extraReducers(builder) {
     builder
-      .addCase(setCardsAsync.pending, (state) => {
-        state.loading = true;
-      })
-      .addCase(setCardsAsync.fulfilled, (state, action) => {
-        state.loading = false;
+      .addCase(fetchCardsAsync.fulfilled, (state, action) => {
         state.cards = [...action.payload];
       })
-      .addCase(setCardsAsync.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error;
-      })
-      .addCase(addCardAsync.pending, (state) => {
-        state.loading = true;
-      })
       .addCase(addCardAsync.fulfilled, (state, action) => {
-        state.loading = false;
         state.cards = [...state.cards, action.payload];
       })
-      .addCase(addCardAsync.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error;
-      });
+      .addCase(createAsync.fulfilled, (state, action) => {
+        state.payments = [...state.payments, action.payload];
+      })
+      .addMatcher(
+        isAnyOf(
+          fetchCardsAsync.pending,
+          addCardAsync.pending,
+          createAsync.pending
+        ),
+        (state) => {
+          state.loading = true;
+        }
+      )
+      .addMatcher(
+        isAnyOf(
+          fetchCardsAsync.fulfilled,
+          addCardAsync.fulfilled,
+          createAsync.fulfilled
+        ),
+        (state) => {
+          state.loading = false;
+        }
+      )
+      .addMatcher(
+        isAnyOf(
+          fetchCardsAsync.rejected,
+          addCardAsync.rejected,
+          createAsync.rejected
+        ),
+        (state, action) => {
+          state.loading = false;
+          state.error = action.error;
+        }
+      );
   },
 });
 

@@ -5,6 +5,7 @@ export interface IPaymentState {
   loading: boolean;
   error: SerializedError | Error | string | null;
   cards: IPaymentCard[];
+  payments: object[];
 }
 
 export interface IRootState {

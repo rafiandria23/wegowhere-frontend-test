@@ -26,7 +26,8 @@
     "axios": "*",
     "omise": "*",
     "omise-react-native": "*",
-    "expo-constants": "*"
+    "expo-constants": "*",
+    "react-native-quick-base64": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp package-lock.json apps/mobile",

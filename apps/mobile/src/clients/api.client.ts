@@ -33,7 +33,9 @@ class ApiClient {
     this.omiseClient = new OmiseClient();
   }
 
-  async addPaymentCard(payload: IPaymentCardAddPayload): Promise<IPaymentCard> {
+  public async addPaymentCard(
+    payload: IPaymentCardAddPayload
+  ): Promise<IPaymentCard> {
     const { data: addedPaymentCard } = await this.client.post<{
       data: IPaymentCard;
     }>('/cards', payload);
@@ -41,7 +43,7 @@ class ApiClient {
     return addedPaymentCard.data;
   }
 
-  async createPayment(
+  public async createPayment(
     payload: IPaymentCardAddPayload & {
       amount: number;
     }
@@ -51,7 +53,7 @@ class ApiClient {
     return createdOmiseCharge;
   }
 
-  async findAllPaymentCards(): Promise<IPaymentCard[]> {
+  public async findAllPaymentCards(): Promise<IPaymentCard[]> {
     const { data: paymentCards } = await this.client.get<{
       data: IPaymentCard[];
     }>('/cards');

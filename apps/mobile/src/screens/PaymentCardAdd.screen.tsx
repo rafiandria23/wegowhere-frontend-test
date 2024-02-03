@@ -1,13 +1,17 @@
-import React, { FC } from 'react';
-import { useForm, FormProvider } from 'react-hook-form';
+import React, { FC, useCallback } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { useForm, FormProvider, SubmitHandler } from 'react-hook-form';
 import {
   KeyboardAvoidingView,
   ScrollView,
   VStack,
   HStack,
   Button,
+  ButtonSpinner,
   ButtonText,
 } from '@gluestack-ui/themed';
+import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
+import { addCardAsync } from '../redux/payment.slice';
 import { IPaymentCardFormInput } from '../interfaces/payment.interface';
 import PaymentCardForm from '../components/PaymentCardForm.component';
 import Layout from '../components/Layout.component';
@@ -16,6 +20,9 @@ import MasterCardSecureCodeIcon from '../../assets/mastercard-securecode-grey.sv
 import OmiseIcon from '../../assets/omise-grey.svg';
 
 const PaymentCardAddScreen: FC = () => {
+  const dispatch = useAppDispatch();
+  const { loading } = useAppSelector((state) => state.payment);
+  const navigation = useNavigation();
   const form = useForm<IPaymentCardFormInput>({
     mode: 'onBlur',
     defaultValues: {
@@ -25,6 +32,27 @@ const PaymentCardAddScreen: FC = () => {
       security_code: '',
     },
   });
+
+  const handleAddPaymentCard = useCallback<
+    SubmitHandler<IPaymentCardFormInput>
+  >(
+    async (formInputData) => {
+      const splittedExpiration = formInputData.expiration.split('/');
+
+      await dispatch(
+        addCardAsync({
+          number: formInputData.number.replace(/\W/gi, ''),
+          name: formInputData.name,
+          expiration_month: splittedExpiration.shift() as string,
+          expiration_year: splittedExpiration.pop() as string,
+          security_code: formInputData.security_code,
+        })
+      );
+
+      navigation.navigate('PaymentCardListScreen' as never);
+    },
+    [dispatch, navigation]
+  );
 
   return (
     <FormProvider {...form}>
@@ -40,8 +68,15 @@ const PaymentCardAddScreen: FC = () => {
                 <OmiseIcon width={56} height={56} />
               </HStack>
 
-              <Button>
-                <ButtonText>Add Card</ButtonText>
+              <Button
+                isDisabled={loading}
+                onPress={form.handleSubmit(handleAddPaymentCard)}
+              >
+                {loading && <ButtonSpinner mr='$3' />}
+
+                <ButtonText>
+                  {loading ? 'Please wait...' : 'Add Card'}
+                </ButtonText>
               </Button>
             </VStack>
           </ScrollView>

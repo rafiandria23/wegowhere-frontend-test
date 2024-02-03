@@ -10,12 +10,14 @@ import {
   InputField,
   InputSlot,
 } from '@gluestack-ui/themed';
+import { useAppSelector } from '../hooks/redux.hook';
 import { formatter } from '../utils/payment';
 import VisaIcon from '../../assets/visa.svg';
 import MasterCardIcon from '../../assets/mastercard.svg';
 import JcbIcon from '../../assets/jcb.svg';
 
 const PaymentCardForm: FC = () => {
+  const { loading } = useAppSelector((state) => state.payment);
   const { control } = useFormContext();
 
   return (
@@ -34,7 +36,7 @@ const PaymentCardForm: FC = () => {
               </FormControlLabelText>
             </FormControlLabel>
 
-            <Input size='lg'>
+            <Input isDisabled={loading} size='lg'>
               <InputField
                 keyboardType='number-pad'
                 autoComplete='cc-number'
@@ -70,7 +72,7 @@ const PaymentCardForm: FC = () => {
               <FormControlLabelText>Name on Card</FormControlLabelText>
             </FormControlLabel>
 
-            <Input size='lg'>
+            <Input isDisabled={loading} size='lg'>
               <InputField
                 autoComplete='name'
                 placeholder='Ty Lee'
@@ -96,7 +98,7 @@ const PaymentCardForm: FC = () => {
                 <FormControlLabelText>Expiry date</FormControlLabelText>
               </FormControlLabel>
 
-              <Input size='lg'>
+              <Input isDisabled={loading} size='lg'>
                 <InputField
                   keyboardType='number-pad'
                   autoComplete='cc-exp'
@@ -126,7 +128,7 @@ const PaymentCardForm: FC = () => {
                 <FormControlLabelText>CVV</FormControlLabelText>
               </FormControlLabel>
 
-              <Input size='lg'>
+              <Input isDisabled={loading} size='lg'>
                 <InputField
                   keyboardType='number-pad'
                   autoComplete='cc-csc'
