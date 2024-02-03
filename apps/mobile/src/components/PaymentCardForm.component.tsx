@@ -21,7 +21,7 @@ const PaymentCardForm: FC = () => {
   const { control } = useFormContext();
 
   return (
-    <VStack space='2xl'>
+    <VStack space='2xl' bg='$white'>
       <Controller
         control={control}
         name='number'

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { createAsyncThunk, createSlice, isAnyOf } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { IRootState, IPaymentState } from '../interfaces/redux.interface';
 import {
   IPaymentCard,
@@ -10,9 +10,6 @@ import ApiClient from '../clients/api.client';
 const apiClient = new ApiClient();
 
 const initialState: IPaymentState = {
-  loading: false,
-  error: null,
-  info: null,
   cards: [],
 };
 
@@ -21,9 +18,13 @@ export const fetchCardsAsync = createAsyncThunk<
   void,
   { state: IRootState }
 >('payment/fetchCards', async (__: void) => {
-  const paymentCards = await apiClient.findAllPaymentCards();
+  try {
+    const paymentCards = await apiClient.findAllPaymentCards();
 
-  return paymentCards;
+    return paymentCards;
+  } catch (err) {
+    throw _.defaultTo(_.get(err, 'response.data'), err);
+  }
 });
 
 export const addCardAsync = createAsyncThunk<
@@ -31,9 +32,13 @@ export const addCardAsync = createAsyncThunk<
   IPaymentCardAddPayload,
   { state: IRootState }
 >('payment/addCard', async (payload) => {
-  const addedPaymentCard = await apiClient.addPaymentCard(payload);
+  try {
+    const addedPaymentCard = await apiClient.addPaymentCard(payload);
 
-  return addedPaymentCard;
+    return addedPaymentCard;
+  } catch (err) {
+    throw _.defaultTo(_.get(err, 'response.data'), err);
+  }
 });
 
 export const createAsync = createAsyncThunk<
@@ -41,22 +46,19 @@ export const createAsync = createAsyncThunk<
   IPaymentCardAddPayload & { amount: number },
   { state: IRootState }
 >('/payment/create', async (payload) => {
-  const createdPayment = await apiClient.createPayment(payload);
+  try {
+    const createdPayment = await apiClient.createPayment(payload);
 
-  return createdPayment;
+    return createdPayment;
+  } catch (err) {
+    throw _.defaultTo(_.get(err, 'response.data'), err);
+  }
 });
 
 const paymentSlice = createSlice({
   name: 'payment',
   initialState,
-  reducers: {
-    setError(state, action) {
-      state.error = action.payload;
-    },
-    setInfo(state, action) {
-      state.info = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers(builder) {
     builder
       .addCase(fetchCardsAsync.fulfilled, (state, action) => {
@@ -64,48 +66,8 @@ const paymentSlice = createSlice({
       })
       .addCase(addCardAsync.fulfilled, (state, action) => {
         state.cards = [...state.cards, action.payload];
-        state.info = 'Successfully added a card!';
-      })
-      .addCase(createAsync.fulfilled, (state, action) => {
-        state.info = `You just paid BHT ${_.get(action, 'payload.amount')}!`;
-      })
-      .addMatcher(
-        isAnyOf(
-          fetchCardsAsync.pending,
-          addCardAsync.pending,
-          createAsync.pending
-        ),
-        (state) => {
-          state.loading = true;
-        }
-      )
-      .addMatcher(
-        isAnyOf(
-          fetchCardsAsync.fulfilled,
-          addCardAsync.fulfilled,
-          createAsync.fulfilled
-        ),
-        (state) => {
-          state.loading = false;
-        }
-      )
-      .addMatcher(
-        isAnyOf(
-          fetchCardsAsync.rejected,
-          addCardAsync.rejected,
-          createAsync.rejected
-        ),
-        (state, action) => {
-          state.loading = false;
-          state.error = _.defaultTo(
-            _.get(action, 'error.message'),
-            'Oops! Something unexpected occurred.'
-          );
-        }
-      );
+      });
   },
 });
-
-export const { setError, setInfo } = paymentSlice.actions;
 
 export default paymentSlice.reducer;

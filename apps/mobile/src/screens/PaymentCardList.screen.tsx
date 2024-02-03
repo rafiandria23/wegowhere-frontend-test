@@ -1,4 +1,5 @@
-import React, { FC, useEffect, useCallback } from 'react';
+import _ from 'lodash';
+import React, { FC, useState, useEffect, useCallback } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {
   SafeAreaView,
@@ -12,24 +13,43 @@ import {
 
 import { fetchCardsAsync } from '../redux/payment.slice';
 import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
+import useToast from '../hooks/toast.hook';
 import PaymentCard from '../components/PaymentCard.component';
 
 const PaymentCardListScreen: FC = () => {
   const dispatch = useAppDispatch();
-  const { loading, cards } = useAppSelector((state) => state.payment);
+  const { cards } = useAppSelector((state) => state.payment);
   const navigation = useNavigation();
+  const toast = useToast();
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleFetchCards = useCallback(() => {
-    dispatch(fetchCardsAsync());
-  }, [dispatch]);
+  const handleFetchCards = useCallback(async () => {
+    try {
+      setLoading(true);
+
+      await dispatch(fetchCardsAsync()).unwrap();
+    } catch (err) {
+      toast.show({
+        action: 'error',
+        text: _.defaultTo(
+          _.get(err, 'data.message'),
+          _.get(err, 'message'),
+        ) as unknown as string,
+      });
+    } finally {
+      setLoading(false);
+    }
+  }, [dispatch, toast]);
 
   useEffect(() => {
     handleFetchCards();
-  }, [handleFetchCards]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <SafeAreaView flex={1}>
-      {cards.length ? (
+    <SafeAreaView flex={1} bg='$white'>
+      {cards ? (
         <ScrollView
           refreshControl={
             <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
@@ -52,22 +72,23 @@ const PaymentCardListScreen: FC = () => {
             alignItems: 'center',
           }}
         >
-          <VStack alignItems='center' p='$6' space='xl'>
+          <VStack alignItems='center' p='$20' space='sm'>
             {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
             <Text size='5xl'>💳</Text>
 
             <Text size='lg'>No Cards Found</Text>
 
-            <Text size='lg'>We recommend adding a card for easy payment</Text>
+            <Text size='lg' textAlign='center'>
+              We recommend adding a card for easy payment
+            </Text>
 
             <Button
               variant='link'
-              size='xl'
               onPress={() =>
                 navigation.navigate('PaymentCardAddScreen' as never)
               }
             >
-              <ButtonText size='lg' color='$cyan400'>
+              <ButtonText size='lg' color='#4AD8DA'>
                 Add New Card
               </ButtonText>
             </Button>
