@@ -44,7 +44,7 @@
     "react-native-svg": "^14.1.0",
     "react-native-web": "^0.19.10",
     "react-redux": "^9.1.0",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.0",
     "tipe-apa": "^0.4.7",
     "tslib": "^2.3.0"
