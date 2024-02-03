@@ -27,7 +27,7 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
         card;
 
       const randomAmount = faker.number.int({
-        min: 20,
+        min: 2000,
         max: 150000,
       });
 
@@ -44,7 +44,7 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
 
       toast.show({
         action: 'success',
-        text: `You just paid BHT ${randomAmount}!`,
+        text: `You just paid THB ${randomAmount}!`,
       });
     } catch (err) {
       toast.show({
