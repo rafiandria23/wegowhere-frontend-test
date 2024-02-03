@@ -50,9 +50,9 @@ const Snackbar: FC<ISnackbarProps> = ({
   }, [action]);
 
   return (
-    <Toast nativeID={nativeId} action={action} variant='accent' mx='$6'>
+    <Toast nativeID={nativeId} action={action} variant='accent'>
       <HStack justifyContent='space-between' alignItems='center' space='4xl'>
-        <VStack space='xs'>
+        <VStack space='xs' width='$5/6'>
           <ToastTitle>{title}</ToastTitle>
 
           <ToastDescription>{text}</ToastDescription>

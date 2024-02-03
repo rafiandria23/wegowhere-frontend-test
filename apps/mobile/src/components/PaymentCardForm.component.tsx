@@ -10,14 +10,16 @@ import {
   InputField,
   InputSlot,
 } from '@gluestack-ui/themed';
-import { useAppSelector } from '../hooks/redux.hook';
 import { formatter } from '../utils/payment';
 import VisaIcon from '../../assets/visa.svg';
 import MasterCardIcon from '../../assets/mastercard.svg';
 import JcbIcon from '../../assets/jcb.svg';
 
-const PaymentCardForm: FC = () => {
-  const { loading } = useAppSelector((state) => state.payment);
+export interface IPaymentCardFormProps {
+  loading: boolean;
+}
+
+const PaymentCardForm: FC<IPaymentCardFormProps> = ({ loading }) => {
   const { control } = useFormContext();
 
   return (
@@ -29,7 +31,7 @@ const PaymentCardForm: FC = () => {
           required: true,
         }}
         render={({ field }) => (
-          <FormControl>
+          <FormControl isDisabled={loading}>
             <FormControlLabel mb='$2'>
               <FormControlLabelText>
                 ATM/Debit/Credit card number
@@ -67,12 +69,12 @@ const PaymentCardForm: FC = () => {
           required: true,
         }}
         render={({ field }) => (
-          <FormControl>
+          <FormControl isDisabled={loading}>
             <FormControlLabel mb='$2'>
               <FormControlLabelText>Name on Card</FormControlLabelText>
             </FormControlLabel>
 
-            <Input isDisabled={loading} size='lg'>
+            <Input size='lg'>
               <InputField
                 autoComplete='name'
                 placeholder='Ty Lee'
@@ -93,7 +95,7 @@ const PaymentCardForm: FC = () => {
             required: true,
           }}
           render={({ field }) => (
-            <FormControl w='$1/2' pr='$2'>
+            <FormControl isDisabled={loading} w='$1/2' pr='$2'>
               <FormControlLabel mb='$2'>
                 <FormControlLabelText>Expiry date</FormControlLabelText>
               </FormControlLabel>
@@ -107,7 +109,7 @@ const PaymentCardForm: FC = () => {
                   onBlur={field.onBlur}
                   onChangeText={(newValue) => {
                     field.onChange(
-                      formatter.card.expiration(field.value, newValue)
+                      formatter.card.expiration(field.value, newValue),
                     );
                   }}
                 />
@@ -123,7 +125,7 @@ const PaymentCardForm: FC = () => {
             required: true,
           }}
           render={({ field }) => (
-            <FormControl w='$1/2' pl='$2'>
+            <FormControl isDisabled={loading} w='$1/2' pl='$2'>
               <FormControlLabel mb='$2'>
                 <FormControlLabelText>CVV</FormControlLabelText>
               </FormControlLabel>
@@ -136,7 +138,7 @@ const PaymentCardForm: FC = () => {
                   onBlur={field.onBlur}
                   onChangeText={(newValue) => {
                     field.onChange(
-                      formatter.card.securityCode(field.value, newValue)
+                      formatter.card.securityCode(field.value, newValue),
                     );
                   }}
                 />

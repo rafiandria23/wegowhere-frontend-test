@@ -19,7 +19,7 @@ class ApiClient {
     const expoHostUri = _.get(expoConstants, 'expoConfig.hostUri');
     const apiPort = _.defaultTo(
       process.env.EXPO_PUBLIC_API_URL?.split(':').pop(),
-      3000
+      3000,
     );
 
     this.client = axios.create({
@@ -34,8 +34,11 @@ class ApiClient {
   }
 
   public async addPaymentCard(
-    payload: IPaymentCardAddPayload
+    payload: IPaymentCardAddPayload,
   ): Promise<IPaymentCard> {
+    // Check the payment card details to make sure it passes Omise's validation.
+    await this.omiseClient.createToken(payload);
+
     const { data: addedPaymentCard } = await this.client.post<{
       data: IPaymentCard;
     }>('/cards', payload);
@@ -46,7 +49,7 @@ class ApiClient {
   public async createPayment(
     payload: IPaymentCardAddPayload & {
       amount: number;
-    }
+    },
   ) {
     const createdOmiseCharge = await this.omiseClient.createCharge(payload);
 

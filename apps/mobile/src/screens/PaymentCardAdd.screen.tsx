@@ -13,7 +13,10 @@ import {
 } from '@gluestack-ui/themed';
 
 import { useAppDispatch } from '../hooks/redux.hook';
-import { addPaymentCard } from '../redux/thunks/payment.thunk';
+import {
+  addPaymentCard,
+  findAllPaymentCards,
+} from '../redux/thunks/payment.thunk';
 import useToast from '../hooks/toast.hook';
 import { IPaymentCardFormInput } from '../interfaces/payment.interface';
 import PaymentCardForm from '../components/PaymentCardForm.component';
@@ -55,6 +58,13 @@ const PaymentCardAddScreen: FC = () => {
           }),
         ).unwrap();
 
+        toast.show({
+          action: 'success',
+          text: 'You just added a payment card!',
+        });
+
+        await dispatch(findAllPaymentCards()).unwrap();
+
         navigation.navigate('PaymentCardListScreen' as never);
       } catch (err) {
         toast.show({
@@ -81,7 +91,7 @@ const PaymentCardAddScreen: FC = () => {
         >
           <VStack flex={1} p='$6' justifyContent='space-between' space='4xl'>
             <VStack space='4xl'>
-              <PaymentCardForm />
+              <PaymentCardForm loading={loading} />
 
               <HStack justifyContent='center' space='2xl'>
                 <VerifiedByVisaIcon width={56} height={56} />
