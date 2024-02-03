@@ -1,19 +1,16 @@
 import _ from 'lodash';
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { IRootState, IPaymentState } from '../interfaces/redux.interface';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+import { IRootState } from '../../interfaces/redux.interface';
 import {
   IPaymentCard,
   IPaymentCardAddPayload,
-} from '../interfaces/payment.interface';
-import ApiClient from '../clients/api.client';
+} from '../../interfaces/payment.interface';
+import ApiClient from '../../clients/api.client';
 
 const apiClient = new ApiClient();
 
-const initialState: IPaymentState = {
-  cards: [],
-};
-
-export const fetchCardsAsync = createAsyncThunk<
+export const findAllPaymentCards = createAsyncThunk<
   IPaymentCard[],
   void,
   { state: IRootState }
@@ -27,7 +24,7 @@ export const fetchCardsAsync = createAsyncThunk<
   }
 });
 
-export const addCardAsync = createAsyncThunk<
+export const addPaymentCard = createAsyncThunk<
   IPaymentCard,
   IPaymentCardAddPayload,
   { state: IRootState }
@@ -41,7 +38,7 @@ export const addCardAsync = createAsyncThunk<
   }
 });
 
-export const createAsync = createAsyncThunk<
+export const createPayment = createAsyncThunk<
   object,
   IPaymentCardAddPayload & { amount: number },
   { state: IRootState }
@@ -54,20 +51,3 @@ export const createAsync = createAsyncThunk<
     throw _.defaultTo(_.get(err, 'response.data'), err);
   }
 });
-
-const paymentSlice = createSlice({
-  name: 'payment',
-  initialState,
-  reducers: {},
-  extraReducers(builder) {
-    builder
-      .addCase(fetchCardsAsync.fulfilled, (state, action) => {
-        state.cards = [...action.payload];
-      })
-      .addCase(addCardAsync.fulfilled, (state, action) => {
-        state.cards = [...state.cards, action.payload];
-      });
-  },
-});
-
-export default paymentSlice.reducer;

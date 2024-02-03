@@ -11,7 +11,7 @@ import {
   ButtonText,
 } from '@gluestack-ui/themed';
 
-import { fetchCardsAsync } from '../redux/payment.slice';
+import { findAllPaymentCards } from '../redux/thunks/payment.thunk';
 import { useAppDispatch, useAppSelector } from '../hooks/redux.hook';
 import useToast from '../hooks/toast.hook';
 import PaymentCard from '../components/PaymentCard.component';
@@ -23,11 +23,11 @@ const PaymentCardListScreen: FC = () => {
   const toast = useToast();
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleFetchCards = useCallback(async () => {
+  const handleFindAllPaymentCards = useCallback(async () => {
     try {
       setLoading(true);
 
-      await dispatch(fetchCardsAsync()).unwrap();
+      await dispatch(findAllPaymentCards()).unwrap();
     } catch (err) {
       toast.show({
         action: 'error',
@@ -42,7 +42,7 @@ const PaymentCardListScreen: FC = () => {
   }, [dispatch, toast]);
 
   useEffect(() => {
-    handleFetchCards();
+    handleFindAllPaymentCards();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -52,7 +52,10 @@ const PaymentCardListScreen: FC = () => {
       {cards ? (
         <ScrollView
           refreshControl={
-            <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
+            <RefreshControl
+              refreshing={loading}
+              onRefresh={handleFindAllPaymentCards}
+            />
           }
         >
           <VStack p='$6' space='2xl'>
@@ -64,7 +67,10 @@ const PaymentCardListScreen: FC = () => {
       ) : (
         <ScrollView
           refreshControl={
-            <RefreshControl refreshing={loading} onRefresh={handleFetchCards} />
+            <RefreshControl
+              refreshing={loading}
+              onRefresh={handleFindAllPaymentCards}
+            />
           }
           contentContainerStyle={{
             flex: 1,

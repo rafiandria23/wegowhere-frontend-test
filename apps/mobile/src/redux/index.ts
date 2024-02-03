@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { IRootState } from '../interfaces/redux.interface';
-import paymentSlice from './payment.slice';
+
+import paymentSlice from './slices/payment.slice';
 
 const store = configureStore<IRootState>({
   reducer: {

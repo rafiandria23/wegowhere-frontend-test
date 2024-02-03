@@ -13,7 +13,7 @@ import {
 } from '@gluestack-ui/themed';
 
 import { useAppDispatch } from '../hooks/redux.hook';
-import { addCardAsync } from '../redux/payment.slice';
+import { addPaymentCard } from '../redux/thunks/payment.thunk';
 import useToast from '../hooks/toast.hook';
 import { IPaymentCardFormInput } from '../interfaces/payment.interface';
 import PaymentCardForm from '../components/PaymentCardForm.component';
@@ -46,7 +46,7 @@ const PaymentCardAddScreen: FC = () => {
         const splittedExpiration = formInputData.expiration.split('/');
 
         await dispatch(
-          addCardAsync({
+          addPaymentCard({
             number: formInputData.number.replace(/\W/gi, ''),
             name: formInputData.name,
             expiration_month: splittedExpiration.shift() as string,

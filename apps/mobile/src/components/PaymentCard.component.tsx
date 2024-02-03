@@ -7,7 +7,7 @@ import { IPaymentCard } from '../interfaces/payment.interface';
 import { parser } from '../utils/payment';
 import VisaIcon from '../../assets/visa.svg';
 import { useAppDispatch } from '../hooks/redux.hook';
-import { createAsync as createPaymentAsync } from '../redux/payment.slice';
+import { createPayment } from '../redux/thunks/payment.thunk';
 import useToast from '../hooks/toast.hook';
 
 export interface IPaymentCardProps {
@@ -32,7 +32,7 @@ const PaymentCard: FC<IPaymentCardProps> = ({ card }) => {
       });
 
       await dispatch(
-        createPaymentAsync({
+        createPayment({
           number,
           name,
           expiration_month,
