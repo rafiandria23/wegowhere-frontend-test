@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import { createAsyncThunk, createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { IRootState, IPaymentState } from '../interfaces/redux.interface';
 import {
@@ -11,8 +12,8 @@ const apiClient = new ApiClient();
 const initialState: IPaymentState = {
   loading: false,
   error: null,
+  info: null,
   cards: [],
-  payments: [],
 };
 
 export const fetchCardsAsync = createAsyncThunk<
@@ -52,6 +53,9 @@ const paymentSlice = createSlice({
     setError(state, action) {
       state.error = action.payload;
     },
+    setInfo(state, action) {
+      state.info = action.payload;
+    },
   },
   extraReducers(builder) {
     builder
@@ -60,9 +64,10 @@ const paymentSlice = createSlice({
       })
       .addCase(addCardAsync.fulfilled, (state, action) => {
         state.cards = [...state.cards, action.payload];
+        state.info = 'Successfully added a card!';
       })
       .addCase(createAsync.fulfilled, (state, action) => {
-        state.payments = [...state.payments, action.payload];
+        state.info = `You just paid BHT ${_.get(action, 'payload.amount')}!`;
       })
       .addMatcher(
         isAnyOf(
@@ -92,12 +97,15 @@ const paymentSlice = createSlice({
         ),
         (state, action) => {
           state.loading = false;
-          state.error = action.error;
+          state.error = _.defaultTo(
+            _.get(action, 'error.message'),
+            'Oops! Something unexpected occurred.'
+          );
         }
       );
   },
 });
 
-export const { setError } = paymentSlice.actions;
+export const { setError, setInfo } = paymentSlice.actions;
 
 export default paymentSlice.reducer;

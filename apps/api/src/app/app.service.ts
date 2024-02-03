@@ -53,9 +53,9 @@ export class AppService {
   }
 
   public async findAllPaymentCards() {
-    const paymentCards = (await this.paymentCardModel.find()).map(
-      (payentCard) => payentCard.toObject()
-    );
+    const paymentCards = (
+      await this.paymentCardModel.find().sort([['updated_at', -1]])
+    ).map((payentCard) => payentCard.toObject());
 
     return this.successTimestamp({
       data: paymentCards,

@@ -6,6 +6,10 @@ const store = configureStore<IRootState>({
   reducer: {
     payment: paymentSlice,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 export default store;
