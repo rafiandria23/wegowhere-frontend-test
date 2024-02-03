@@ -57,7 +57,7 @@ class OmiseClient {
         headers: {
           Authorization: `Basic ${btoa(this.publicKey + ':')}`,
         },
-      }
+      },
     );
 
     return data;
@@ -66,7 +66,7 @@ class OmiseClient {
   public async createCharge(
     payload: IPaymentCardAddPayload & {
       amount: number;
-    }
+    },
   ) {
     const createdToken = await this.createToken(_.omit(payload, ['amount']));
 
@@ -81,7 +81,7 @@ class OmiseClient {
         headers: {
           Authorization: `Basic ${btoa(this.secretKey + ':')}`,
         },
-      }
+      },
     );
 
     return createdCharge;
