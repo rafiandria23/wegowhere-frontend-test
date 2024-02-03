@@ -50,7 +50,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@config-plugins/detox": "^2.0.0",
+    "@config-plugins/detox": "^6.0.0",
     "@expo/cli": "^0.17.3",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
