@@ -34,6 +34,21 @@
           "skipProguard": false,
           "subdomains": ["10.0.2.2", "localhost"]
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "flipper": true,
+            "infoPlist": {
+              "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": true }
+            },
+            "supportsTablet": true
+          },
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
       ]
     ]
   }
