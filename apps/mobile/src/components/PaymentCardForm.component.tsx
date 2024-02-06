@@ -146,10 +146,7 @@ const PaymentCardForm: FC<IPaymentCardFormProps> = ({ loading }) => {
                 .set('month', expirationMonth - 1)
                 .set('year', parseInt(`20${expirationYear}`, 10));
 
-              if (
-                now.diff(expiration, 'year', false) < 0 ||
-                now.diff(expiration, 'year', false) > 5
-              ) {
+              if (expiration.diff(now, 'year', false) > 5) {
                 return 'Invalid expiration year!';
               }
 
