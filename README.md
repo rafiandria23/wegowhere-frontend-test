@@ -16,7 +16,7 @@ Frontend Test for WeGoWhere. Full stack app that connects to the [Omise](https:/
 ## Apps
 
 - [API](apps/api/)
-- [Mobile](apps/auth/)
+- [Mobile](apps/mobile/)
 
 ## Environment
 
