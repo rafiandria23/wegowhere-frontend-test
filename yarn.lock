@@ -6378,7 +6378,7 @@ builtins@^5.0.0:
   dependencies:
     semver "^7.0.0"
 
-bunyamin@^1.5.0:
+bunyamin@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/bunyamin/-/bunyamin-1.5.2.tgz#681db204c0b16531369d5c1f6c89dc8d760b7558"
   integrity sha512-Xp2nfqk33zt3nX90OSTkLVOc5N+1zdR3MWvfLHoIrm3cGRkdxPTPYB9CCgrDV8oum5rbghJjAbmXFXOrRXvMtg==
@@ -7479,9 +7479,9 @@ detect-port@^1.5.1:
     debug "4"
 
 detox@^20.11.1:
-  version "20.17.1"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.17.1.tgz#55b9615cf5937819e1257fbf03fb2d2d58cf2acc"
-  integrity sha512-10pey6CR9D5GSloRkH60ObBGZ8VS11H7iuBNY7qq6jO2swiqqckHhPLRXfH9+WGR7l3vDnfU+G/gQs7JxQkJwA==
+  version "20.18.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.0.tgz#d63b6654a812903bfb5a2d019712013ac8830b68"
+  integrity sha512-CVR6BR12HDp+YEalLIDDZHL56jVeOwoGpQVvyFc4h89ed6Rt93s0ge7jZMf4O6JxQ5wBtKeHftKywTihcBG9cA==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
@@ -10196,11 +10196,11 @@ jest-each@^29.7.0:
     pretty-format "^29.7.0"
 
 jest-environment-emit@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/jest-environment-emit/-/jest-environment-emit-1.0.5.tgz#e6f33451f98b88ccd48e9e1188bb535880f03c1b"
-  integrity sha512-OsQ08AhYxkkyDBTIow+9ogNmJheQIGWQKp0Nku+1ToLWjAj2Pd6LmypN8HgUIqYHs4HFcqkQ25kaf1qExmoZpg==
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/jest-environment-emit/-/jest-environment-emit-1.0.6.tgz#0c8f4f408012f3479e521fc31163975408814c49"
+  integrity sha512-iE+N18T76Gr5EVn58ANoUu1BMTrEYEgqpCOrAlev/KUfv8YuqUfyLon8C2tsp4qSmk0wIhEHhBMB0v54yv4tRA==
   dependencies:
-    bunyamin "^1.5.0"
+    bunyamin "^1.5.2"
     bunyan "^2.0.5"
     bunyan-debug-stream "^3.1.0"
     funpermaproxy "^1.1.0"
