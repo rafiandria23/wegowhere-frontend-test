@@ -18,7 +18,7 @@ export class ExceptionFilter
 {
   constructor(
     private readonly httpAdapterHost: HttpAdapterHost<FastifyAdapter>,
-    private readonly appService: AppService
+    private readonly appService: AppService,
   ) {}
 
   public catch(exception: HttpException | Error, host: ArgumentsHost) {
@@ -28,18 +28,18 @@ export class ExceptionFilter
 
     let errStatus: HttpStatus = _.defaultTo(
       _.get(exception, 'status'),
-      HttpStatus.INTERNAL_SERVER_ERROR
+      HttpStatus.INTERNAL_SERVER_ERROR,
     );
     let errData: string | object = _.defaultTo(
       _.get(exception, 'data'),
-      'Oops! Something unexpected occurred.'
+      'Oops! Something unexpected occurred.',
     );
 
     if (exception instanceof HttpException) {
       errStatus = exception.getStatus();
       errData = _.get(
         _.omit(exception.getResponse() as object, ['statusCode', 'error']),
-        'message'
+        'message',
       );
     }
 
@@ -55,7 +55,7 @@ export class ExceptionFilter
         success: false,
         data: errData,
       }),
-      errStatus
+      errStatus,
     );
   }
 }

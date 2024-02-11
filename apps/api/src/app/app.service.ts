@@ -10,7 +10,7 @@ import { AddPaymentCardDto } from './dto/save-payment-card.dto';
 export class AppService {
   constructor(
     @InjectModel(PaymentCard.name)
-    private readonly paymentCardModel: Model<PaymentCard>
+    private readonly paymentCardModel: Model<PaymentCard>,
   ) {}
 
   public successTimestamp({ success = true, data = undefined } = {}) {
@@ -35,7 +35,7 @@ export class AppService {
 
     if (foundCard) {
       throw new UnprocessableEntityException(
-        'Payment card with that number already exists!'
+        'Payment card with that number already exists!',
       );
     }
 
