@@ -17,16 +17,16 @@ if (!projectRoot) {
 }
 try {
   const workspacePackage = JSON.parse(
-    readFileSync(join(workspaceRoot, 'package.json')).toString()
+    readFileSync(join(workspaceRoot, 'package.json')).toString(),
   );
   const projectPackage = JSON.parse(
-    readFileSync(join(projectRoot, 'package.json')).toString()
+    readFileSync(join(projectRoot, 'package.json')).toString(),
   );
   projectPackage.dependencies = workspacePackage.dependencies;
   projectPackage.devDependencies = workspacePackage.devDependencies;
   writeFileSync(
     join(projectRoot, 'package.json'),
-    JSON.stringify(projectPackage, null, 2)
+    JSON.stringify(projectPackage, null, 2),
   );
 } catch (e) {
   console.error('Error reading package.json file', e);

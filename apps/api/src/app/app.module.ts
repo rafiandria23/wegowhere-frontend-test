@@ -22,7 +22,7 @@ import { AppService } from './app.service';
       async useFactory(configService: ConfigService) {
         return {
           uri: `mongodb://${configService.get<string>(
-            'db.host'
+            'db.host',
           )}:${configService.get<number>('db.port')}`,
           user: configService.get<string>('db.user'),
           pass: configService.get<string>('db.pass'),

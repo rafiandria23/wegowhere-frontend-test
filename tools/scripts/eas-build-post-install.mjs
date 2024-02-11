@@ -24,5 +24,5 @@ symlink(
     else {
       console.log('Symlink created');
     }
-  }
+  },
 );
