@@ -7479,9 +7479,9 @@ detect-port@^1.5.1:
     debug "4"
 
 detox@^20.11.1:
-  version "20.18.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.0.tgz#d63b6654a812903bfb5a2d019712013ac8830b68"
-  integrity sha512-CVR6BR12HDp+YEalLIDDZHL56jVeOwoGpQVvyFc4h89ed6Rt93s0ge7jZMf4O6JxQ5wBtKeHftKywTihcBG9cA==
+  version "20.18.1"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.1.tgz#9c595d86f6d30966e4f4824eaa9d73c5f71a683a"
+  integrity sha512-GMwtoNr5E//ReIGUNtvqye+sHUj4qf9xar/I91HZeP2DAwCTogZ/rysyWH/Y/F3lvVcRxZYh7/qXaxsHNFsduQ==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
