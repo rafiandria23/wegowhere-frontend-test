@@ -11426,10 +11426,15 @@ metro-minify-terser@0.80.5:
   dependencies:
     terser "^5.15.0"
 
-metro-resolver@0.80.5, metro-resolver@^0.80.5, metro-resolver@~0.80.4:
+metro-resolver@0.80.5, metro-resolver@~0.80.4:
   version "0.80.5"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.5.tgz#3915be3b2bcf4f3e9e2f24bdde8d8c9ac26bb134"
   integrity sha512-haJ/Hveio3zv/Fr4eXVdKzjUeHHDogYok7OpRqPSXGhTXisNXB+sLN7CpcUrCddFRUDLnVaqQOYwhYsFndgUwA==
+
+metro-resolver@^0.80.5:
+  version "0.80.6"
+  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.6.tgz#b648b8c661bc4cf091efd11affa010dd11f58bec"
+  integrity sha512-R7trfglG4zY4X9XyM9cvuffAhQ9W1reWoahr1jdEWa6rOI8PyM0qXjcsb8l+fsOQhdSiVlkKcYAmkyrs1S/zrA==
 
 metro-runtime@0.80.5, metro-runtime@^0.80.3:
   version "0.80.5"
