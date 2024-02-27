@@ -2115,10 +2115,10 @@
     "@react-native-aria/focus" "^0.2.9"
     "@react-native-aria/interactions" "^0.2.11"
 
-"@gluestack-ui/menu@0.2.29":
-  version "0.2.29"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/menu/-/menu-0.2.29.tgz#70cd6d96fe861d77378bdaac6b39f5d6dd132b3a"
-  integrity sha512-gz1Z5XPOGRTNSMZzcGzVc+5v9vtDIGMYc77w9RYbeIklx8Pzrqxawi0ORTRYlPEh2Ncrr4cb2ztINRSVpakraA==
+"@gluestack-ui/menu@0.2.30":
+  version "0.2.30"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/menu/-/menu-0.2.30.tgz#83b9844ec01e8f23e08b0a4ae1c69d3a21fde59e"
+  integrity sha512-DxKnVPLinzfCLUftG3ek0yx+8FP5oF1QPDtd62YhmrL/4ybUTMQtDDsg8GIjrjL+kgUHvt0bofsQfwD897lmLg==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "^0.1.12"
@@ -2269,9 +2269,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.8.tgz#253b843300836168c4e7c1751e5020dcc8cd9e96"
-  integrity sha512-ucyUIW8XfK0zja73BA2BFB6UpyA7cNzUaIKI5HPvQgvSqCNeUvwzi/5GrrTAdt70OL6LGPy8bdmaYyzTwEfE9g==
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.9.tgz#83128bd466c6b3fe83d17e6eb8f90af7749b9daf"
+  integrity sha512-8NCHb6yWTpx/Xc42ER+lvwGDuO0WEvLlkoLSTfAWHkCIsbMiSulC5SyVAf0JiAjYia8Hq26rXhMhxY9TeSh6vQ==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -2290,7 +2290,7 @@
     "@gluestack-ui/image" "0.1.7"
     "@gluestack-ui/input" "0.1.24"
     "@gluestack-ui/link" "0.1.17"
-    "@gluestack-ui/menu" "0.2.29"
+    "@gluestack-ui/menu" "0.2.30"
     "@gluestack-ui/modal" "0.1.29"
     "@gluestack-ui/overlay" "0.1.12"
     "@gluestack-ui/popover" "0.1.31"
@@ -14435,6 +14435,7 @@ string-length@^5.0.1:
     strip-ansi "^7.0.1"
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -15789,6 +15790,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@7.0.0, wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
