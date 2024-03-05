@@ -2170,9 +2170,9 @@
     "@react-stately/checkbox" "^3.4.2"
 
 "@gluestack-ui/config@^1.1.1":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/config/-/config-1.1.12.tgz#b257c051464a82dcf3ee7012ff935e9131b98810"
-  integrity sha512-4LcrituZu9HR8PIsKkuLNln2hpwXeC04jMTeKB9ZLgqePTgUzJjdsqztypmAVWP+1DJq4aldUnax4MxWxmWbeQ==
+  version "1.1.16"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/config/-/config-1.1.16.tgz#b1b41d774af5860da030557553c21dd474d69dff"
+  integrity sha512-oLdQEpCnOAYFskgk3whwIDZ3DmI9sAYf93LJB7qz+8VpOzSuoREq/hEL9Vtxk1BzioQDrjOB+FGLOpe+/vfJ9Q==
 
 "@gluestack-ui/divider@0.1.8":
   version "0.1.8"
