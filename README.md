@@ -13,7 +13,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_wegowhere-frontend-test&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=rafiandria23_wegowhere-frontend-test)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_wegowhere-frontend-test&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rafiandria23_wegowhere-frontend-test)
 
-Frontend Test for WeGoWhere. Full stack app that connects to the [Omise](https://omise.co) payment gateway for adding cards and paying. Made with [React Native](https://reactnative.dev).
+Frontend test for WeGoWhere. Full stack app that connects to the [Omise](https://omise.co) payment gateway for adding cards and paying. Made with [React Native](https://reactnative.dev).
 
 ## Tech Stacks
 
