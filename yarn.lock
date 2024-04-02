@@ -6786,9 +6786,9 @@ builtins@^5.0.0:
     semver "^7.0.0"
 
 bunyamin@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/bunyamin/-/bunyamin-1.5.2.tgz#681db204c0b16531369d5c1f6c89dc8d760b7558"
-  integrity sha512-Xp2nfqk33zt3nX90OSTkLVOc5N+1zdR3MWvfLHoIrm3cGRkdxPTPYB9CCgrDV8oum5rbghJjAbmXFXOrRXvMtg==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/bunyamin/-/bunyamin-1.6.0.tgz#edcaa2880785a887ba7e0d1d42b59ad2c65dca50"
+  integrity sha512-MoKfhxRUe7kQUBJz90z44/xckgoYj09Jz9haEsdLrp9MqbW70ee45ifB+r4yKaVCPuMu+5rvh225M3Tk4sb71w==
   dependencies:
     "@flatten-js/interval-tree" "^1.1.2"
     multi-sort-stream "^1.0.4"
@@ -7914,9 +7914,9 @@ detect-port@^1.5.1:
     debug "4"
 
 detox@^20.11.1:
-  version "20.19.5"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.19.5.tgz#5bdedb09692a57381dd1916834d2a8b6f4b61ef9"
-  integrity sha512-gLNp2rGLMSjrCpY6Xx3drK8jEkhUqrwRCbn27Q5AayFUGHeN7702wU1hLjWEdmJzRCmFUOmOeHR+j+l5N7xEDw==
+  version "20.20.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.20.0.tgz#ab5d01d0c2121b5da37d16e643b621e7568a0b7e"
+  integrity sha512-8aiIcNrrjsrWCMGiDB22vGKYHLfDVgwcCMlFmEiJsVbPfhtjDbhGSfSvHqpyf6rb63GEPq/HxCkCy+NBkowXtQ==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
