@@ -1584,7 +1584,7 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.22.6", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.22.6", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.24.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.4.tgz#de795accd698007a66ba44add6cc86542aff1edd"
   integrity sha512-dkxf7+hn8mFBwKjs9bvBlArzLVxVbS8usaPUDd5p2a9JCL9tB8OaOVN1isD4+Xyk4ns89/xeOmbQvgdK7IIVdA==
@@ -1598,7 +1598,7 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.20.0", "@babel/runtime@^7.6.2", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.20.0":
   version "7.24.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.1.tgz#431f9a794d173b53720e69a6464abc6f0e2a5c57"
   integrity sha512-+BIznRzyqBf+2wCTxcKE3wDjfGeCoVE61KSHGpkzqrLi8qxqFwBeUFyId2cxkTmm55fzDGnm0+yCxaxygrLUnQ==
@@ -2561,10 +2561,10 @@
     "@react-stately/utils" "^3.6.0"
     react-stately "^3.21.0"
 
-"@gluestack-ui/modal@0.1.31":
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/modal/-/modal-0.1.31.tgz#eb23d148974b9fa2b414a5adf1e726e3f561b248"
-  integrity sha512-J8pBlA51hcVg2Qhh2KFaLZdH+PZbCRxspSn/FvY9IyJZYH6UMggqv/gTJm/H7BJ7tsCcL1UBU/BpDN7X8DU4iQ==
+"@gluestack-ui/modal@0.1.32":
+  version "0.1.32"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/modal/-/modal-0.1.32.tgz#f7d79d94349e4063aeafa55698313b9ed88941b5"
+  integrity sha512-nqAxbw6hdbHgt4sQR/JCRcwpr4avI4CD1E03Xu+nbfo86qeFi8LgzgSRkoxFQ3pDb0Mej6L/QdZ3RKMpcBPwRg==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "^0.1.14"
@@ -2699,9 +2699,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.21"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.21.tgz#e2c3241b8d842b34fdd9076dcd4dc21ad94aa8c1"
-  integrity sha512-+VUeFnO0VXroT6vk+Ld4y3JcddFwNXRoR3rFKLjJmlK5rvRnJLX0YFJmoY9ISKZKM3bj/a1bVDs3BUmui0BZSA==
+  version "1.1.22"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.22.tgz#c80505b2c91a3c9f874548b4d8292c0e0c295a83"
+  integrity sha512-gdriivFCdddPR5GDuucNR8r0sLXns1y3qN7a7C38lMjodj5ygAZ7Bg+016vdzQKStQY66tvtxmFZyakkWBVzHg==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -2721,7 +2721,7 @@
     "@gluestack-ui/input" "0.1.29"
     "@gluestack-ui/link" "0.1.20"
     "@gluestack-ui/menu" "0.2.33"
-    "@gluestack-ui/modal" "0.1.31"
+    "@gluestack-ui/modal" "0.1.32"
     "@gluestack-ui/overlay" "0.1.14"
     "@gluestack-ui/popover" "0.1.34"
     "@gluestack-ui/pressable" "0.1.16"
