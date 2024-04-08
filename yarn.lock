@@ -1913,13 +1913,23 @@
     semver "^7.5.4"
     zod "^3.22.4"
 
-"@expo/eas-json@7.7.0":
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-7.7.0.tgz#4b41bcc1d4c7961a00e9f82ac06220c83c1ab05e"
-  integrity sha512-3fA6QAdDLj+Rific/Y+o89Ks6CBZHRQ7NvF9bp2hu1jEyLZf2C+axMWLGx0p9zAlq4eUjVggW5/t/EWlBJhMCg==
+"@expo/eas-build-job@1.0.95":
+  version "1.0.95"
+  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.95.tgz#182a4d90a3e7abe19efcc2c93f42405e007398fe"
+  integrity sha512-IsigaF7VEcg8+/jt2Hn7qJ2UYZqTl/70DfHwLO6g7UPw6LbWtrAbpMjIRj1ZgnbSA3QZRRxRspFXLqOkpxVR+w==
+  dependencies:
+    "@expo/logger" "1.0.57"
+    joi "^17.11.0"
+    semver "^7.5.4"
+    zod "^3.22.4"
+
+"@expo/eas-json@7.8.0":
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-7.8.0.tgz#e581de671ff2dd3240af2f3890e61c350627e084"
+  integrity sha512-Fq4hvFeB84Z8LZe8AjzEKjrm+y0BAMztg1EJBxomkAFsnbZT13zDXr0J203EHeCXC0vQ0+U9Pp5c7UVW4mjqJA==
   dependencies:
     "@babel/code-frame" "7.23.5"
-    "@expo/eas-build-job" "1.0.92"
+    "@expo/eas-build-job" "1.0.95"
     chalk "4.1.2"
     env-string "1.0.1"
     fs-extra "11.2.0"
@@ -8159,18 +8169,19 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^7.0.0:
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.7.0.tgz#64acaddcbbbd6106adb57ba55359e2df5481af3d"
-  integrity sha512-t6PaVD1WAq3VcMfJLZEeDvVBmH8n/1j0tkJeyxhtTLnVKRhjlup/7kXtUeWM/QE5cfoIzW7CauUvDaEM9oEnww==
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.8.0.tgz#57a6ff5ef8397d4bf7086dccfd230f8abc98d08c"
+  integrity sha512-c42hklO+cJwCAieQz6oIeKeE0c8aP3WRBb5/b+3MCNgbfVCEUdGmf5GhDD3eDPS9eAvTNgVv23Xdw1Cu8AhFHg==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
     "@expo/config" "8.5.4"
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
-    "@expo/eas-build-job" "1.0.92"
-    "@expo/eas-json" "7.7.0"
+    "@expo/eas-build-job" "1.0.95"
+    "@expo/eas-json" "7.8.0"
     "@expo/json-file" "8.2.37"
+    "@expo/logger" "1.0.57"
     "@expo/multipart-body-parser" "1.1.0"
     "@expo/osascript" "2.0.33"
     "@expo/package-manager" "1.1.2"
