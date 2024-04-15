@@ -8051,9 +8051,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^7.0.0:
-  version "7.8.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.8.1.tgz#a4120002062ed92eabc685d0be164d9d7af2b89a"
-  integrity sha512-kcIsGQrDuE/d/n7+EKSdRkBvM7VFBetn9eCyaWyLsFEvfuKvoHMo6jQyFsrRe2dH7Fbk+yGjcbecKAYNyeTnMQ==
+  version "7.8.2"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.8.2.tgz#9ad3c023bc393b7b7c93f3a5c0b1e2a76a7af868"
+  integrity sha512-mMB75JiJs+GHRkmEwRNVC6m3q+tHY024OlLwdS2D7TXiBbsumbL4/Pl5U/ToDno6MSQXupcwJPa/eKeXAgtB7Q==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -8155,9 +8155,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 ejs@^3.1.6, ejs@^3.1.7, ejs@^3.1.8:
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.9.tgz#03c9e8777fe12686a9effcef22303ca3d8eeb361"
-  integrity sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.10.tgz#69ab8358b14e896f80cc39e62087b88500c3ac3b"
+  integrity sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==
   dependencies:
     jake "^10.8.5"
 
