@@ -3,9 +3,9 @@
 
 
 "@0no-co/graphql.web@^1.0.1", "@0no-co/graphql.web@^1.0.5":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@0no-co/graphql.web/-/graphql.web-1.0.6.tgz#3def68bbaf654a301bd910ce3744506cad97ab9a"
-  integrity sha512-KZ7TnwMcQJcFgzjoY623AVxtlDQonkqp3rSz0wb15/jHPyU1v5gynUibEpuutDeoyGJ5Tp+FwxjGyDGDwq3vIw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@0no-co/graphql.web/-/graphql.web-1.0.7.tgz#c7a762c887b3482a79ffa68f63de5e96059a62e4"
+  integrity sha512-E3Qku4mTzdrlwVWGPxklDnME5ANrEGetvYw4i2GCRlppWXXE4QD66j7pwb8HelZwS6LnqEChhrSOGCXpbiu6MQ==
 
 "@aashutoshrathi/word-wrap@^1.2.3":
   version "1.2.6"
@@ -1806,10 +1806,10 @@
     semver "^7.5.4"
     zod "^3.22.4"
 
-"@expo/eas-json@7.8.0":
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-7.8.0.tgz#e581de671ff2dd3240af2f3890e61c350627e084"
-  integrity sha512-Fq4hvFeB84Z8LZe8AjzEKjrm+y0BAMztg1EJBxomkAFsnbZT13zDXr0J203EHeCXC0vQ0+U9Pp5c7UVW4mjqJA==
+"@expo/eas-json@7.8.4":
+  version "7.8.4"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-7.8.4.tgz#f31047d031dea56aff3b76d613c96e22fad05415"
+  integrity sha512-PNNbs/PD0zDY9c2hlvx7i0JAJ2luVdhwgv6Q7q1S2qnfSsvWbHqqGYeoNr7dehD/u4xsUfi03ixuWXdrUb+Gmg==
   dependencies:
     "@babel/code-frame" "7.23.5"
     "@expo/eas-build-job" "1.0.95"
@@ -5793,10 +5793,18 @@
     "@0no-co/graphql.web" "^1.0.1"
     wonka "^6.3.2"
 
-"@urql/core@>=2.3.1", "@urql/core@>=4.0.0":
+"@urql/core@>=2.3.1":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.0.tgz#690e664cf66f733077c558bf685adbdac2b25823"
   integrity sha512-kFkZxusq/VBQKEUcQFtf7AilMotLO+oGpE4WFhCiminZm8ZU2aulXSDWla50TaD0pj704FnWlXts6lRm0uHdDg==
+  dependencies:
+    "@0no-co/graphql.web" "^1.0.5"
+    wonka "^6.3.2"
+
+"@urql/core@>=4.0.0":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.2.tgz#ab2148ac96aab4067eed9d91833e664d40f64aa0"
+  integrity sha512-gxMYkhbZg43cPftRv9K/A8lLjbZm2aam+K5AfPyQyADQVKkQ0V5hC/XtH++Zdi3swhBvgjbvVG/YjdkZTh8PVg==
   dependencies:
     "@0no-co/graphql.web" "^1.0.5"
     wonka "^6.3.2"
@@ -8252,9 +8260,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^7.0.0:
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.8.2.tgz#9ad3c023bc393b7b7c93f3a5c0b1e2a76a7af868"
-  integrity sha512-mMB75JiJs+GHRkmEwRNVC6m3q+tHY024OlLwdS2D7TXiBbsumbL4/Pl5U/ToDno6MSQXupcwJPa/eKeXAgtB7Q==
+  version "7.8.4"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-7.8.4.tgz#1ac0f5935ae31d67fe50805d0e42ad9066a5ca4e"
+  integrity sha512-ViYxlgbr8tkVFZeeCXeSfuGJ3n8zZg4j3MzFoAPJoBCJ/rD0lTY/HFOlsqZr0UhbOttm8ICJQwPOt1pfhTj2uw==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -8262,7 +8270,7 @@ eas-cli@^7.0.0:
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
     "@expo/eas-build-job" "1.0.95"
-    "@expo/eas-json" "7.8.0"
+    "@expo/eas-json" "7.8.4"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.57"
     "@expo/multipart-body-parser" "1.1.0"
@@ -11308,7 +11316,18 @@ joi@17.11.0:
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
-joi@^17.11.0, joi@^17.2.1:
+joi@^17.11.0:
+  version "17.13.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.0.tgz#b6f340b8029ee7af2397f821d17a4f03bf34b043"
+  integrity sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==
+  dependencies:
+    "@hapi/hoek" "^9.3.0"
+    "@hapi/topo" "^5.1.0"
+    "@sideway/address" "^4.1.5"
+    "@sideway/formula" "^3.0.1"
+    "@sideway/pinpoint" "^2.0.0"
+
+joi@^17.2.1:
   version "17.12.3"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.12.3.tgz#944646979cd3b460178547b12ba37aca8482f63d"
   integrity sha512-2RRziagf555owrm9IRVtdKynOBeITiDpuZqIpgwqXShPncPKNiRQoiGsl/T8SQdq+8ugRzH2LqY67irr2y/d+g==
@@ -16709,6 +16728,6 @@ yocto-queue@^1.0.0:
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
 zod@^3.22.4:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
+  version "3.23.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.4.tgz#c63805b2f39e10d4ab3d55eb3c8cdb472c79dfb1"
+  integrity sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==
