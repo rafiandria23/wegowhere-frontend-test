@@ -2308,9 +2308,9 @@
   integrity sha512-sD6aFS6Tq5XpyjrboFEIc8LrRY4TA4kodFYHzk6mDchvbkdLODijtjnaDQB1UqihOkMRg49e7ANRAOzc7eymaQ==
 
 "@gluestack-style/react@^1.0.45":
-  version "1.0.53"
-  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.53.tgz#803af017deabc40b3f80313bac099b6f5adcf652"
-  integrity sha512-x/pj8T79dHvGVdKDFKyEZAcxytnBEf55OzsIQs84UcmB3tsMgd4KqxutExncjupPgU8m/5gmDS+ZI2ngroAcqg==
+  version "1.0.54"
+  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.54.tgz#c399e318768aa0f59b17043f10971d5e401d43c0"
+  integrity sha512-LAN7mMYr7IlhJAnab2PT5xiB55SUjKHdyIZ24qfayrZveKBH8Iy6TGCHkyE3JPP3ExgzFepDeshzz4T9X2/eoQ==
   dependencies:
     inline-style-prefixer "^6.0.1"
     normalize-css-color "^1.0.2"
