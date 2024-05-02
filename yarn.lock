@@ -12311,12 +12311,12 @@ metro-minify-terser@0.80.9:
   dependencies:
     terser "^5.15.0"
 
-metro-resolver@0.80.8, metro-resolver@^0.80.5, metro-resolver@~0.80.4:
+metro-resolver@0.80.8, metro-resolver@~0.80.4:
   version "0.80.8"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.8.tgz#bcc8f8d7f874a9c5fee9ebbde8541d6dc88783df"
   integrity sha512-JdtoJkP27GGoZ2HJlEsxs+zO7jnDUCRrmwXJozTlIuzLHMRrxgIRRby9fTCbMhaxq+iA9c+wzm3iFb4NhPmLbQ==
 
-metro-resolver@0.80.9:
+metro-resolver@0.80.9, metro-resolver@^0.80.5:
   version "0.80.9"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.9.tgz#bae9120a0553e0cb59da6429e83a7e97465cc1a8"
   integrity sha512-wAPIjkN59BQN6gocVsAvvpZ1+LQkkqUaswlT++cJafE/e54GoVkMNCmrR4BsgQHr9DknZ5Um/nKueeN7kaEz9w==
