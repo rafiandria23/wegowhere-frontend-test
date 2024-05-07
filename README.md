@@ -33,7 +33,7 @@ Frontend test for WeGoWhere. Full stack app that connects to the [Omise](https:/
 
 ## Environment
 
-Environment variables are available in `.env.template` file.
+Environment variables are available in `.env.example` file inside each app.
 
 ## Installation
 
