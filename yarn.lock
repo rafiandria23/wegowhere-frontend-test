@@ -2634,10 +2634,10 @@
   resolved "https://registry.yarnpkg.com/@gluestack-ui/hooks/-/hooks-0.1.11.tgz#6b925d1dc4ac853cc24b0702e62b73224e375b7c"
   integrity sha512-bcBsF7bTo//JD6L9ekJu0rZs83qYD/pE/Uj3ih3OYEtGU0LDoYiGkBMmDRpVMcVv8bE3TCKivnhHaT/heafInA==
 
-"@gluestack-ui/icon@0.1.20":
-  version "0.1.20"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/icon/-/icon-0.1.20.tgz#4140b5e94efeeb953ddc2c828800b27e103f7bfa"
-  integrity sha512-f/+DGR3139LU9NbMMvoumZWIwqy4B4e+xc02kAAubiv7p7aqGDV5KPm2JN5vVmCwiDRxX5u0F3SxodSQhEoQZA==
+"@gluestack-ui/icon@0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/icon/-/icon-0.1.21.tgz#b2d2fd787d85de4e906352bce8630e9625e6d9cd"
+  integrity sha512-QZsx/MUS9AVjMka1mOcDPH6NDvPHQpp/nYEBD8M8pqj6C3SPtLbNAQJNWewy7WQTAsUdJblk6mUayq7LDrkQtA==
   dependencies:
     "@gluestack-ui/provider" "^0.1.6"
     "@gluestack-ui/utils" "^0.1.12"
@@ -2767,10 +2767,10 @@
   dependencies:
     "@react-native-aria/focus" "^0.2.7"
 
-"@gluestack-ui/select@0.1.25":
-  version "0.1.25"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/select/-/select-0.1.25.tgz#adfe00fa6f15ce0d25ff8064225863d5ed0a7c89"
-  integrity sha512-whwfpFSo4/qvnaJR7a2uA0ca3MotMeBV4IyqpATk7AlMy+NZXi8RjQR5sBzeGP5/RhzwDhcYC8gbCXhyBpJi+g==
+"@gluestack-ui/select@0.1.26":
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/select/-/select-0.1.26.tgz#f1112eb8c327b5da2b2caca9e10b189a2be42fdb"
+  integrity sha512-gclLFh3zI1RF2/ViKg7e3EF+ZVf6aNPa45KZFdvHlt3Po8QITtzeK0OXWT/xyb2MtNztNcuILbcCC4GhVNuFIA==
   dependencies:
     "@gluestack-ui/form-control" "^0.1.16"
     "@gluestack-ui/hooks" "0.1.11"
@@ -2825,9 +2825,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.24"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.24.tgz#f3aabc3c467509097aa3610a78f90b288c824813"
-  integrity sha512-fXYlYc7UvWBzIt6ZHzWF7igQa2k3tis6dZJbgE381zpfh+bqza8GJUCnF0DyLM/sh+VytjOjymkntevQ9ppUIA==
+  version "1.1.25"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.25.tgz#8930b1577f33c07452344b80c05d9875a070e7f1"
+  integrity sha512-KrNhZ7ko/9IQhOR1NRpjVQdD804FOW3bVZ6NNsWf2Q5IUeLxxFddXsCi+Tbb7qXvmnbA5YPvG3zW1f/Bo+4+Rg==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -2842,7 +2842,7 @@
     "@gluestack-ui/divider" "0.1.8"
     "@gluestack-ui/fab" "0.1.20"
     "@gluestack-ui/form-control" "0.1.17"
-    "@gluestack-ui/icon" "0.1.20"
+    "@gluestack-ui/icon" "0.1.21"
     "@gluestack-ui/image" "0.1.9"
     "@gluestack-ui/input" "0.1.29"
     "@gluestack-ui/link" "0.1.20"
@@ -2854,7 +2854,7 @@
     "@gluestack-ui/progress" "0.1.14"
     "@gluestack-ui/provider" "0.1.12"
     "@gluestack-ui/radio" "0.1.29"
-    "@gluestack-ui/select" "0.1.25"
+    "@gluestack-ui/select" "0.1.26"
     "@gluestack-ui/slider" "0.1.23"
     "@gluestack-ui/spinner" "0.1.14"
     "@gluestack-ui/switch" "0.1.21"
