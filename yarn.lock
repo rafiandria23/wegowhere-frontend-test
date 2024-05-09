@@ -364,22 +364,12 @@
     "@babel/traverse" "^7.24.5"
     "@babel/types" "^7.24.5"
 
-"@babel/highlight@^7.10.4", "@babel/highlight@^7.24.2":
+"@babel/highlight@^7.10.4", "@babel/highlight@^7.23.4", "@babel/highlight@^7.24.2":
   version "7.24.5"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.24.5.tgz#bc0613f98e1dd0720e99b2a9ee3760194a704b6e"
   integrity sha512-8lLmua6AVh/8SLJRRVD6V8p73Hir9w5mJrhE+IPpILG31KKlI9iz5zmBYKcWPS59qSfgP9RaSBQSHHE81WKuEw==
   dependencies:
     "@babel/helper-validator-identifier" "^7.24.5"
-    chalk "^2.4.2"
-    js-tokens "^4.0.0"
-    picocolors "^1.0.0"
-
-"@babel/highlight@^7.23.4":
-  version "7.24.2"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.24.2.tgz#3f539503efc83d3c59080a10e6634306e0370d26"
-  integrity sha512-Yac1ao4flkTxTteCDZLEvdxg2fZfz1v8M4QpaGypq/WPDqg3ijHYbDfs+LG5hvzSoqaSZ9/Z9lKSP3CjZjv+pA==
-  dependencies:
-    "@babel/helper-validator-identifier" "^7.22.20"
     chalk "^2.4.2"
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
@@ -1940,10 +1930,10 @@
     semver "^7.5.4"
     zod "^3.22.4"
 
-"@expo/eas-json@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-9.0.0.tgz#1c80fbed92eadade6f2545e3d01370d2a362dbc5"
-  integrity sha512-gS6P+2SVxzdu3/B7lvSeyWpRoq6SpbtI9Hhsru5sWb3+2In//a4+n2H8S0sWe15di1teFj5sUp8pNc/eLRB9hg==
+"@expo/eas-json@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-9.0.1.tgz#f237318435379bdcc17475355d5ca964601eb3af"
+  integrity sha512-E7mOuQwFU0HDw/QgIy3HSgBg5gSir/O7sk6YY879+9AcseBOuBrqjdVAT9/8zcb17AUJRoAgYkaIMz8c4i663A==
   dependencies:
     "@babel/code-frame" "7.23.5"
     "@expo/eas-build-job" "1.0.107"
@@ -5777,18 +5767,10 @@
     "@0no-co/graphql.web" "^1.0.1"
     wonka "^6.3.2"
 
-"@urql/core@>=2.3.1":
+"@urql/core@>=2.3.1", "@urql/core@>=4.0.0":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.3.tgz#80e390399f6aa32757c42733deb5f029bf0406ad"
   integrity sha512-NZ3YqRr6IphbpFjGqujJOuVuV8/QegYxfjy1zdmOSWpYYFLpmMBfVtzZ/L8IiqPERVAEAIKjUsryLnVtXJQo4w==
-  dependencies:
-    "@0no-co/graphql.web" "^1.0.5"
-    wonka "^6.3.2"
-
-"@urql/core@>=4.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.2.tgz#ab2148ac96aab4067eed9d91833e664d40f64aa0"
-  integrity sha512-gxMYkhbZg43cPftRv9K/A8lLjbZm2aam+K5AfPyQyADQVKkQ0V5hC/XtH++Zdi3swhBvgjbvVG/YjdkZTh8PVg==
   dependencies:
     "@0no-co/graphql.web" "^1.0.5"
     wonka "^6.3.2"
@@ -8206,9 +8188,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-9.0.0.tgz#6d4bb0fd9c538510c38b59a8ec8d1e6ac8b6c8b7"
-  integrity sha512-5qcdbk1Vwgh2rLhGmyzRoUB+p1F98rUjj37IUQayt8Iz3YmlvJsrk5hnL5KFHqz4gBWKGBR8Owqmr9IqbN53EA==
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-9.0.1.tgz#31a5b583ea3359dfb59bf663c6965c6abf9acb00"
+  integrity sha512-5oNILKW400viPjmpEZiIMhwsvryQ9B4FxMGESUInsl4xgxvl6fB7Smd5amx2/ybgfjxLQfuCvucQjfhXOftlUQ==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -8216,7 +8198,7 @@ eas-cli@^9.0.0:
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
     "@expo/eas-build-job" "1.0.107"
-    "@expo/eas-json" "9.0.0"
+    "@expo/eas-json" "9.0.1"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.57"
     "@expo/multipart-body-parser" "1.1.0"
@@ -11258,18 +11240,7 @@ joi@17.11.0:
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
-joi@^17.11.0:
-  version "17.13.0"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.0.tgz#b6f340b8029ee7af2397f821d17a4f03bf34b043"
-  integrity sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==
-  dependencies:
-    "@hapi/hoek" "^9.3.0"
-    "@hapi/topo" "^5.1.0"
-    "@sideway/address" "^4.1.5"
-    "@sideway/formula" "^3.0.1"
-    "@sideway/pinpoint" "^2.0.0"
-
-joi@^17.2.1:
+joi@^17.11.0, joi@^17.2.1:
   version "17.13.1"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.1.tgz#9c7b53dc3b44dd9ae200255cc3b398874918a6ca"
   integrity sha512-vaBlIKCyo4FCUtCm7Eu4QZd/q02bWcxfUO6YSXAZOWF6gzcLBeba8kwotUdYJjDLW8Cz8RywsSOqiNJZW0mNvg==
@@ -14614,12 +14585,17 @@ semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.0.0, semver@^7.3.4, semver@^7.3.5, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
+semver@^7.0.0, semver@^7.3.4, semver@^7.3.5, semver@^7.6.0:
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.1.tgz#60bfe090bf907a25aa8119a72b9f90ef7ca281b2"
   integrity sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==
 
-semver@^7.3.7, semver@^7.3.8, semver@^7.5.2:
+semver@^7.3.7, semver@^7.3.8, semver@^7.5.3, semver@^7.5.4:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.2.tgz#1e3b34759f896e8f14d6134732ce798aeb0c6e13"
+  integrity sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==
+
+semver@^7.5.2:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
   integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
@@ -16622,15 +16598,10 @@ yaml@^1.10.0, yaml@^1.7.2:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.2.1:
+yaml@^2.2.1, yaml@^2.3.4:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.2.tgz#7a2b30f2243a5fc299e1f14ca58d475ed4bc5362"
   integrity sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==
-
-yaml@^2.3.4:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.1.tgz#2e57e0b5e995292c25c75d2658f0664765210eed"
-  integrity sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==
 
 yargs-parser@21.1.1, yargs-parser@^21.0.0, yargs-parser@^21.0.1, yargs-parser@^21.1.1:
   version "21.1.1"
@@ -16701,6 +16672,6 @@ yocto-queue@^1.0.0:
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
 zod@^3.22.4:
-  version "3.23.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.4.tgz#c63805b2f39e10d4ab3d55eb3c8cdb472c79dfb1"
-  integrity sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
