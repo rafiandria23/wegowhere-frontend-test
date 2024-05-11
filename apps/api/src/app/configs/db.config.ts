@@ -3,7 +3,7 @@ import { registerAs } from '@nestjs/config';
 
 export default registerAs('db', () => {
   return {
-    host: _.defaultTo(process.env.DB_HOST, '127.0.0.1'),
+    host: _.defaultTo(process.env.DB_HOST, 'localhost'),
     port: _.defaultTo(parseInt(process.env.DB_PORT, 10), 27017),
     user: process.env.DB_USER,
     pass: process.env.DB_PASS,
