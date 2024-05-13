@@ -1930,10 +1930,10 @@
     semver "^7.5.4"
     zod "^3.22.4"
 
-"@expo/eas-json@9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-9.0.3.tgz#5cb70a0a88c421ba9de118d9672fb7c3c48b18f7"
-  integrity sha512-NStZIcDCsvVRYikDDmnONtfsH1Qfba7c23wfqcgWWSSs12e9BLpTykpi9Xtrx4/sgx058tj+iaefUVDDyhtt+Q==
+"@expo/eas-json@9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-9.0.4.tgz#0da172c64b4364307fe6b0a0c1b430cfa363a95d"
+  integrity sha512-VA0PEbyO7vGh5HPtSHdORsWcbcoQ79hiVyh/rZXuZ6jCpQ1TyHf9alpUWe8dlV9KeHuJ2HcUmecHKV5i2LxmQw==
   dependencies:
     "@babel/code-frame" "7.23.5"
     "@expo/eas-build-job" "1.0.108"
@@ -8183,9 +8183,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^9.0.0:
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-9.0.3.tgz#67e4dba93827dd83c578faf4a7ad52a4b7a2aab9"
-  integrity sha512-tmzmkHeV0TXxv7Hu1mKhNGBY5TzF1kkhg/LhL/9//k0iYFbBHYr7lD2MKXpunMm7Nu/I44wIyZxAjIRBoJxbng==
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-9.0.5.tgz#fbc51eebf821183314b3227c8f4d4507debef9d3"
+  integrity sha512-htZl+L3UtK9hG22KSZq9dgyyflSDI/Xm2BA4XO1yzfQcMBpwXscB7tuosjYssUCR+fh33L2Dv3rQtHysuMEVyg==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -8193,7 +8193,7 @@ eas-cli@^9.0.0:
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
     "@expo/eas-build-job" "1.0.108"
-    "@expo/eas-json" "9.0.3"
+    "@expo/eas-json" "9.0.4"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.57"
     "@expo/multipart-body-parser" "1.1.0"
