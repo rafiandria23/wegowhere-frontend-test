@@ -49,7 +49,7 @@ yarn
 
 ```zsh
 # Run all apps
-nx run-many -t serve -p api mobile
+nx run-many -t serve
 ```
 
 ## License
