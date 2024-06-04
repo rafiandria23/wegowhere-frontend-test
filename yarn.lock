@@ -2901,10 +2901,10 @@
   resolved "https://registry.yarnpkg.com/@gluestack-ui/hooks/-/hooks-0.1.11.tgz#6b925d1dc4ac853cc24b0702e62b73224e375b7c"
   integrity sha512-bcBsF7bTo//JD6L9ekJu0rZs83qYD/pE/Uj3ih3OYEtGU0LDoYiGkBMmDRpVMcVv8bE3TCKivnhHaT/heafInA==
 
-"@gluestack-ui/icon@0.1.21":
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/icon/-/icon-0.1.21.tgz#b2d2fd787d85de4e906352bce8630e9625e6d9cd"
-  integrity sha512-QZsx/MUS9AVjMka1mOcDPH6NDvPHQpp/nYEBD8M8pqj6C3SPtLbNAQJNWewy7WQTAsUdJblk6mUayq7LDrkQtA==
+"@gluestack-ui/icon@0.1.22":
+  version "0.1.22"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/icon/-/icon-0.1.22.tgz#3446ec5c118dbdf1ab7d139f7cca63ada7172909"
+  integrity sha512-6E8N0OEEike0p6ITRJoEYpRlHqjRAabekEVSOk/HM/v+MJONT613TlQari5ozBHcaNLn/JhJqRxNHxNrzxd+ZQ==
   dependencies:
     "@gluestack-ui/provider" "^0.1.6"
     "@gluestack-ui/utils" "^0.1.12"
@@ -3092,9 +3092,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.27.tgz#45d1ebd432ef7851580d7b15ec01c2dd9a3a7e9b"
-  integrity sha512-z0ePoyYxuaYAzeVWP+nXZ7UuC0j8l8Gi4fh/bHeywLgVBoSTE7+GWpU0YkjFcCfm6sFHcLu9IG3ZYxdQAiuG/w==
+  version "1.1.28"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.28.tgz#871cce1b20bc9df2bb9442cc73576462b9b33195"
+  integrity sha512-U5Vhk56jVd64gTv4xXJ2xuUm0uHnsevYyRAxTQdJAdgS+CxQY5+RIFxXHVTIYHl9wjcAK6T0ACUEP4cu7zPpDg==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3109,7 +3109,7 @@
     "@gluestack-ui/divider" "0.1.8"
     "@gluestack-ui/fab" "0.1.20"
     "@gluestack-ui/form-control" "0.1.17"
-    "@gluestack-ui/icon" "0.1.21"
+    "@gluestack-ui/icon" "0.1.22"
     "@gluestack-ui/image" "0.1.9"
     "@gluestack-ui/input" "0.1.29"
     "@gluestack-ui/link" "0.1.20"
