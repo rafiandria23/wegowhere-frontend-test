@@ -2494,23 +2494,23 @@
     tmp "^0.0.33"
     tslib "^2.4.0"
 
-"@expo/eas-build-job@1.0.117":
-  version "1.0.117"
-  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.117.tgz#0a0a057bd1b0df5b2857a13ef4b54db173d837bf"
-  integrity sha512-l1EBpRH4lqRg0uPKl4/xn3V77dzWDrSAIU0r88aNq+Slznpu8U8HCkEZSh2YyF/BFhhs5lG7v8yQclVaflVBrQ==
+"@expo/eas-build-job@1.0.119":
+  version "1.0.119"
+  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.119.tgz#3ce1e757a935cfb3a17d35124d3513be2af2cd81"
+  integrity sha512-uWgriDXF/cKSKl62lqD0OnoCTtX8+s00te2KQ54S/tz3/LYfiE4JBRsLazQq9hIfz8JPEXwmfKN713BDeV/TOg==
   dependencies:
     "@expo/logger" "1.0.117"
     joi "^17.13.1"
     semver "^7.6.2"
     zod "^3.23.8"
 
-"@expo/eas-json@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-10.0.0.tgz#9e4f882ed5a93707c76f01e00df63a90e4b4e733"
-  integrity sha512-3RIzqeNGhiWLfU8IGH9sxgI8OaWAAjEMprDuec1//C2QARylA6agx2knqLEi5BmSCZDPiw7QwUN3+XskHKq85w==
+"@expo/eas-json@10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-10.0.3.tgz#39c1b926f62d54d1acaa4537e67d5efc2c4931c3"
+  integrity sha512-eMgV1YuGP9bmGzB8+8tiJMcIiH2aEfwFwpqd1CqPs1gs5YPAQT/VmnkRIuC4DjWLuqhFr/fX9rO+yvOpr2MsIw==
   dependencies:
     "@babel/code-frame" "7.23.5"
-    "@expo/eas-build-job" "1.0.117"
+    "@expo/eas-build-job" "1.0.119"
     chalk "4.1.2"
     env-string "1.0.1"
     fs-extra "11.2.0"
@@ -2820,12 +2820,12 @@
   dependencies:
     cross-spawn "^7.0.3"
 
-"@expo/steps@1.0.118":
-  version "1.0.118"
-  resolved "https://registry.yarnpkg.com/@expo/steps/-/steps-1.0.118.tgz#67839259e67b52e7b24f0bfc5913c869c1ed1f2e"
-  integrity sha512-JzU4K5bmNG+RFj21ulPXNADwxdtynN8WAZnqRluafz7FcU9ibNMdowdXWR17zo0xpCd1f5awcsjhTebWDjd5hg==
+"@expo/steps@1.0.119":
+  version "1.0.119"
+  resolved "https://registry.yarnpkg.com/@expo/steps/-/steps-1.0.119.tgz#6eb907fadd11fdc7b5c477a45784252e63ec9495"
+  integrity sha512-raPlBDsMkRO5pOlGDa9PnjgCIJdiDTgU92GtTML0UZ+hPiy5H7Vbx2JxqtqMiZcl21mxQ7V60toqdbo7DF5iJQ==
   dependencies:
-    "@expo/eas-build-job" "1.0.117"
+    "@expo/eas-build-job" "1.0.119"
     "@expo/logger" "1.0.117"
     "@expo/spawn-async" "^1.7.2"
     arg "^5.0.2"
@@ -5507,9 +5507,9 @@
     rimraf "^3.0.2"
 
 "@segment/ajv-human-errors@^2.1.2":
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/@segment/ajv-human-errors/-/ajv-human-errors-2.12.0.tgz#2c6b1a16652df23e90d27ca4fa2e739c63cb31e6"
-  integrity sha512-wgQpYRaPMlgaJvxhd7gCRUQcLbrgYwwbtqXnCfpT6Vv+al5OP2pqPj27WAXNq/3OBzbwsn0NXm0m1U8ygHeybg==
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@segment/ajv-human-errors/-/ajv-human-errors-2.13.0.tgz#2881976962c86b8b18a5ee7d7287b8ef6df55ec1"
+  integrity sha512-rubuhyhxCHmVdTmA5G3aMiWoN8Yutp+LG/AGUSiIKJVs1r7EEE/yjqSzSqyANGj5ZkqGUP802Ur9s19MuWelZQ==
 
 "@segment/loosely-validate-event@^2.0.0":
   version "2.0.0"
@@ -8801,17 +8801,17 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^10.0.0:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.0.2.tgz#fbfc17d42bf371c6417f4e97c2e07ed4c940f0b0"
-  integrity sha512-+GtMMGYw6mRlW4fiVp8ujkU4s2m9zyNBQjlLzP0NLex4Ll4A1zZmp2X1Ip9xPCgbrbVrwCbSFOhYWtozoaoUKQ==
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.0.3.tgz#76c2668b5450d12b0a97b0ff775fd05d35973d5c"
+  integrity sha512-lAUBrzz5Kjrmg8rYYKCLN71esTAjjq1M8ynraScS2I/BS46EgLK4sVJkMQ6iPpw1CVRH1HBE5LjLudQB2sTwkw==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
     "@expo/config" "8.5.4"
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
-    "@expo/eas-build-job" "1.0.117"
-    "@expo/eas-json" "10.0.0"
+    "@expo/eas-build-job" "1.0.119"
+    "@expo/eas-json" "10.0.3"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.117"
     "@expo/multipart-body-parser" "1.1.0"
@@ -8825,7 +8825,7 @@ eas-cli@^10.0.0:
     "@expo/results" "1.0.0"
     "@expo/rudder-sdk-node" "1.1.1"
     "@expo/spawn-async" "1.7.0"
-    "@expo/steps" "1.0.118"
+    "@expo/steps" "1.0.119"
     "@expo/timeago.js" "1.0.0"
     "@oclif/core" "^1.26.2"
     "@oclif/plugin-autocomplete" "^2.3.10"
@@ -11769,7 +11769,18 @@ joi@17.11.0:
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
-joi@^17.13.1, joi@^17.2.1:
+joi@^17.13.1:
+  version "17.13.3"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.3.tgz#0f5cc1169c999b30d344366d384b12d92558bcec"
+  integrity sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==
+  dependencies:
+    "@hapi/hoek" "^9.3.0"
+    "@hapi/topo" "^5.1.0"
+    "@sideway/address" "^4.1.5"
+    "@sideway/formula" "^3.0.1"
+    "@sideway/pinpoint" "^2.0.0"
+
+joi@^17.2.1:
   version "17.13.1"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.1.tgz#9c7b53dc3b44dd9ae200255cc3b398874918a6ca"
   integrity sha512-vaBlIKCyo4FCUtCm7Eu4QZd/q02bWcxfUO6YSXAZOWF6gzcLBeba8kwotUdYJjDLW8Cz8RywsSOqiNJZW0mNvg==
