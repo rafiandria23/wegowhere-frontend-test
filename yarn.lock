@@ -6573,10 +6573,15 @@ acorn-walk@^8.0.2, acorn-walk@^8.1.1:
   dependencies:
     acorn "^8.11.0"
 
-acorn@^8.1.0, acorn@^8.11.0, acorn@^8.12.0, acorn@^8.4.1, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.1, acorn@^8.8.2, acorn@^8.9.0:
+acorn@^8.1.0, acorn@^8.12.0, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.1, acorn@^8.8.2, acorn@^8.9.0:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.0.tgz#1627bfa2e058148036133b8d9b51a700663c294c"
   integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==
+
+acorn@^8.11.0, acorn@^8.4.1:
+  version "8.12.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.1.tgz#71616bdccbe25e27a54439e0046e89ca76df2248"
+  integrity sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==
 
 address@^1.0.1:
   version "1.2.2"
@@ -8797,9 +8802,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^10.0.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.1.0.tgz#01833ca6e23d6cdc82f99a45804aa1eeb7cd3ee7"
-  integrity sha512-CJbYRUE2MRaEkNVKRloNtdzkvAaJXNE4FZ7nBddkvJcwFA2QELBOWIgB6247UhmoYYvewQQemQoxsLGCfja57g==
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.1.1.tgz#0b96c66bb59fab1933824a7d59bd8dd55ba04a47"
+  integrity sha512-xb0FtF+lT0zfaCjZ5q3KYV7Ap+u7i6xET2Ju7b2XYgMpVP6WF2pMvekd5tNp+xtPUOZoAJazUdytdd43F1b4ww==
   dependencies:
     "@expo/apple-utils" "1.7.0"
     "@expo/code-signing-certificates" "0.0.5"
