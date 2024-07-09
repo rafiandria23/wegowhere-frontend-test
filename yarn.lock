@@ -3236,18 +3236,18 @@
     "@react-native-aria/interactions" "0.2.13"
     "@react-native-aria/overlays" "^0.3.12"
 
-"@gluestack-ui/popover@0.1.35":
-  version "0.1.35"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/popover/-/popover-0.1.35.tgz#e7286d44c35827a2d77dfa37930882fae7a34ba9"
-  integrity sha512-W8NiTctdzJvvWwO7i3sP7nLIM5SOvJmTKxMLk2DmuR3NxnZ7O0hYwj/mB1P5Hxyh3ijUb8g3MQwi0nZTLQUrDA==
+"@gluestack-ui/popover@0.1.36":
+  version "0.1.36"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/popover/-/popover-0.1.36.tgz#18eeef263e99c09a4344fe142fefef6acbeadfcd"
+  integrity sha512-t+xk+NkrrnOC4yqTUXXdP8a7xsoT28xgYxRWZ0tjakRkZEVx70bP7wQt4hoSqSRpnNZNNa6SLfkhnuUHuB305Q==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
-    "@gluestack-ui/overlay" "^0.1.14"
+    "@gluestack-ui/overlay" "0.1.14"
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/dialog" "^0.0.4"
     "@react-native-aria/focus" "^0.2.9"
     "@react-native-aria/interactions" "0.2.13"
-    "@react-native-aria/overlays" "^0.3.12"
+    "@react-native-aria/overlays" "0.3.14"
 
 "@gluestack-ui/pressable@0.1.16":
   version "0.1.16"
@@ -3352,9 +3352,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.33"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.33.tgz#7996ae8ee4a9aba2160d18c5b2826f42d032a856"
-  integrity sha512-h2dymNFXHGizwPv8Tn9BablVKNbwnEV1GO56MTvqIYlHRdDYMURiGmwDhGAWC5h6s7oVWM7yqFHVCWZIn2/5lw==
+  version "1.1.34"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.34.tgz#bc081f987e598f0fdf6f3fc5d8ae70011f18e301"
+  integrity sha512-9KrOWKv0SCyqb1O673yWFWsd2jR5f9Fj0loxdilmZ21HlcyMK3Jw3W7xR4KUPezMvd/cttjw5h/CoGUAEOC2PA==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3376,7 +3376,7 @@
     "@gluestack-ui/menu" "0.2.34"
     "@gluestack-ui/modal" "0.1.34"
     "@gluestack-ui/overlay" "0.1.14"
-    "@gluestack-ui/popover" "0.1.35"
+    "@gluestack-ui/popover" "0.1.36"
     "@gluestack-ui/pressable" "0.1.16"
     "@gluestack-ui/progress" "0.1.15"
     "@gluestack-ui/provider" "0.1.12"
@@ -4795,10 +4795,10 @@
     "@react-stately/tree" "^3.1.2"
     "@react-types/menu" "^3.1.1"
 
-"@react-native-aria/overlays@^0.3.12":
-  version "0.3.12"
-  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.12.tgz#224cc8a096a16fb6ee8ffe15d6a4290c7447db84"
-  integrity sha512-XV/JjL+zimkpDT7WfomrZl6D7on2RFnhlM0/EPwCPoHRALrJf1gcyEtl0ubWpB3b9yg5uliJ8u0zOS9ui/8S/Q==
+"@react-native-aria/overlays@0.3.14", "@react-native-aria/overlays@^0.3.12":
+  version "0.3.14"
+  resolved "https://registry.yarnpkg.com/@react-native-aria/overlays/-/overlays-0.3.14.tgz#3992f656704d67bbe9d5c28862e6fac841f263ae"
+  integrity sha512-a8MIB2aBw5yitNB0szNqKQlm4ngOozHGVmXTbslejGIX2+3YQUg8e7J4ouT7ZgK2iIr2gIB3YrstHDM6mvKVmw==
   dependencies:
     "@react-aria/interactions" "^3.3.2"
     "@react-aria/overlays" "^3.7.0"
