@@ -2092,7 +2092,7 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.22.6", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.22.6", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.24.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.7.tgz#f4f0d5530e8dbdf59b3451b9b3e594b6ba082e12"
   integrity sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==
@@ -2106,7 +2106,7 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.20.0":
+"@babel/runtime@^7.20.0", "@babel/runtime@^7.6.2", "@babel/runtime@^7.8.7":
   version "7.24.8"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.8.tgz#5d958c3827b13cc6d05e038c07fb2e5e3420d82e"
   integrity sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==
@@ -3351,9 +3351,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.34"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.34.tgz#bc081f987e598f0fdf6f3fc5d8ae70011f18e301"
-  integrity sha512-9KrOWKv0SCyqb1O673yWFWsd2jR5f9Fj0loxdilmZ21HlcyMK3Jw3W7xR4KUPezMvd/cttjw5h/CoGUAEOC2PA==
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.35.tgz#c110ef71cb0cdc6a2e0ca73d968de808e74de80c"
+  integrity sha512-XqY/iizZDLA93QoxbhBkGWv+eqhvJKDvblb6SWA18+LUoR4E+feZ52sIkY9xWitp/kNnSCCh0YjdjNFGm0TRSQ==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3386,14 +3386,14 @@
     "@gluestack-ui/switch" "0.1.22"
     "@gluestack-ui/tabs" "0.1.16"
     "@gluestack-ui/textarea" "0.1.23"
-    "@gluestack-ui/toast" "1.0.5"
+    "@gluestack-ui/toast" "1.0.6"
     "@gluestack-ui/tooltip" "0.1.31"
     "@legendapp/motion" latest
 
-"@gluestack-ui/toast@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/toast/-/toast-1.0.5.tgz#ce3fa7bf163f4d1e4cecb167754b7abe8a704d72"
-  integrity sha512-jsYgKQkAJFlf9I/9St9XXhhvSCpX2ZvbLfvSzTQpw1hplt1iHeNGSxHkCuxB+0bBJc16wpzoC0mRUfK3t/cqdw==
+"@gluestack-ui/toast@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/toast/-/toast-1.0.6.tgz#756ba56f5ab43b06c019d11847a2fbc0914f7ebe"
+  integrity sha512-HltJeHxWfsEQlM/FfWsZd08kB5SpEdBQBglARhuyHkrZSvPs3yJA9DE343h2uh+u0XQx2+uEqXOxDatoBhp6bA==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "^0.1.12"
