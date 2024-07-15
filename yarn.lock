@@ -6757,7 +6757,7 @@ ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.0, ajv@^8.12.0, ajv@^8.9.0:
+ajv@^8.0.0, ajv@^8.12.0, ajv@^8.6.3, ajv@^8.9.0:
   version "8.17.1"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.17.1.tgz#37d9a5c776af6bc92d7f4f9510eba4c0a60d11a6"
   integrity sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==
@@ -6767,7 +6767,7 @@ ajv@^8.0.0, ajv@^8.12.0, ajv@^8.9.0:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
 
-ajv@^8.10.0, ajv@^8.11.0, ajv@^8.6.3:
+ajv@^8.10.0, ajv@^8.11.0:
   version "8.16.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.16.0.tgz#22e2a92b94f005f7e0f9c9d39652ef0b8f6f0cb4"
   integrity sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw==
@@ -8722,9 +8722,9 @@ detect-port@^1.5.1:
     debug "4"
 
 detox@^20.11.1:
-  version "20.24.0"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.24.0.tgz#c797ef8ed31d122e638305242feff64df946105d"
-  integrity sha512-ZqNvY99vKglYh/YJFZmmqzOB8+aQxtA7PxT9gWWM6SFzh5aShFfLBAN3BFVYEnuQ16vm/6h17xJDe8RnqnYOLA==
+  version "20.25.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.25.0.tgz#70017ef918d8b154178c2f7beb733cac13b907ae"
+  integrity sha512-PI4JR7XZQM/VPLLscf07WHdjHu/n9zRRKajEFrgIIpaZK2txDJZnv1rqaIC+4yFGEvCVSbxYQFrjjihLERDWrA==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
