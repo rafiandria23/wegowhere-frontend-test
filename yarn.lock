@@ -3053,10 +3053,10 @@
   dependencies:
     "@gluestack-ui/utils" "^0.1.12"
 
-"@gluestack-ui/button@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/button/-/button-1.0.6.tgz#4d80573f6b79c7ab9f843336af985dc6ec4476f2"
-  integrity sha512-e94C25nvYX1YKiwnM8mKjAXWJf9wsptuzaE14s8azDPqwV8L/ro9Fr/mcJQ7kiQmFPlIViT3cg3zKmMowuX4cw==
+"@gluestack-ui/button@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/button/-/button-1.0.7.tgz#513c42b895f285b527969f7dde9abc7f622d7905"
+  integrity sha512-6hz5BPoB+iHMpDvys6AbIpeRPbnFiqyE3SnnbKPSCj8lgl3Dr9sFln41BvDmqmZ98d0usJluk50rz8pVNRZRgw==
   dependencies:
     "@gluestack-ui/utils" "0.1.13"
     "@react-native-aria/focus" "^0.2.9"
@@ -3299,9 +3299,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.39"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.39.tgz#47b949013876bae8907922a3d036386ca5315c48"
-  integrity sha512-ag88f2vPY2wBpjOh8UgUTKxuf42ZaBwmGlhyr5UUhu4Jn5zZa4FbY6ULqDH0v8+QG7Isq5FjLtLlmkhMv+vA9w==
+  version "1.1.40"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.40.tgz#18b995c2409a146f83d52eea62d3e71e20c3519f"
+  integrity sha512-2TJ6MNp34lOFOM1S5XUCGlDOuKJbeyQ0ngyMHIJx9VpjHcfF7k2U+FgbZF9tNTXiOKbcLLydWtnHda+cS//nRw==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3311,7 +3311,7 @@
     "@gluestack-ui/alert" "0.1.15"
     "@gluestack-ui/alert-dialog" "0.1.30"
     "@gluestack-ui/avatar" "0.1.17"
-    "@gluestack-ui/button" "1.0.6"
+    "@gluestack-ui/button" "1.0.7"
     "@gluestack-ui/checkbox" "0.1.30"
     "@gluestack-ui/divider" "0.1.9"
     "@gluestack-ui/fab" "0.1.21"
