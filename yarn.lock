@@ -3151,10 +3151,10 @@
     "@react-native-aria/focus" "^0.2.9"
     "@react-native-aria/interactions" "0.2.13"
 
-"@gluestack-ui/link@0.1.21":
-  version "0.1.21"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/link/-/link-0.1.21.tgz#5d7a96259d7fea5a7c1e16279913b4a3030478b8"
-  integrity sha512-nOY43vacmF+ssk3R1cTrHLQN6HRlw7qU+CUd1vtMu2vQJ4cPLVzdnfJQGaUHIUNxE1nOnh/40t7bXYB12R1scQ==
+"@gluestack-ui/link@0.1.22":
+  version "0.1.22"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/link/-/link-0.1.22.tgz#6a357852b323c41e0c7ab100b387589ba5436046"
+  integrity sha512-eNUEhxYI9Mogpb+v+zGkZMh8caObhIlpfQKznGObCSsDHg3OmNuUqqL3MjpGVsYaqmQw9+vVR2ehxMEJiOg2xg==
   dependencies:
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/focus" "^0.2.9"
@@ -3314,9 +3314,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.40"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.40.tgz#18b995c2409a146f83d52eea62d3e71e20c3519f"
-  integrity sha512-2TJ6MNp34lOFOM1S5XUCGlDOuKJbeyQ0ngyMHIJx9VpjHcfF7k2U+FgbZF9tNTXiOKbcLLydWtnHda+cS//nRw==
+  version "1.1.42"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.42.tgz#a4a02165b7afe5f25ca993009670f7fc77823a37"
+  integrity sha512-rjiGnQSg99SnebpDHhnSTFLFs9DqpyBX2gjJMjRRQep4eapXhDuM/UF8QmVVtsBgRaTKwH7tdjCa3vTfOQXskw==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3334,7 +3334,7 @@
     "@gluestack-ui/icon" "0.1.22"
     "@gluestack-ui/image" "0.1.10"
     "@gluestack-ui/input" "0.1.31"
-    "@gluestack-ui/link" "0.1.21"
+    "@gluestack-ui/link" "0.1.22"
     "@gluestack-ui/menu" "0.2.34"
     "@gluestack-ui/modal" "0.1.34"
     "@gluestack-ui/overlay" "0.1.15"
