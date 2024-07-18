@@ -9039,9 +9039,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^10.0.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.2.0.tgz#d510f442f751a70f9389723ae7709ace3e8aef91"
-  integrity sha512-z2+ddJj8687kbHBteUZdQY9WLER4l3CeDAm2kCpIVPP6nhAMuisW8usHTOnRCjnfErGBorGIPqxhJ5dzt6LP3g==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.2.1.tgz#990be407c0e126d632fb320b2c2845fa57af2dcb"
+  integrity sha512-ayiCnxv58RYFPgYtgDhzcTIsJuN4CWFIl0IR1zMLlau/tNQxR6AnXTyF+XNUYEIHMaLwc1TDsZ5DlZu9e/2sXg==
   dependencies:
     "@expo/apple-utils" "1.7.1"
     "@expo/code-signing-certificates" "0.0.5"
@@ -15615,12 +15615,12 @@ semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.0.0, semver@^7.3.7, semver@^7.3.8, semver@^7.5.2, semver@^7.6.2:
+semver@^7.0.0, semver@^7.5.2:
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.2.tgz#1e3b34759f896e8f14d6134732ce798aeb0c6e13"
   integrity sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==
 
-semver@^7.3.4, semver@^7.3.5, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
+semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0, semver@^7.6.2:
   version "7.6.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
