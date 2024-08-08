@@ -2297,10 +2297,10 @@
   dependencies:
     uuid "^8.0.0"
 
-"@expo/cli@0.18.27", "@expo/cli@^0.18.0":
-  version "0.18.27"
-  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.18.27.tgz#659d3563b6f2d123ac356f051216dffe8aafcbae"
-  integrity sha512-YPHp0B7tF2cMb/pEJr1d23g2w+CXND1p8sApeIyNaR37/WhCKWM6FpAiQrxubD1i4d74f6U9wfJbayiI/wKlmQ==
+"@expo/cli@0.18.28", "@expo/cli@^0.18.0":
+  version "0.18.28"
+  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.18.28.tgz#eb49cbde4a3c9bdb24cc8f041dba425f93f3526e"
+  integrity sha512-fvbVPId6s6etindzP6Nzos/CS1NurMVy4JKozjebArHr63tBid5i/UY5Pp+4wTCAM20gB2SjRdwcwoL6HFC4Iw==
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -2310,7 +2310,7 @@
     "@expo/env" "~0.3.0"
     "@expo/image-utils" "^0.5.0"
     "@expo/json-file" "^8.3.0"
-    "@expo/metro-config" "~0.18.6"
+    "@expo/metro-config" "0.18.11"
     "@expo/osascript" "^2.0.31"
     "@expo/package-manager" "^1.5.0"
     "@expo/plist" "^0.1.0"
@@ -2653,10 +2653,10 @@
     "@types/bunyan" "^1.8.11"
     bunyan "^1.8.15"
 
-"@expo/metro-config@0.18.10", "@expo/metro-config@^0.18.0", "@expo/metro-config@~0.18.6":
-  version "0.18.10"
-  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.18.10.tgz#2b0ec353c38802dd89028432c3a463804df94f24"
-  integrity sha512-HTYQqKfV0JSuRp5aDvrPHezj5udXOWoXqHOjfTSnce2m13j6D0yYXTJNaKRhlgpPBrkg5DL7z1fL3zwDUpLM4w==
+"@expo/metro-config@0.18.11", "@expo/metro-config@^0.18.0":
+  version "0.18.11"
+  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.18.11.tgz#22e82d92fb9d94ac760cc8b3bff48e6f32b4f032"
+  integrity sha512-/uOq55VbSf9yMbUO1BudkUM2SsGW1c5hr9BnhIqYqcsFv0Jp5D3DtJ4rljDKaUeNLbwr6m7pqIrkSMq5NrYf4Q==
   dependencies:
     "@babel/core" "^7.20.0"
     "@babel/generator" "^7.20.5"
@@ -9915,23 +9915,23 @@ expo-constants@^16.0.0, expo-constants@~16.0.0:
     "@expo/env" "~0.3.0"
 
 expo-dev-client@^4.0.0:
-  version "4.0.21"
-  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-4.0.21.tgz#27a92cea712fdcbe213eadc9ae828c136f5086e8"
-  integrity sha512-+zuVsKyp5tXTQUwDnTjtaOLf3TdmZ483Il9slg/LO15EsEFpl0zwI42DrQpzYmv617cgvywmp6iybGXjV3eZbQ==
+  version "4.0.22"
+  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-4.0.22.tgz#9e75ed9a3e4819a3d5b8a16dec213d1202439516"
+  integrity sha512-tT/9kRqvN3r2MLJL70FdQIgv2ycstN17/vUnxeDVGunW1Q+OdNPupZqyVk0qMeI9Cy1H4ZFBllZ6I1nlOI+mlg==
   dependencies:
-    expo-dev-launcher "4.0.23"
-    expo-dev-menu "5.0.17"
+    expo-dev-launcher "4.0.24"
+    expo-dev-menu "5.0.18"
     expo-dev-menu-interface "1.8.3"
     expo-manifests "~0.14.0"
     expo-updates-interface "~0.16.2"
 
-expo-dev-launcher@4.0.23:
-  version "4.0.23"
-  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-4.0.23.tgz#e9c8d1ee32f1cdc5522c35a6733ee656a3801984"
-  integrity sha512-XG9VyFUoslBsBpJqtuOsen93u3hEw4rK7VSNqz8g+d8+AmHBv2rSuQheirPfxuSrLqGm49/ybWkHYqfs8CdlQw==
+expo-dev-launcher@4.0.24:
+  version "4.0.24"
+  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-4.0.24.tgz#bd54576dd9350ae15f4faa52bcb0014bb113e92e"
+  integrity sha512-s9j2lBK5Da/btYnwX1TRV1aXWh54Qnc+fFnH8bCzY/cImDcIxy49+GHVCyw2AQj3ZlUcPRuxj29bzi6vSN214Q==
   dependencies:
     ajv "8.11.0"
-    expo-dev-menu "5.0.17"
+    expo-dev-menu "5.0.18"
     expo-manifests "~0.14.0"
     resolve-from "^5.0.0"
     semver "^7.6.0"
@@ -9941,10 +9941,10 @@ expo-dev-menu-interface@1.8.3:
   resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-1.8.3.tgz#8c1262e29e0124fc5932a129c95b36de56656b20"
   integrity sha512-QM0LRozeFT5Ek0N7XpV93M+HMdEKRLEOXn0aW5M3uoUlnqC1+PLtF3HMy3k3hMKTTE/kJ1y1Z7akH07T0lunCQ==
 
-expo-dev-menu@5.0.17:
-  version "5.0.17"
-  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-5.0.17.tgz#becb333cf11749b98c8366980ce7fc29562b566d"
-  integrity sha512-BnFSd6PKDaJenRKn2C4X50dWyqvvkVz9pE/6IKuUvGIsshkk9pCoZvsFOlJjM61/ojz1KXyY9O1FUPPI7B1A7w==
+expo-dev-menu@5.0.18:
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-5.0.18.tgz#04d5dffa608660b0d40432f7a78d81051855c746"
+  integrity sha512-6edBlagCbgastLTazLUNJLGlO29/K80VVkZ+Nxt66k34NKINhnSb/fsguQr8w8HeI+xh7N6l0C9rlzWQEJn0Wg==
   dependencies:
     expo-dev-menu-interface "1.8.3"
     semver "^7.5.4"
@@ -10015,15 +10015,15 @@ expo-updates-interface@~0.16.2:
   integrity sha512-929XBU70q5ELxkKADj1xL0UIm3HvhYhNAOZv5DSk7rrKvLo7QDdPyl+JVnwZm9LrkNbH4wuE2rLoKu1KMgZ+9A==
 
 expo@^51.0.0:
-  version "51.0.25"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-51.0.25.tgz#2549b61b124bd838504aa34cf7ac97db97368a7d"
-  integrity sha512-hFPj7UQHx3dqmFUZLV89BHfXNSJk7S36+RfoLk7uiApCJ2Ab0V3cKPHu4iQAnFk9hRXvAAiScsBQ1z64sug6VA==
+  version "51.0.26"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-51.0.26.tgz#a19b891f8d1f1e7639dc375fa69a152ab6f4843a"
+  integrity sha512-7ThQa6CVbiVtk4GNw0E9CewSzXYOeHkcRTCGorBZVcjAu6SuxbdWEtl0RI01/VpRKV+6I+yy/BmGnCl7lFRILg==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "0.18.27"
+    "@expo/cli" "0.18.28"
     "@expo/config" "9.0.3"
     "@expo/config-plugins" "8.0.8"
-    "@expo/metro-config" "0.18.10"
+    "@expo/metro-config" "0.18.11"
     "@expo/vector-icons" "^14.0.0"
     babel-preset-expo "~11.0.13"
     expo-asset "~10.0.10"
@@ -10423,9 +10423,9 @@ flow-enums-runtime@^0.0.6:
   integrity sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==
 
 flow-parser@0.*:
-  version "0.242.1"
-  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.242.1.tgz#d95977303d2cca0c1cb39394f5f5098d1ed5fc95"
-  integrity sha512-E3ml21Q1S5cMAyPbtYslkvI6yZO5oCS/S2EoteeFH8Kx9iKOv/YOJ+dGd/yMf+H3YKfhMKjnOpyNwrO7NdddWA==
+  version "0.243.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.243.0.tgz#4a55047035a4fa0fa7215348b9d7b4ea276abb04"
+  integrity sha512-HCDBfH+kZcY5etWYeAqatjW78gkIryzb9XixRsA8lGI1uyYc7aCpElkkO4H+KIpoyQMiY0VAZPI4cyac3wQe8w==
 
 follow-redirects@^1.0.0, follow-redirects@^1.15.6:
   version "1.15.6"
