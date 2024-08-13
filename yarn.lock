@@ -2549,10 +2549,20 @@
     semver "^7.6.2"
     zod "^3.23.8"
 
-"@expo/eas-json@10.2.2":
-  version "10.2.2"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-10.2.2.tgz#59dc91dabff24723abf22d6cf52e1fd24c5f6d49"
-  integrity sha512-8zZQwvjSdMD8tT0ZyxRP4nJ/FyVhKCmuR8cVDK3iJ4nBtYSrsVmTGGkriWlu/1vd41edPsYL5znLmDTYJ33YbQ==
+"@expo/eas-build-job@1.0.130":
+  version "1.0.130"
+  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.130.tgz#698de0139d14cd339f9d0f37ad40a86f1e9acbc8"
+  integrity sha512-3amSYB9QC24ZqMjNAl/s2EHbF4Y3btKnSAafp5sp5t2g8GvU1sBZ/+rXQPKH/Ga+PcbqNT+pduGIGg4uUC7gnw==
+  dependencies:
+    "@expo/logger" "1.0.117"
+    joi "^17.13.1"
+    semver "^7.6.2"
+    zod "^3.23.8"
+
+"@expo/eas-json@10.2.3":
+  version "10.2.3"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-10.2.3.tgz#e3a134d33729ed5246e8fd080ffa967179c77509"
+  integrity sha512-vRaZRle3Mg9BxietQxO7LUPOH2o1wNwl+sCFt5qFTTBvCdLzD74wwA/OlgPt699JS6GEPVb8RelmgtR9widilw==
   dependencies:
     "@babel/code-frame" "7.23.5"
     "@expo/eas-build-job" "1.0.129"
@@ -6328,9 +6338,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "22.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.1.0.tgz#6d6adc648b5e03f0e83c78dc788c2b037d0ad94b"
-  integrity sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==
+  version "22.2.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.2.0.tgz#7cf046a99f0ba4d628ad3088cb21f790df9b0c5b"
+  integrity sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==
   dependencies:
     undici-types "~6.13.0"
 
@@ -6632,10 +6642,18 @@
     "@0no-co/graphql.web" "^1.0.1"
     wonka "^6.3.2"
 
-"@urql/core@>=2.3.1", "@urql/core@>=4.0.0":
+"@urql/core@>=2.3.1":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.5.tgz#8b7d864c40ca30c3ad29bbda93ad718f78a3d055"
   integrity sha512-KmWRlN8dJz+XU21wmhcHcTV11n1K7zxaMtVwOhkH7b8H5Z5nuFKY5EkUsWqPlZl53YPiKwTtOMpptz5hamVVNQ==
+  dependencies:
+    "@0no-co/graphql.web" "^1.0.5"
+    wonka "^6.3.2"
+
+"@urql/core@>=4.0.0":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.6.tgz#0d6624e30084f9137f78dc6c5bb8a599cba7f9dc"
+  integrity sha512-38rgSDqVNihFDauw1Pm9V7XLWIKuK8V9CKgrUF7/xEKinze8ENKP1ZeBhkG+dxWzJan7CHK+SLl46kAdvZwIlA==
   dependencies:
     "@0no-co/graphql.web" "^1.0.5"
     wonka "^6.3.2"
@@ -9162,17 +9180,17 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^10.0.0:
-  version "10.2.2"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.2.2.tgz#6fd3f09ea1ea4614f428de3bc325e81b89dcd9c3"
-  integrity sha512-LHup0Sr7vfsqWdnX0xs0By2xsAQDIlxIV6DX8qZIyHbVBbzVg2L6aQNaz8LjomKuDkZ64TgqdgLjeVAqFywR4Q==
+  version "10.2.3"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-10.2.3.tgz#72830abf5331194f4d1fa22196d9299a6ca0f8bd"
+  integrity sha512-muDmdCFfPgJI6aqk2hkRRvQsZJ7qp0nR1Z2xg1KfjFdmHerwjGzP6Cjhia9sP0633+Mdk2G0ehvH/wCcueY1Lw==
   dependencies:
     "@expo/apple-utils" "1.7.1"
     "@expo/code-signing-certificates" "0.0.5"
     "@expo/config" "8.5.4"
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
-    "@expo/eas-build-job" "1.0.129"
-    "@expo/eas-json" "10.2.2"
+    "@expo/eas-build-job" "1.0.130"
+    "@expo/eas-json" "10.2.3"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.117"
     "@expo/multipart-body-parser" "1.1.0"
