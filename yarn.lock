@@ -2688,9 +2688,9 @@
     resolve-from "^5.0.0"
 
 "@expo/metro-runtime@^3.1.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-3.2.2.tgz#9de6a1a666ebe4a53d2418b741763e4aafd9d83c"
-  integrity sha512-Q7CeZUk9TN+e4+NMUG7wpS7U9EKoUdM5cSTRxzVgmBQX+B47Ukv00n4c4mMRY1B9XM3vcQwUHIqLpyErgYNnBg==
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-3.2.3.tgz#e074c28084f30725f8d0d0eeee4fcd6074797d2d"
+  integrity sha512-v5ji+fAGi7B9YavrxvekuF8gXEV/5fz0+PhaED5AaFDnbGB4IJIbpaiqK9nqZV1axjGZNQSw6Q8TsnFetCR3bQ==
 
 "@expo/multipart-body-parser@1.1.0":
   version "1.1.0"
