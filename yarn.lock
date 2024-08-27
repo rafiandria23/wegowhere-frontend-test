@@ -9127,9 +9127,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 eas-cli@^11.0.0:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-11.0.1.tgz#cc76dac16d2243560c4aaa7ad421af6b75e63a86"
-  integrity sha512-p8K3LTz2JT06TPmcuGZCTTiBIU1qnuiLZNORcbVjrtr3aWB/FLCvULJoqNyom01P+iCQIlFdt3zQSIJvTlbzbg==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-11.0.2.tgz#a9e91e227ccd85ed8128e19cb79dd83bf65c7f92"
+  integrity sha512-Bmij8TrdpAkPCFQGwezHfqGdbWzqhmo12n4Y2Dzu+Qu+ItLCN8QIq/QOusWOo2UsG/9+x/nJkmNQeXA0tc4cDw==
   dependencies:
     "@expo/apple-utils" "1.7.1"
     "@expo/code-signing-certificates" "0.0.5"
