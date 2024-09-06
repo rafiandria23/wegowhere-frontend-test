@@ -3282,10 +3282,10 @@
     "@react-native-aria/focus" "^0.2.9"
     "@react-native-aria/interactions" "0.2.13"
 
-"@gluestack-ui/progress@0.1.16":
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/progress/-/progress-0.1.16.tgz#9618581531cc127d3256a6b58725cf48dd6febad"
-  integrity sha512-pjNh8hOhYHTq9ko7topyB9hVpky8eO53aDIeDeaCpzG+YdMGPwYi/QngpIH15YrCLKp2ofiwfXwf+E9IvlRMMg==
+"@gluestack-ui/progress@0.1.17":
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/progress/-/progress-0.1.17.tgz#45bbc4a6811eb7ef036eb6c1dd0e7eea963a273e"
+  integrity sha512-zjUuHdUhQ2ASWW/V0iQP2VVCuX9suZW6rNnHw2hWRnOFpsnWZUtU8Cj6lJOopt0iphjUQrxKicYmlFACtnIGhw==
   dependencies:
     "@gluestack-ui/utils" "^0.1.12"
 
@@ -3376,9 +3376,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.50"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.50.tgz#5bdaa7d9558ed8014708592ebaa7c33d7c180862"
-  integrity sha512-t9lhyYou++xT0EbreF8XezBLlA5iATDE+SrtHIIrhxl8y8K/HZ/dGJCGZIdsSBdfXoNByIlw+rm6xiGla+oNxg==
+  version "1.1.51"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.51.tgz#1e2feb4d4922bfd5fdc33155321d952e6c4658ec"
+  integrity sha512-NVYLROJklG0V9wRHgc9AtAoomZ2oayDRUk+wUNtqBxgu3Kmkm2+rkHUeA7D/buUowhOiLWDKZ8/Dn+FBIyRApg==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3402,7 +3402,7 @@
     "@gluestack-ui/overlay" "0.1.15"
     "@gluestack-ui/popover" "0.1.37"
     "@gluestack-ui/pressable" "0.1.16"
-    "@gluestack-ui/progress" "0.1.16"
+    "@gluestack-ui/progress" "0.1.17"
     "@gluestack-ui/provider" "0.1.12"
     "@gluestack-ui/radio" "0.1.33"
     "@gluestack-ui/select" "0.1.29"
