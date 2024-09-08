@@ -13459,17 +13459,10 @@ metro-resolver@0.80.10, metro-resolver@~0.80.4:
   dependencies:
     flow-enums-runtime "^0.0.6"
 
-metro-resolver@0.80.12:
+metro-resolver@0.80.12, metro-resolver@^0.80.5:
   version "0.80.12"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.12.tgz#e3815914c21315b04db200032c3243a4cc22dfb6"
   integrity sha512-PR24gYRZnYHM3xT9pg6BdbrGbM/Cu1TcyIFBVlAk7qDAuHkUNQ1nMzWumWs+kwSvtd9eZGzHoucGJpTUEeLZAw==
-  dependencies:
-    flow-enums-runtime "^0.0.6"
-
-metro-resolver@^0.80.5:
-  version "0.80.11"
-  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.11.tgz#e9033bf581d14de296d62dc2da21173288fecd45"
-  integrity sha512-g1ntyySE22OCyy7ycdmiexcdfOS/yUrevUFg2+GCGpPWnDC4Lj71/AeKbkPVYjFEHQJhd/EALGo3EzxMhUpR5A==
   dependencies:
     flow-enums-runtime "^0.0.6"
 
