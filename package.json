@@ -9,7 +9,7 @@
     "@expo/metro-config": "^0.18.0",
     "@expo/metro-runtime": "^3.1.2",
     "@faker-js/faker": "^9.0.0",
-    "@fastify/static": "^7.0.0",
+    "@fastify/static": "^8.0.0",
     "@gluestack-style/react": "^1.0.45",
     "@gluestack-ui/config": "^1.1.1",
     "@gluestack-ui/themed": "^1.1.2",
