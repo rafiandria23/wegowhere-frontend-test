@@ -3003,9 +3003,9 @@
     mime "^3"
 
 "@fastify/static@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@fastify/static/-/static-8.0.0.tgz#ba88156d436b6bd2197de9ac9bccbe853ba024bf"
-  integrity sha512-VKGn1PQslB2VqzspyMKPu9xasF9vj+YuyGhVLb1ih6V60VVcRvcf0fFRcl3opt6c6YWwhKKdTUTfVE6COnpw6A==
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@fastify/static/-/static-8.0.1.tgz#137059a4625c64cce8ee7eb513961c5e23018805"
+  integrity sha512-7idyhbcgf14v4bjWzUeHEFvnVxvNJ1n5cyGPgFtwTZjnjUQ1wgC7a2FQai7OGKqCKywDEjzbPhAZRW+uEK1LMg==
   dependencies:
     "@fastify/accept-negotiator" "^2.0.0"
     "@fastify/send" "^3.1.0"
@@ -10253,9 +10253,9 @@ fastify-plugin@^4.0.0:
   integrity sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==
 
 fastify-plugin@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-5.0.0.tgz#59baeee39d6e8e729cd27333c366d3c0146ab23b"
-  integrity sha512-0725fmH/yYi8ugsjszLci+lLnGBK6cG+WSxM7edY2OXJEU7gr2JiGBoieL2h9mhTych1vFsEfXsAsGGDJ/Rd5w==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-5.0.1.tgz#82d44e6fe34d1420bb5a4f7bee434d501e41939f"
+  integrity sha512-HCxs+YnRaWzCl+cWRYFnHmeRFyR5GVnJTAaCJQiYzQSDwK9MgJdyAsuL3nh0EWRCYMgQ5MeziymvmAhUHYHDUQ==
 
 fastify@4.28.1:
   version "4.28.1"
