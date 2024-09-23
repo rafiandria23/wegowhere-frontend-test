@@ -3370,9 +3370,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.52"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.52.tgz#f5795cfef9dae622a4fa3a9dbeb7c1ed817b7a07"
-  integrity sha512-qIt159DhNvryIbyElguRYWXeMDIUJPh1UZGUrxesILp8ltYp0yFbSPc3g9jf0lpE4+GlKW6YWdAKUJZv0JN2CQ==
+  version "1.1.53"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.53.tgz#97d7008d0adb9e2349c19d9e03fcedffc29b62a7"
+  integrity sha512-I4nxxjQ/KIlKa/egGnXuLsl7jzeIOIxH9AyI0hZ/ZGcBBSGm/bSqp0el4xcDOfAekgRcM2YpJR7PTqdPz39TgA==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3406,7 +3406,7 @@
     "@gluestack-ui/tabs" "0.1.17"
     "@gluestack-ui/textarea" "0.1.23"
     "@gluestack-ui/toast" "1.0.7"
-    "@gluestack-ui/tooltip" "0.1.32"
+    "@gluestack-ui/tooltip" "0.1.33"
     "@legendapp/motion" latest
 
 "@gluestack-ui/toast@1.0.7":
@@ -3420,10 +3420,10 @@
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/focus" "^0.2.9"
 
-"@gluestack-ui/tooltip@0.1.32":
-  version "0.1.32"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/tooltip/-/tooltip-0.1.32.tgz#0ce743f00ea4ed99d4577aa71ead024b667837eb"
-  integrity sha512-IsHCnmwYSMOSsIcjF2NpFU1d0lzQETuIyQkkBE8vTB1nPVTpJDvRt5mmfcmn0B/aampA6JOYT7rrGsTj7cjcFA==
+"@gluestack-ui/tooltip@0.1.33":
+  version "0.1.33"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/tooltip/-/tooltip-0.1.33.tgz#1d3af3cfa849b46b185361cc72728b62a3f37148"
+  integrity sha512-SUktNTnTCEz9Gnl8SteTMzZ8NkhAH7XI1+FmeeLNneVMzBUIZZxMy7YZPTOZjCWSxJCsT0aznek1ki7M60xIHQ==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "^0.1.14"
