@@ -628,22 +628,12 @@
     "@babel/template" "^7.25.7"
     "@babel/types" "^7.25.7"
 
-"@babel/highlight@^7.10.4", "@babel/highlight@^7.25.7":
+"@babel/highlight@^7.10.4", "@babel/highlight@^7.23.4", "@babel/highlight@^7.25.7":
   version "7.25.7"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.25.7.tgz#20383b5f442aa606e7b5e3043b0b1aafe9f37de5"
   integrity sha512-iYyACpW3iW8Fw+ZybQK+drQre+ns/tKpXbNESfrhNnPLIklLbXr7MYJ6gPEd0iETGLOK+SxMjVvKb/ffmk+FEw==
   dependencies:
     "@babel/helper-validator-identifier" "^7.25.7"
-    chalk "^2.4.2"
-    js-tokens "^4.0.0"
-    picocolors "^1.0.0"
-
-"@babel/highlight@^7.23.4":
-  version "7.24.7"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.24.7.tgz#a05ab1df134b286558aae0ed41e6c5f731bf409d"
-  integrity sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==
-  dependencies:
-    "@babel/helper-validator-identifier" "^7.24.7"
     chalk "^2.4.2"
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
@@ -2636,10 +2626,10 @@
     semver "^7.6.2"
     zod "^3.23.8"
 
-"@expo/eas-json@12.5.0":
-  version "12.5.0"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-12.5.0.tgz#a121f303e407270bb8433f0297e51ca7e0d67342"
-  integrity sha512-sZ6pT9Zl+E3cY6vHQtXKDTSsGuJypfQHCiTDXMBV4owIHWhFkT11jwDEj3ipf6yb2QAa5n5P7DBZ9VPzOi8xRA==
+"@expo/eas-json@12.5.2":
+  version "12.5.2"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-12.5.2.tgz#82756552d70839817d272800cb40f313a06c5a27"
+  integrity sha512-BbPOSmjZ8xHOb0N0rGL16nTG4InNOfyZZby/DSKSZJ+yDoLvKzejhdpuhkRuLeaGeW6CIZbxbWJTIM3c6GvDiw==
   dependencies:
     "@babel/code-frame" "7.23.5"
     "@expo/eas-build-job" "1.0.136"
@@ -9460,9 +9450,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^12.0.0:
-  version "12.5.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.5.1.tgz#58b9d0d462c4167ab3a8c30041ac519997d9f8b2"
-  integrity sha512-+JRLEiXZTMBlbMur1+xNeR6S7D1Wq2d8otm8Sb92+B99t0WYQIY2JERILBeoMFX0uveHbTXVAwWjiFZFsOtrOA==
+  version "12.5.2"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.5.2.tgz#1cf16db71c04460d4f2dbea86bb10ccbf5973b7c"
+  integrity sha512-tdpOUPzVkNXyGmf0TebkcTir9KcHH0ZL3gIQizwXm3hYGG6r2hnxltudVAv+mpbBQp08Z7uHhESwx+oeD9bu0w==
   dependencies:
     "@expo/apple-utils" "1.8.0"
     "@expo/code-signing-certificates" "0.0.5"
@@ -9470,7 +9460,7 @@ eas-cli@^12.0.0:
     "@expo/config-plugins" "7.8.4"
     "@expo/config-types" "50.0.0"
     "@expo/eas-build-job" "1.0.136"
-    "@expo/eas-json" "12.5.0"
+    "@expo/eas-json" "12.5.2"
     "@expo/env" "^0.3.0"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.117"
@@ -13960,9 +13950,9 @@ mz@^2.7.0:
     thenify-all "^1.0.0"
 
 nan@^2.14.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.20.0.tgz#08c5ea813dd54ed16e5bd6505bf42af4f7838ca3"
-  integrity sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.22.0.tgz#31bc433fc33213c97bad36404bb68063de604de3"
+  integrity sha512-nbajikzWTMwsW+eSsNm3QwlOs7het9gGJU5dDZzRTQGk03vyBOauxgI4VakDzE0PtsGTmXPsXTbbjVhRwR5mpw==
 
 nanoid@3.3.4:
   version "3.3.4"
