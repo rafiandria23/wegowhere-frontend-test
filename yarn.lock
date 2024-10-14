@@ -13659,14 +13659,14 @@ metro-minify-terser@0.81.0:
     flow-enums-runtime "^0.0.6"
     terser "^5.15.0"
 
-metro-resolver@0.80.12, metro-resolver@^0.80.5, metro-resolver@~0.80.4:
+metro-resolver@0.80.12, metro-resolver@~0.80.4:
   version "0.80.12"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.80.12.tgz#e3815914c21315b04db200032c3243a4cc22dfb6"
   integrity sha512-PR24gYRZnYHM3xT9pg6BdbrGbM/Cu1TcyIFBVlAk7qDAuHkUNQ1nMzWumWs+kwSvtd9eZGzHoucGJpTUEeLZAw==
   dependencies:
     flow-enums-runtime "^0.0.6"
 
-metro-resolver@0.81.0:
+metro-resolver@0.81.0, metro-resolver@^0.81.0:
   version "0.81.0"
   resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.81.0.tgz#141f4837e1e0c5a1810ea02f2d9be3c9f6cf3766"
   integrity sha512-Uu2Q+buHhm571cEwpPek8egMbdSTqmwT/5U7ZVNpK6Z2ElQBBCxd7HmFAslKXa7wgpTO2FAn6MqGeERbAtVDUA==
