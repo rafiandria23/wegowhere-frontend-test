@@ -7019,9 +7019,9 @@
     wonka "^6.3.2"
 
 "@urql/core@>=4.0.0":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.7.tgz#eddfd63a4990488ef2a6bd6be746974774266624"
-  integrity sha512-1uBj2PmHoen3LugD+UHQ4cr/ls8/0e2/sD8YL0u17sXm02cVnV6VY3bC9wi6fl/DCWEO9AUnwv7qZCz6ME3BfA==
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@urql/core/-/core-5.0.8.tgz#eba39eaa2bf9a0a963383e87a65cba7a9ca794bd"
+  integrity sha512-1GOnUw7/a9bzkcM0+U8U5MmxW2A7FE5YquuEmcJzTtW5tIs2EoS4F2ITpuKBjRBbyRjZgO860nWFPo1m4JImGA==
   dependencies:
     "@0no-co/graphql.web" "^1.0.5"
     wonka "^6.3.2"
@@ -9548,9 +9548,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^12.0.0:
-  version "12.5.4"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.5.4.tgz#1bd9024a53a23fd00e0184edf4f36db2dce1358c"
-  integrity sha512-q0eW5TiGkmhZhVSvjAeA8AJEhUD2G0qYleaibITGsJNn9UQfEMXRjpdMmOZGyEKiNNtSVBbHwlg6I3S/NDG7Mw==
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.6.0.tgz#c4e8bc9e9d5cc3d53c1c2c9850fe52937a3eac40"
+  integrity sha512-sAZH7LaaSP0US6/woseHO3R0tZsVffV1jWkk/4d7Uq13u5TW6UCKvhiQjvS1/BGNVCSjVAQt5mrhBpHDCNq+NA==
   dependencies:
     "@expo/apple-utils" "2.0.2"
     "@expo/code-signing-certificates" "0.0.5"
