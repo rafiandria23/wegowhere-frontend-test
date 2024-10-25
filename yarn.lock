@@ -760,17 +760,7 @@
     "@babel/template" "^7.25.9"
     "@babel/types" "^7.25.9"
 
-"@babel/highlight@^7.10.4", "@babel/highlight@^7.23.4":
-  version "7.25.7"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.25.7.tgz#20383b5f442aa606e7b5e3043b0b1aafe9f37de5"
-  integrity sha512-iYyACpW3iW8Fw+ZybQK+drQre+ns/tKpXbNESfrhNnPLIklLbXr7MYJ6gPEd0iETGLOK+SxMjVvKb/ffmk+FEw==
-  dependencies:
-    "@babel/helper-validator-identifier" "^7.25.7"
-    chalk "^2.4.2"
-    js-tokens "^4.0.0"
-    picocolors "^1.0.0"
-
-"@babel/highlight@^7.25.7", "@babel/highlight@^7.25.9":
+"@babel/highlight@^7.10.4", "@babel/highlight@^7.23.4", "@babel/highlight@^7.25.7", "@babel/highlight@^7.25.9":
   version "7.25.9"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.25.9.tgz#8141ce68fc73757946f983b343f1231f4691acc6"
   integrity sha512-llL88JShoCsth8fF8R4SJnIn+WLvR6ccFxu1H3FlMhDontdcmZWf2HgIZ7AIqV3Xcck1idlohrN4EUBQz6klbw==
@@ -6928,11 +6918,11 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "22.7.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.9.tgz#2bf2797b5e84702d8262ea2cf843c3c3c880d0e9"
-  integrity sha512-jrTfRC7FM6nChvU7X2KqcrgquofrWLFDeYC1hKfwNWomVvrn7JIksqf344WN2X/y8xrgqBd2dJATZV4GbatBfg==
+  version "22.8.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.0.tgz#193c6f82f9356ce0e6bba86b59f2ffe06e7e320b"
+  integrity sha512-84rafSBHC/z1i1E3p0cJwKA+CfYDNSXX9WSZBRopjIzLET8oNt6ht2tei4C7izwDeEiLLfdeSVBv1egOH916hg==
   dependencies:
-    undici-types "~6.19.2"
+    undici-types "~6.19.8"
 
 "@types/node@^18.0.0":
   version "18.19.55"
@@ -9679,9 +9669,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^12.0.0:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.6.0.tgz#c4e8bc9e9d5cc3d53c1c2c9850fe52937a3eac40"
-  integrity sha512-sAZH7LaaSP0US6/woseHO3R0tZsVffV1jWkk/4d7Uq13u5TW6UCKvhiQjvS1/BGNVCSjVAQt5mrhBpHDCNq+NA==
+  version "12.6.1"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.6.1.tgz#d700c7da7a30f91f4215f78475448cbb63c8d44b"
+  integrity sha512-vuGIvk3w3HCgD/Sn+f3nsc0zqVyjKG8o4gMQICPRQPVr4QvmnhdeiMyx8JYHjF7TOrahjdJJNNtpEQmwEA1kvA==
   dependencies:
     "@expo/apple-utils" "2.0.2"
     "@expo/code-signing-certificates" "0.0.5"
@@ -17878,7 +17868,7 @@ undici-types@~5.26.4:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
-undici-types@~6.19.2:
+undici-types@~6.19.2, undici-types@~6.19.8:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
