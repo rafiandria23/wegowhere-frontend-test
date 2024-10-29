@@ -2862,10 +2862,10 @@
   dependencies:
     levn "^0.4.1"
 
-"@expo/apple-utils@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@expo/apple-utils/-/apple-utils-2.0.2.tgz#1e765aa334485b2cd28d4476bedded0c4d812b71"
-  integrity sha512-KIfzTYgk81YeXCwPVfR2lWdMZBMS2gUt5BXXV1sgDl7BbmjPlRbixL7kaieegwimPmXG2y3+Tth2lqWjuip3oQ==
+"@expo/apple-utils@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@expo/apple-utils/-/apple-utils-2.0.3.tgz#558f185a44533ee7b33fc9da3a76ebb953ab8777"
+  integrity sha512-RvV6rCvwdYvCv9c/57XHDAUfTq3RM/wQMmurrLLuYADEurwRveltO7SQ/ajpa4SrTpCzQDx2L3WZGXah7Syr6Q==
 
 "@expo/bunyan@^4.0.0":
   version "4.0.1"
@@ -3111,23 +3111,23 @@
     tmp "^0.0.33"
     tslib "^2.4.0"
 
-"@expo/eas-build-job@1.0.136":
-  version "1.0.136"
-  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.136.tgz#caae63772f80b6e013731e4f6e00900e7dc05522"
-  integrity sha512-IEQ3ttjLm5TpgrQ8WNlEBflbNghknLBewExCOyz8T+9busMh6jnFsKZgqLrDVWAG0cMPnQ3ybHVaRqNadP781Q==
+"@expo/eas-build-job@1.0.141":
+  version "1.0.141"
+  resolved "https://registry.yarnpkg.com/@expo/eas-build-job/-/eas-build-job-1.0.141.tgz#9946a694d7a9602fc9827da66a6cbb625f8f7b6e"
+  integrity sha512-7BlmYxMGn/0sR9S5nCPHHDD0niiO9DZ2o1VsyqG0jk1butucL0iR0f4gf1FAsnT18f5bLdrvBaBKpmv5U/q3Rg==
   dependencies:
     "@expo/logger" "1.0.117"
     joi "^17.13.1"
     semver "^7.6.2"
     zod "^3.23.8"
 
-"@expo/eas-json@12.5.2":
-  version "12.5.2"
-  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-12.5.2.tgz#82756552d70839817d272800cb40f313a06c5a27"
-  integrity sha512-BbPOSmjZ8xHOb0N0rGL16nTG4InNOfyZZby/DSKSZJ+yDoLvKzejhdpuhkRuLeaGeW6CIZbxbWJTIM3c6GvDiw==
+"@expo/eas-json@12.6.2":
+  version "12.6.2"
+  resolved "https://registry.yarnpkg.com/@expo/eas-json/-/eas-json-12.6.2.tgz#29655d2fc6594a754acb6624a445c24bec086def"
+  integrity sha512-2+lmtZNbvr4t0BONGR9fyZ5Qf6dHRQRrZGYio5Fqx3SmFG3S8PdSUEZ+iuz3pcc9L9iWhhLsGzuBnW2mfy/PFQ==
   dependencies:
     "@babel/code-frame" "7.23.5"
-    "@expo/eas-build-job" "1.0.136"
+    "@expo/eas-build-job" "1.0.141"
     chalk "4.1.2"
     env-string "1.0.1"
     fs-extra "11.2.0"
@@ -3454,12 +3454,12 @@
   dependencies:
     cross-spawn "^7.0.3"
 
-"@expo/steps@1.0.136":
-  version "1.0.136"
-  resolved "https://registry.yarnpkg.com/@expo/steps/-/steps-1.0.136.tgz#144f51c3c541b5c0b7813abf50c543c80413600a"
-  integrity sha512-5TQ/zYI9wQc5hAwIOC25K0Pa1wRCpbqkSB6iq5Z6I06gwle+ayaq2YWIy47S1XHBIJ9JSbQ2hsHJBYvJfbKYGQ==
+"@expo/steps@1.0.141":
+  version "1.0.141"
+  resolved "https://registry.yarnpkg.com/@expo/steps/-/steps-1.0.141.tgz#36be4e1f8b6d73acfef2128f40dd09b301daa12e"
+  integrity sha512-B9unlCJQHMlaE82I00W/mFTJ8H6RMThsldsbydZQFeLgif60q7eyAtnB2xbRJwCMoGZ9p72QSkQQFtG5waFMJw==
   dependencies:
-    "@expo/eas-build-job" "1.0.136"
+    "@expo/eas-build-job" "1.0.141"
     "@expo/logger" "1.0.117"
     "@expo/spawn-async" "^1.7.2"
     arg "^5.0.2"
@@ -6990,9 +6990,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "22.8.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.1.tgz#b39d4b98165e2ae792ce213f610c7c6108ccfa16"
-  integrity sha512-k6Gi8Yyo8EtrNtkHXutUu2corfDf9su95VYVP10aGYMMROM6SAItZi0w1XszA6RtWTHSVp5OeFof37w0IEqCQg==
+  version "22.8.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.2.tgz#8e82bb8201c0caf751dcdc61b0a262d2002d438b"
+  integrity sha512-NzaRNFV+FZkvK/KLCsNdTvID0SThyrs5SHB6tsD/lajr22FGC73N2QeDPM2wHtVde8mgcXuSsHQkH5cX1pbPLw==
   dependencies:
     undici-types "~6.19.8"
 
@@ -7554,7 +7554,12 @@ acorn@^8.1.0, acorn@^8.8.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.1.tgz#71616bdccbe25e27a54439e0046e89ca76df2248"
   integrity sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==
 
-acorn@^8.11.0, acorn@^8.12.0, acorn@^8.4.1, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.2, acorn@^8.9.0:
+acorn@^8.11.0, acorn@^8.4.1:
+  version "8.14.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.0.tgz#063e2c70cac5fb4f6467f0b11152e04c682795b0"
+  integrity sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==
+
+acorn@^8.12.0, acorn@^8.5.0, acorn@^8.7.1, acorn@^8.8.2, acorn@^8.9.0:
   version "8.13.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.13.0.tgz#2a30d670818ad16ddd6a35d3842dacec9e5d7ca3"
   integrity sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==
@@ -9796,16 +9801,16 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^12.0.0:
-  version "12.6.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.6.1.tgz#d700c7da7a30f91f4215f78475448cbb63c8d44b"
-  integrity sha512-vuGIvk3w3HCgD/Sn+f3nsc0zqVyjKG8o4gMQICPRQPVr4QvmnhdeiMyx8JYHjF7TOrahjdJJNNtpEQmwEA1kvA==
+  version "12.6.2"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-12.6.2.tgz#0fd0e480bde218f80884a804ac4682c992bcdcb6"
+  integrity sha512-R2rbRLPNUVR6LP1Cjh+CR68eGEF30baoYf22BpBm5Iq9CiTzxlZiSd3p4jq/v/sMknj9noN0boQdsMGSGViIAA==
   dependencies:
-    "@expo/apple-utils" "2.0.2"
+    "@expo/apple-utils" "2.0.3"
     "@expo/code-signing-certificates" "0.0.5"
     "@expo/config" "8.5.4"
     "@expo/config-plugins" "7.8.4"
-    "@expo/eas-build-job" "1.0.136"
-    "@expo/eas-json" "12.5.2"
+    "@expo/eas-build-job" "1.0.141"
+    "@expo/eas-json" "12.6.2"
     "@expo/env" "^0.3.0"
     "@expo/json-file" "8.2.37"
     "@expo/logger" "1.0.117"
@@ -9820,7 +9825,7 @@ eas-cli@^12.0.0:
     "@expo/results" "1.0.0"
     "@expo/rudder-sdk-node" "1.1.1"
     "@expo/spawn-async" "1.7.0"
-    "@expo/steps" "1.0.136"
+    "@expo/steps" "1.0.141"
     "@expo/timeago.js" "1.0.0"
     "@oclif/core" "^1.26.2"
     "@oclif/plugin-autocomplete" "^2.3.10"
