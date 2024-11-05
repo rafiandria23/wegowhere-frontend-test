@@ -3850,9 +3850,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.56"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.56.tgz#eb340c7b7d294cc66146f3b21a6d9190a88d9c1b"
-  integrity sha512-1buc1WcRYbtx0U/ROeiOvj926uWdaG4uHVXSXaaFCS8OUxP9osn271lPYMSRP2f5OqK3a8U/IsSGEJbhnly47g==
+  version "1.1.57"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.57.tgz#076e128e084793f1efd1c2864c49453fc75a5bff"
+  integrity sha512-D7iDzrct40JksqWRXuJqCydrFE4tBudnr1aISaRPGPWN1AwETdXoLLC5BYr8KooUljlYwuJkzKP0PoMMpbwpfQ==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3886,7 +3886,7 @@
     "@gluestack-ui/tabs" "0.1.17"
     "@gluestack-ui/textarea" "0.1.23"
     "@gluestack-ui/toast" "1.0.7"
-    "@gluestack-ui/tooltip" "0.1.33"
+    "@gluestack-ui/tooltip" "0.1.34"
     "@legendapp/motion" latest
 
 "@gluestack-ui/toast@1.0.7":
@@ -3900,10 +3900,10 @@
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/focus" "^0.2.9"
 
-"@gluestack-ui/tooltip@0.1.33":
-  version "0.1.33"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/tooltip/-/tooltip-0.1.33.tgz#1d3af3cfa849b46b185361cc72728b62a3f37148"
-  integrity sha512-SUktNTnTCEz9Gnl8SteTMzZ8NkhAH7XI1+FmeeLNneVMzBUIZZxMy7YZPTOZjCWSxJCsT0aznek1ki7M60xIHQ==
+"@gluestack-ui/tooltip@0.1.34":
+  version "0.1.34"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/tooltip/-/tooltip-0.1.34.tgz#87e1d417224a671e6ccf5c7bddcc800a04d8a444"
+  integrity sha512-XgGZqXz8x3HHal2RHPbQID1MgvVMMH7eIQCpd11x29prr7aQcVcpPL1PlhGT0q4mkean1ZheLAnVGqYaKKPwfw==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "^0.1.14"
@@ -11855,9 +11855,9 @@ internal-slot@^1.0.7:
     side-channel "^1.0.4"
 
 intl-messageformat@^10.1.0:
-  version "10.7.5"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-10.7.5.tgz#b81888eb728c4e229f7ae5d88ee13b1eafd0d4ac"
-  integrity sha512-CflbRvJiahVmnfxq/lO+DCM1/8ji4vC4rTnz6ZJEKKodViB+EWgY9M4EqXVRQ+3K0Ng5qwSyqybPP+KSfS4KZw==
+  version "10.7.6"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-10.7.6.tgz#d486c780508a2fb8c383e95462951276cf0bcdf4"
+  integrity sha512-IsMU/hqyy3FJwNJ0hxDfY2heJ7MteSuFvcnCebxRp67di4Fhx1gKKE+qS0bBwUF8yXkX9SsPUhLeX/B6h5SKUA==
   dependencies:
     "@formatjs/ecma402-abstract" "2.2.3"
     "@formatjs/fast-memoize" "2.2.3"
