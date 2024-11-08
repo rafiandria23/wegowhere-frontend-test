@@ -3547,10 +3547,10 @@
     "@react-native-aria/interactions" "0.2.13"
     "@react-native-aria/overlays" "^0.3.12"
 
-"@gluestack-ui/popover@0.1.40":
-  version "0.1.40"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/popover/-/popover-0.1.40.tgz#7210ce23de7004ed28944199a6d30eb3e53df6dc"
-  integrity sha512-DLbt7odXdDKg0IlymvOqRHaJhg8m/d6+8npsD1wZ7Q5EvI7LZDxzo5xcNrtVTERsvFr1mpvtJDWpgNdS+Fc4vg==
+"@gluestack-ui/popover@0.1.41":
+  version "0.1.41"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/popover/-/popover-0.1.41.tgz#f2b96ce9a24083c5b6e840256654fd1639d4a500"
+  integrity sha512-FbSjpabrFc/IrSIv32Sfr0I/3thdAM6n6bqZmXeHIE3Lg19lM/GIopprc6oBCLA7u20uhR2z14XLRc4KoP0MDg==
   dependencies:
     "@gluestack-ui/hooks" "0.1.11"
     "@gluestack-ui/overlay" "0.1.15"
@@ -3663,9 +3663,9 @@
     "@react-native-aria/focus" "^0.2.9"
 
 "@gluestack-ui/themed@^1.1.2":
-  version "1.1.58"
-  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.58.tgz#378c4993c708dc2541024c051af9908ba0e3cadf"
-  integrity sha512-rCwIcBpj8PBF6o+fzgkwzzW7NMpI4ev8GJHLNHYZvHHQyq6STDZs5ouFPJGk6853gdqrJUl5JuEJKuvkNzXs1Q==
+  version "1.1.59"
+  resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.1.59.tgz#03b5f403304588a060206bfc8167f6b3df53ec5a"
+  integrity sha512-zMboh3lcqQyOCr0C4721gwdB3ZyJqjt0MLvKAMGx/w/lKSy5FGXy6WvGtDtr5VDx1wpEwGL+Lc7JN4A8yG/SVg==
   dependencies:
     "@expo/html-elements" latest
     "@gluestack-style/animation-resolver" "1.0.4"
@@ -3687,7 +3687,7 @@
     "@gluestack-ui/menu" "0.2.36"
     "@gluestack-ui/modal" "0.1.34"
     "@gluestack-ui/overlay" "0.1.15"
-    "@gluestack-ui/popover" "0.1.40"
+    "@gluestack-ui/popover" "0.1.41"
     "@gluestack-ui/pressable" "0.1.16"
     "@gluestack-ui/progress" "0.1.17"
     "@gluestack-ui/provider" "0.1.12"
