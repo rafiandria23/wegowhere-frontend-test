@@ -9140,9 +9140,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^13.0.0:
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.1.1.tgz#554bc1ee24886453ad07c1477dd0df90a3adaf23"
-  integrity sha512-rXMHtnor0N/O0grGzpSxxP+iY9yZkTsf9n7gZe3G7rzKHLnLFeXmhDqk+aN95tCCsgJT8ekmhe0v4ceV0U0lVg==
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.2.0.tgz#1dd5abcf7407c7a2abaff5e8e614078696cf7308"
+  integrity sha512-4gIoDgYoYWl34SM3oeFKK79NxCemnAGQmPJCEEHCzLXlM8OCswzBGvUDxqnyj+Nn48o5kgdVeNK21ob2yinrXg==
   dependencies:
     "@expo/apple-utils" "2.1.0"
     "@expo/code-signing-certificates" "0.0.5"
