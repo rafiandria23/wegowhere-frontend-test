@@ -4308,9 +4308,9 @@
     pluralize "8.0.0"
 
 "@nestjs/swagger@^8.0.0":
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/swagger/-/swagger-8.0.6.tgz#41bee2d2e3c89c3ecc074fec30837adce688f1c5"
-  integrity sha512-NMHfwkLIZZVtO4Z4WczBYbXgE0KAkhI2YDl8BCKDOCKjmIL89T0dJG7K82cONxzSYo/d4isIrAY9hDMlFV4tmg==
+  version "8.0.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/swagger/-/swagger-8.0.7.tgz#7347fcd919a413a001838732f1b1966ad19df094"
+  integrity sha512-zaTMCEZ/CxX7QYF110nTqJsn7eCXp4VI9kv7+AdUcIlBmhhgJpggBw2Mx2p6xVjyz1EoWXGfxxWKnxEyaQwFlg==
   dependencies:
     "@microsoft/tsdoc" "^0.15.0"
     "@nestjs/mapped-types" "2.0.6"
