@@ -8567,7 +8567,16 @@ cross-spawn@^6.0.0:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.0, cross-spawn@^7.0.3, cross-spawn@^7.0.5:
+cross-spawn@^7.0.0, cross-spawn@^7.0.3:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
+  integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
+  dependencies:
+    path-key "^3.1.0"
+    shebang-command "^2.0.0"
+    which "^2.0.1"
+
+cross-spawn@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.5.tgz#910aac880ff5243da96b728bc6521a5f6c2f2f82"
   integrity sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==
@@ -9182,9 +9191,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^13.0.0:
-  version "13.2.3"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.2.3.tgz#d2fd0efb6e580163d14e9846f6d2ad1f215affd8"
-  integrity sha512-F18Xe7ZkE/ltKajev5PnHnoSDeSRoR9jXxKvqc3XbkFDXvhm3qTCsfkv/yZNWsYGZbAQfAngTIARKUYq53Bf2g==
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.3.0.tgz#af1be98e398107781cdee55ad7b07ee61333c409"
+  integrity sha512-8nvEo1LqHJDD15JVzVhHubV5jCVtQOlSV10wwDGMzUDO+3zeaSzaEvx7vJfHLbPZtNxv1HFIsBP02Xul1evYNg==
   dependencies:
     "@expo/apple-utils" "2.1.0"
     "@expo/code-signing-certificates" "0.0.5"
