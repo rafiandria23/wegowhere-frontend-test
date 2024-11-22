@@ -9295,9 +9295,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^13.0.0:
-  version "13.4.0"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.4.0.tgz#42bdd166975f36e57e9e1ca0975080a9ab8fcffe"
-  integrity sha512-wT9hoWhUKLV8o1z8GjRb8fXR42t+g5p2dNs5F2cTNj9yDTePDdXBbhuBes7ZIcYoumuUu8b1KDIBa8bxiX6/GQ==
+  version "13.4.1"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-13.4.1.tgz#bffd81e839609529aa466fb79fba3ffb1b852a49"
+  integrity sha512-YS/I0MllSI3DPXUhqZgPTwsXSrXVsKGipH//cliLZLZTb10E3AYevRl6bNyv7Y58v7dO83Cb9udpNhylIg/GTw==
   dependencies:
     "@expo/apple-utils" "2.1.0"
     "@expo/code-signing-certificates" "0.0.5"
