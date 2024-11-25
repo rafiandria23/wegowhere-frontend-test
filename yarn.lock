@@ -5324,9 +5324,9 @@
     color "^4.2.3"
 
 "@react-navigation/native-stack@^7.0.0":
-  version "7.1.6"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.1.6.tgz#36d55f030285e6e5ce755009fd92448add0fb96d"
-  integrity sha512-IJAdG2o0J2cOZNYHFCqEMUm/dlr8WDtMZcmyM2iRPlyRHnzDMN6nij8ld5ZXK+BMBcvhxVZyLdducqhrZ4p2+g==
+  version "7.1.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.1.7.tgz#695bc12f21d2239cf327d007f0b8ae01039926da"
+  integrity sha512-Y8JJVdTsWs1nC27UfuJXnd7cP6O3anQCsPpQhM9I9UOwNcQKi702aRKiDcjM77/LWp8Z+IShMtGVpkdG+oy39g==
   dependencies:
     "@react-navigation/elements" "^2.1.5"
     warn-once "^0.1.1"
