@@ -2549,7 +2549,7 @@
     node-forge "^1.2.1"
     nullthrows "^1.1.1"
 
-"@expo/config-plugins@9.0.12", "@expo/config-plugins@~9.0.0":
+"@expo/config-plugins@9.0.12":
   version "9.0.12"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-9.0.12.tgz#f122b2dca22e135eadf6e73442da3ced0ce8aa0a"
   integrity sha512-/Ko/NM+GzvJyRkq8PITm8ms0KY5v0wmN1OQFYRMkcJqOi3PjlhndW+G6bHpJI9mkQXBaUnHwAiGLqIC3+MQ5Wg==
@@ -2569,7 +2569,7 @@
     xcode "^3.0.1"
     xml2js "0.6.0"
 
-"@expo/config-plugins@~9.0.10", "@expo/config-plugins@~9.0.13":
+"@expo/config-plugins@~9.0.0", "@expo/config-plugins@~9.0.10", "@expo/config-plugins@~9.0.13":
   version "9.0.13"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-9.0.13.tgz#051f75115943017755000ee429d7cc12d34c60e3"
   integrity sha512-9mSjuMoCijA0O4JONJwWXg+xaD4tVeVv7pXWQovnQGxorgMNgygOGEzGi9GXFMki8FJ1Zlt2gyXrcPFXiId7Hw==
@@ -2677,7 +2677,18 @@
     terminal-link "2.1.1"
     tslib "2.4.1"
 
-"@expo/env@^0.4.0", "@expo/env@~0.4.0":
+"@expo/env@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/env/-/env-1.0.0.tgz#8e22894fae04ba6dc41fe0f1351a4973d410273a"
+  integrity sha512-43R5rxlaLJQOWunyfnQEpgHJCsSLCUWDoU/wJNABEYkHdt1Sjrlf+ieH3MG1f/RZYE+1Wss3sYiO9oPps1aMNg==
+  dependencies:
+    chalk "^4.0.0"
+    debug "^4.3.4"
+    dotenv "~16.4.5"
+    dotenv-expand "~11.0.6"
+    getenv "^1.0.0"
+
+"@expo/env@~0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@expo/env/-/env-0.4.0.tgz#1ff3a15084566d12ca92cb67e5b0a9796a9f0aa7"
   integrity sha512-g2JYFqck3xKIwJyK+8LxZ2ENZPWtRgjFWpeht9abnKgzXVXBeSNECFBkg+WQjQocSIdxXhEWM6hz4ZAe7Tc4ng==
@@ -9224,9 +9235,9 @@ duplexer2@^0.1.2:
     readable-stream "^2.0.2"
 
 eas-cli@^14.0.0:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-14.3.1.tgz#878cc5a57f558874c3fdd476e4347ac85a27ab3e"
-  integrity sha512-CsiAf2Nq5l0su7KoNQTnVhUsNy1BFyEWaQchCQsXWH7nv1LhWC5nPU3Fh3FGYZw5Igonrx8z+PNdzFz02T2opw==
+  version "14.4.0"
+  resolved "https://registry.yarnpkg.com/eas-cli/-/eas-cli-14.4.0.tgz#2de8bcf34dfbfe0189e97e2ef725b2c8284e575f"
+  integrity sha512-OuWYIgwbxd0ZWXrPubJEgtMXfRw9J5wL0NDdVkHLnMHgA7QctX3EMF5xH5DIM8WnkAoaToPiIN+1ljI0u+alJQ==
   dependencies:
     "@expo/apple-utils" "2.1.5"
     "@expo/code-signing-certificates" "0.0.5"
@@ -9234,7 +9245,7 @@ eas-cli@^14.0.0:
     "@expo/config-plugins" "9.0.12"
     "@expo/eas-build-job" "1.0.156"
     "@expo/eas-json" "14.3.1"
-    "@expo/env" "^0.4.0"
+    "@expo/env" "^1.0.0"
     "@expo/json-file" "8.3.3"
     "@expo/logger" "1.0.117"
     "@expo/multipart-body-parser" "2.0.0"
