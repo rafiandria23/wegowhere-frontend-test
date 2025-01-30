@@ -1838,12 +1838,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/apple-utils@npm:2.1.5":
-  version: 2.1.5
-  resolution: "@expo/apple-utils@npm:2.1.5"
+"@expo/apple-utils@npm:2.1.6":
+  version: 2.1.6
+  resolution: "@expo/apple-utils@npm:2.1.6"
   bin:
     apple-utils: bin.js
-  checksum: 10c0/97b4a2fdd8e25fd12c11a4f045a4a99b7f22305e6fe7f6319f7ac99229870254a73b93417fb34057541710ef56f7c47b10261ea11678af4f6ddc8207408b8f30
+  checksum: 10c0/8d759fd562a8063b68c8874d1118fa79a07a105e6d22138de1595a86e666e236a6db7b1d3897b6bcc7eaae25ea9ca7b782a5d1cccba83d6f4f96b80320cad6d4
   languageName: node
   linkType: hard
 
@@ -2430,9 +2430,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/steps@npm:1.0.165":
-  version: 1.0.165
-  resolution: "@expo/steps@npm:1.0.165"
+"@expo/steps@npm:1.0.166":
+  version: 1.0.166
+  resolution: "@expo/steps@npm:1.0.166"
   dependencies:
     "@expo/eas-build-job": "npm:1.0.165"
     "@expo/logger": "npm:1.0.117"
@@ -2446,7 +2446,7 @@ __metadata:
     this-file: "npm:^2.0.3"
     uuid: "npm:^9.0.1"
     yaml: "npm:^2.4.3"
-  checksum: 10c0/4f99b0653aa1622ea00b05d61ad798badcc4ceac65ac3e0631ac1eec474edf0fec9142c44f9eaaa0f22822ac2338041f9fbde32d4818dc7ed5ec8d8a06018e37
+  checksum: 10c0/117168f10255ce16f6e043c821e969805b224b5ebe605dfd867acbac2fe2de45a39523adc186203586419e7742a9f997baaae097725da53938cb3fc536bde0d3
   languageName: node
   linkType: hard
 
@@ -11403,10 +11403,10 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^14.0.0":
-  version: 14.5.0
-  resolution: "eas-cli@npm:14.5.0"
+  version: 14.6.0
+  resolution: "eas-cli@npm:14.6.0"
   dependencies:
-    "@expo/apple-utils": "npm:2.1.5"
+    "@expo/apple-utils": "npm:2.1.6"
     "@expo/code-signing-certificates": "npm:0.0.5"
     "@expo/config": "npm:10.0.6"
     "@expo/config-plugins": "npm:9.0.12"
@@ -11426,7 +11426,7 @@ __metadata:
     "@expo/results": "npm:1.0.0"
     "@expo/rudder-sdk-node": "npm:1.1.1"
     "@expo/spawn-async": "npm:1.7.2"
-    "@expo/steps": "npm:1.0.165"
+    "@expo/steps": "npm:1.0.166"
     "@expo/timeago.js": "npm:1.0.0"
     "@oclif/core": "npm:^1.26.2"
     "@oclif/plugin-autocomplete": "npm:^2.3.10"
@@ -11489,7 +11489,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     eas: bin/run
-  checksum: 10c0/5edc5e149984f62244cbfd74d67b28703c8794b5ee22d611566e7dddab22a54fe827a99070f2da1bd4aa4e5b6475613f21d06abcd991c0ba41bf9ea58b9b82bf
+  checksum: 10c0/02f0cb9fd3eaa69ad713c1ac764e756368f94e10bd7da10fdd1441c802edc4cca057a1523b71f2d9839f42c03304744a0cacdaa4dd698f56d6b3976363f92df7
   languageName: node
   linkType: hard
 
