@@ -2073,9 +2073,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/eas-json@npm:14.5.0":
-  version: 14.5.0
-  resolution: "@expo/eas-json@npm:14.5.0"
+"@expo/eas-json@npm:15.0.0":
+  version: 15.0.0
+  resolution: "@expo/eas-json@npm:15.0.0"
   dependencies:
     "@babel/code-frame": "npm:7.23.5"
     "@expo/eas-build-job": "npm:1.0.165"
@@ -2088,7 +2088,7 @@ __metadata:
     semver: "npm:7.5.2"
     terminal-link: "npm:2.1.1"
     tslib: "npm:2.4.1"
-  checksum: 10c0/c84979d6d515824b37cf5abb65fe40cdff2925bb896761b50399df046bc2716d30b99380de388fa030a35a758142cb3f8b02aa6400c24edac7a22e36e557de21
+  checksum: 10c0/4e6fe60fe39ca3fc1101bde57cc39dd190a4f28f6801d26e5012e6a54ad0ff26a533dd5f07b022a5062f2156da5d58cb24c920c0c97a6d69d921ab3395a3595c
   languageName: node
   linkType: hard
 
@@ -5207,7 +5207,7 @@ __metadata:
     class-validator: "npm:^0.14.1"
     dayjs: "npm:^1.11.10"
     detox: "npm:^20.11.1"
-    eas-cli: "npm:^14.0.0"
+    eas-cli: "npm:^15.0.0"
     eslint: "npm:^9.0.0"
     eslint-config-prettier: "npm:^10.0.0"
     eslint-plugin-import: "npm:^2.29.1"
@@ -11410,16 +11410,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eas-cli@npm:^14.0.0":
-  version: 14.7.1
-  resolution: "eas-cli@npm:14.7.1"
+"eas-cli@npm:^15.0.0":
+  version: 15.0.3
+  resolution: "eas-cli@npm:15.0.3"
   dependencies:
     "@expo/apple-utils": "npm:2.1.6"
     "@expo/code-signing-certificates": "npm:0.0.5"
     "@expo/config": "npm:10.0.6"
     "@expo/config-plugins": "npm:9.0.12"
     "@expo/eas-build-job": "npm:1.0.165"
-    "@expo/eas-json": "npm:14.5.0"
+    "@expo/eas-json": "npm:15.0.0"
     "@expo/env": "npm:^1.0.0"
     "@expo/json-file": "npm:8.3.3"
     "@expo/logger": "npm:1.0.117"
@@ -11497,7 +11497,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     eas: bin/run
-  checksum: 10c0/61d6abb760bc1422f0706ccaf41e4b85ed1d6d9315bd0a98bae8d22889894a4d8f9694bbbdafecea2077d3127c1cb261df1fd1a7d441dff21a8d0847b21e23e9
+  checksum: 10c0/aeea5efb3f0df497d32934566aaf8cf13a8629eb139b8be81822176ab9ff8448659c9b976b455aa0ed1343fec81eb21744c756c6cb5dbaf0baac46fc3953f979
   languageName: node
   linkType: hard
 
