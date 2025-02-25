@@ -17233,21 +17233,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.81.2":
+"metro-resolver@npm:0.81.2, metro-resolver@npm:^0.81.0":
   version: 0.81.2
   resolution: "metro-resolver@npm:0.81.2"
   dependencies:
     flow-enums-runtime: "npm:^0.0.6"
   checksum: 10c0/48733285d2d6ba4578152b84f82e7c760ec8776f47e5f5fa5649c6d42a706542313d2b3ec8449f7b436ee2475eb821a00f4282cca2fe4db2757fa695c861d692
-  languageName: node
-  linkType: hard
-
-"metro-resolver@npm:^0.81.0":
-  version: 0.81.1
-  resolution: "metro-resolver@npm:0.81.1"
-  dependencies:
-    flow-enums-runtime: "npm:^0.0.6"
-  checksum: 10c0/4177c470db0e1f86d6a3aba107ac8521f2a39bad32344f196f04b952d5566da0b37a2272cbaf7a5ec525d7749b28b23115b187811bb139307d9cd763ee849cca
   languageName: node
   linkType: hard
 
