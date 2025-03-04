@@ -2131,24 +2131,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/eas-build-job@npm:1.0.165":
-  version: 1.0.165
-  resolution: "@expo/eas-build-job@npm:1.0.165"
+"@expo/eas-build-job@npm:1.0.170":
+  version: 1.0.170
+  resolution: "@expo/eas-build-job@npm:1.0.170"
   dependencies:
     "@expo/logger": "npm:1.0.117"
     joi: "npm:^17.13.1"
     semver: "npm:^7.6.2"
     zod: "npm:^3.23.8"
-  checksum: 10c0/624762c5208214fe7de472f90e9a50c405fdf6727b0a7ad43fecd91c05c820ae13b4a1fe18f02361ebd8f518e289c781f7b49157f2557ecf644418c933cbdde1
+  checksum: 10c0/b6201632fa160f2125f12accd281ee8359f013d5d49065261d568773be152ff6f8281ed7377fa26b242ea55bca47d418dbccb25dee99c856f31ee20093643bf3
   languageName: node
   linkType: hard
 
-"@expo/eas-json@npm:15.0.0":
-  version: 15.0.0
-  resolution: "@expo/eas-json@npm:15.0.0"
+"@expo/eas-json@npm:15.0.13":
+  version: 15.0.13
+  resolution: "@expo/eas-json@npm:15.0.13"
   dependencies:
     "@babel/code-frame": "npm:7.23.5"
-    "@expo/eas-build-job": "npm:1.0.165"
+    "@expo/eas-build-job": "npm:1.0.170"
     chalk: "npm:4.1.2"
     env-string: "npm:1.0.1"
     fs-extra: "npm:11.2.0"
@@ -2158,7 +2158,7 @@ __metadata:
     semver: "npm:7.5.2"
     terminal-link: "npm:2.1.1"
     tslib: "npm:2.4.1"
-  checksum: 10c0/4e6fe60fe39ca3fc1101bde57cc39dd190a4f28f6801d26e5012e6a54ad0ff26a533dd5f07b022a5062f2156da5d58cb24c920c0c97a6d69d921ab3395a3595c
+  checksum: 10c0/5361a96aa7ad6a32ca5ff61fa32c4f672febc9819cda4feae501289da2eb40e3aadad22926d7143638491c0ddd4aea0ebf29e0b406463fb625d28ad4e618b5ab
   languageName: node
   linkType: hard
 
@@ -2560,11 +2560,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/steps@npm:1.0.166":
-  version: 1.0.166
-  resolution: "@expo/steps@npm:1.0.166"
+"@expo/steps@npm:1.0.170":
+  version: 1.0.170
+  resolution: "@expo/steps@npm:1.0.170"
   dependencies:
-    "@expo/eas-build-job": "npm:1.0.165"
+    "@expo/eas-build-job": "npm:1.0.170"
     "@expo/logger": "npm:1.0.117"
     "@expo/spawn-async": "npm:^1.7.2"
     arg: "npm:^5.0.2"
@@ -2576,7 +2576,7 @@ __metadata:
     this-file: "npm:^2.0.3"
     uuid: "npm:^9.0.1"
     yaml: "npm:^2.4.3"
-  checksum: 10c0/117168f10255ce16f6e043c821e969805b224b5ebe605dfd867acbac2fe2de45a39523adc186203586419e7742a9f997baaae097725da53938cb3fc536bde0d3
+  checksum: 10c0/8f6302d4daa2136aa1400096f9257a66d0b067810eba20146f244781137060470507a43e14c05949bb252a20156beb0f837ae161e83fc75abc3290aa52596812
   languageName: node
   linkType: hard
 
@@ -11630,15 +11630,15 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^15.0.0":
-  version: 15.0.12
-  resolution: "eas-cli@npm:15.0.12"
+  version: 15.0.13
+  resolution: "eas-cli@npm:15.0.13"
   dependencies:
     "@expo/apple-utils": "npm:2.1.11"
     "@expo/code-signing-certificates": "npm:0.0.5"
     "@expo/config": "npm:10.0.6"
     "@expo/config-plugins": "npm:9.0.12"
-    "@expo/eas-build-job": "npm:1.0.165"
-    "@expo/eas-json": "npm:15.0.0"
+    "@expo/eas-build-job": "npm:1.0.170"
+    "@expo/eas-json": "npm:15.0.13"
     "@expo/env": "npm:^1.0.0"
     "@expo/json-file": "npm:8.3.3"
     "@expo/logger": "npm:1.0.117"
@@ -11653,7 +11653,7 @@ __metadata:
     "@expo/results": "npm:1.0.0"
     "@expo/rudder-sdk-node": "npm:1.1.1"
     "@expo/spawn-async": "npm:1.7.2"
-    "@expo/steps": "npm:1.0.166"
+    "@expo/steps": "npm:1.0.170"
     "@expo/timeago.js": "npm:1.0.0"
     "@oclif/core": "npm:^1.26.2"
     "@oclif/plugin-autocomplete": "npm:^2.3.10"
@@ -11716,7 +11716,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     eas: bin/run
-  checksum: 10c0/79dcf35c0753f06e9b328c5a83a045a92bbfe4e34ce2aff44fd83f7a96d930a650e32bb0af817e2d490e8fbd61b5a816b8e803bc8a2ffeffbb7576e460c25a87
+  checksum: 10c0/c26ee7948fbe40645e63fcfb112d336786afc3d786dcde9782d0744634d5031d942c389ad34dddc93726a1b1f31f660575083b1c0c147af44aa95a17023f5e23
   languageName: node
   linkType: hard
 
