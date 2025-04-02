@@ -3065,9 +3065,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-ui/icon@npm:0.1.26":
-  version: 0.1.26
-  resolution: "@gluestack-ui/icon@npm:0.1.26"
+"@gluestack-ui/icon@npm:0.1.27":
+  version: 0.1.27
+  resolution: "@gluestack-ui/icon@npm:0.1.27"
   dependencies:
     "@gluestack-ui/provider": "npm:^0.1.19"
     "@gluestack-ui/utils": "npm:^0.1.14"
@@ -3075,7 +3075,7 @@ __metadata:
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 10c0/64b549899aca43a06982b72deb52cd6ac2dff603f74acd9cd179e7b641af5e80116a5204903822185055b60ab1180d346870d670327a989e242d48185dec3bff
+  checksum: 10c0/c5024819d548fa79847ece23c4d2059de799334356d4c88d0fc8b3b96fac4efdcac1a589e5a4b615d98ec12439fe39ab8e61adae05f7e46adc60038a1692d7f9
   languageName: node
   linkType: hard
 
@@ -3380,8 +3380,8 @@ __metadata:
   linkType: hard
 
 "@gluestack-ui/themed@npm:^1.1.2":
-  version: 1.1.71
-  resolution: "@gluestack-ui/themed@npm:1.1.71"
+  version: 1.1.72
+  resolution: "@gluestack-ui/themed@npm:1.1.72"
   dependencies:
     "@expo/html-elements": "npm:latest"
     "@gluestack-style/animation-resolver": "npm:1.0.4"
@@ -3396,7 +3396,7 @@ __metadata:
     "@gluestack-ui/divider": "npm:0.1.10"
     "@gluestack-ui/fab": "npm:0.1.28"
     "@gluestack-ui/form-control": "npm:0.1.19"
-    "@gluestack-ui/icon": "npm:0.1.26"
+    "@gluestack-ui/icon": "npm:0.1.27"
     "@gluestack-ui/image": "npm:0.1.17"
     "@gluestack-ui/input": "npm:0.1.38"
     "@gluestack-ui/link": "npm:0.1.29"
@@ -3425,7 +3425,7 @@ __metadata:
     react-native: ">=0.72"
     react-native-svg: ">=13.4.0"
     react-native-web: ">=0.19"
-  checksum: 10c0/ebb8124f01a0565b76267e5b8ecfc05f38e548a563537b5b366cc3261d7b9ae779a648aa6b50e1ea518a6d9fd0e0877eca77a5f62624cae14f40ab822cc480c5
+  checksum: 10c0/2ff16d66cdae0fff308f0088d0e2b78b819ed445d3d36e920970c1c55a4c236164ec08e1b54ab6675f87097b0e2477e9f9a7993eb81527334fc316f47daf68a2
   languageName: node
   linkType: hard
 
