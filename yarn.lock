@@ -12896,31 +12896,31 @@ __metadata:
   linkType: hard
 
 "expo-dev-client@npm:^5.0.0":
-  version: 5.0.19
-  resolution: "expo-dev-client@npm:5.0.19"
+  version: 5.0.20
+  resolution: "expo-dev-client@npm:5.0.20"
   dependencies:
-    expo-dev-launcher: "npm:5.0.34"
-    expo-dev-menu: "npm:6.0.24"
+    expo-dev-launcher: "npm:5.0.35"
+    expo-dev-menu: "npm:6.0.25"
     expo-dev-menu-interface: "npm:1.9.3"
     expo-manifests: "npm:~0.15.8"
     expo-updates-interface: "npm:~1.0.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/359c76e54a6198b8640261c27d945ba8e57e9d952420bf8959c82082252064fc2486abd1360d7f63904425f13de6e916afa886bc4e295efaa1162060473b973c
+  checksum: 10c0/eef50b6eedbd12a1ee59227aa0140ae89755b6066606cbc80087f6ef3fbcad7f5f33db6e9031cba1523c71aefb032718eac4dea6c28b348767947cee69359aba
   languageName: node
   linkType: hard
 
-"expo-dev-launcher@npm:5.0.34":
-  version: 5.0.34
-  resolution: "expo-dev-launcher@npm:5.0.34"
+"expo-dev-launcher@npm:5.0.35":
+  version: 5.0.35
+  resolution: "expo-dev-launcher@npm:5.0.35"
   dependencies:
     ajv: "npm:8.11.0"
-    expo-dev-menu: "npm:6.0.24"
+    expo-dev-menu: "npm:6.0.25"
     expo-manifests: "npm:~0.15.8"
     resolve-from: "npm:^5.0.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/9838d97de60906cccbb131663cd416831874b30eb9ead2e98ab18d1ec0485dc6f720262eb4d672b8e6020bddc48ad8bc0db4ce5da4d211445dc82053762f2e35
+  checksum: 10c0/4f98d73c37ab1bc26e4f1f855329aae6ef2a21b109cfa92235b6c2c0d2e1eb8454dd3ef1fa4b7bee669162904dcfd7bf22fa52a3897f5887785d2a940b2d46b4
   languageName: node
   linkType: hard
 
@@ -12933,14 +12933,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-dev-menu@npm:6.0.24":
-  version: 6.0.24
-  resolution: "expo-dev-menu@npm:6.0.24"
+"expo-dev-menu@npm:6.0.25":
+  version: 6.0.25
+  resolution: "expo-dev-menu@npm:6.0.25"
   dependencies:
     expo-dev-menu-interface: "npm:1.9.3"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/8ed1cb08f508824fad72c52bb098519b4092e03328653f09add41220f7dc20968322c84c74dc43ec98d518b3388a4f53cc5fa7b63441637d0d95dd61d34f789f
+  checksum: 10c0/c0e661bad8082dbce9daaa3e58bc3c79d8ffa4e51495dddcab3a764621f9b691cfea8cf8e013720e7ebc5d892467e70f063f59797dc9ebf4f5b04d5135043fa7
   languageName: node
   linkType: hard
 
