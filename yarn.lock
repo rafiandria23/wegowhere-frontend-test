@@ -1860,12 +1860,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/apple-utils@npm:2.1.11":
-  version: 2.1.11
-  resolution: "@expo/apple-utils@npm:2.1.11"
+"@expo/apple-utils@npm:2.1.12":
+  version: 2.1.12
+  resolution: "@expo/apple-utils@npm:2.1.12"
   bin:
     apple-utils: bin.js
-  checksum: 10c0/09a37bf369035954411a6ae8d9a77aea29fd41928e12b97b3ceeab0256a1348e7f7cc43d43acbde0d8ef3cdc1c7c4ce4892066923eb49689f066944c70b3a804
+  checksum: 10c0/f1c12c6233320c7b78113a330b5e3e9f0977171cc07c7856b38b74ccd5c2c20d53895197ec640f3ecc38d12b556d94c40adffbe63d75cc4c5169614854b48742
   languageName: node
   linkType: hard
 
@@ -11954,10 +11954,10 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^16.0.0":
-  version: 16.2.0
-  resolution: "eas-cli@npm:16.2.0"
+  version: 16.2.1
+  resolution: "eas-cli@npm:16.2.1"
   dependencies:
-    "@expo/apple-utils": "npm:2.1.11"
+    "@expo/apple-utils": "npm:2.1.12"
     "@expo/code-signing-certificates": "npm:0.0.5"
     "@expo/config": "npm:10.0.6"
     "@expo/config-plugins": "npm:9.0.12"
@@ -12017,6 +12017,7 @@ __metadata:
     nanoid: "npm:3.3.8"
     node-fetch: "npm:2.6.7"
     node-forge: "npm:1.3.1"
+    node-stream-zip: "npm:1.15.0"
     nullthrows: "npm:1.1.1"
     ora: "npm:5.1.0"
     pkg-dir: "npm:4.2.0"
@@ -12041,7 +12042,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     eas: bin/run
-  checksum: 10c0/1f18c40a3ff39bc4922c3aff690857cf6e08052609e705f98c782e948a78edb887045f58e2987db2d5cb65ddc59540c7492d1cb0a16011e1cf72a7bceae81b18
+  checksum: 10c0/fa50d1e34a44a7598ac5e7c83ff94621dc4e0f09bbc124f587b8bf559a1ac478ee25d7f8fa89aa7dc7b523013ef60a2d207745e870954d4dc466392d77b621d3
   languageName: node
   linkType: hard
 
@@ -18741,6 +18742,13 @@ __metadata:
     long-timeout: "npm:0.1.1"
     sorted-array-functions: "npm:^1.3.0"
   checksum: 10c0/6ec51b34b9e676740ac25298e4ced5ee46053379f0d3aad533e51d7e083bc24ced045df1772a95bf9d9cfdb81299340bbf551549a7c5eb6e4d2dc6468c85c70e
+  languageName: node
+  linkType: hard
+
+"node-stream-zip@npm:1.15.0":
+  version: 1.15.0
+  resolution: "node-stream-zip@npm:1.15.0"
+  checksum: 10c0/429fce95d7e90e846adbe096c61d2ea8d18defc155c0345d25d0f98dd6fc72aeb95039318484a4e0a01dc3814b6d0d1ae0fe91847a29669dff8676ec064078c9
   languageName: node
   linkType: hard
 
