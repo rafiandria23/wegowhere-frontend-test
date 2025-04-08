@@ -2897,9 +2897,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-ui/actionsheet@npm:0.2.52":
-  version: 0.2.52
-  resolution: "@gluestack-ui/actionsheet@npm:0.2.52"
+"@gluestack-ui/actionsheet@npm:0.2.53":
+  version: 0.2.53
+  resolution: "@gluestack-ui/actionsheet@npm:0.2.53"
   dependencies:
     "@gluestack-ui/hooks": "npm:0.1.13"
     "@gluestack-ui/overlay": "npm:^0.1.22"
@@ -2911,7 +2911,7 @@ __metadata:
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 10c0/1a0a1a5bf244730a308ca169e6e52a5ed591f87719bd3a2592245fdf4e7d6bbb8a9a96e5b0296bd5f77d7ecad9012829ad0b5ee1879ddc9e60784c79b4a87bf8
+  checksum: 10c0/9e0977cb62df7ddc26b11ada1f8fa7d16b398f4b7355be0dee38ff78d56a3e5247cbffda9618e21c518aefceb9b07091b6383307b8aa132c0f5d670851e3ecdd
   languageName: node
   linkType: hard
 
@@ -3344,29 +3344,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-ui/textarea@npm:0.1.24":
-  version: 0.1.24
-  resolution: "@gluestack-ui/textarea@npm:0.1.24"
+"@gluestack-ui/textarea@npm:0.1.25":
+  version: 0.1.25
+  resolution: "@gluestack-ui/textarea@npm:0.1.25"
   dependencies:
     "@gluestack-ui/form-control": "npm:^0.1.19"
     "@gluestack-ui/utils": "npm:^0.1.14"
     "@react-native-aria/focus": "npm:^0.2.9"
+    "@react-native-aria/interactions": "npm:^0.2.16"
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 10c0/c40e41b6695f0a915cd611679599a84e80fbb0380a7db8e4335ddb2c4c1d52a7a85d4d169417b073017a4de05eb16b1ff0bbd05994639aad80ce1a38fb9c974b
+  checksum: 10c0/925cdbd1c6d4711b2bcce2adc48dd6be262970939e04aae27f271d32ecb6bcaad1ec081d3afbba45eccd94813d1e96e84336bc26ce4acc3b17cfbd3193598114
   languageName: node
   linkType: hard
 
 "@gluestack-ui/themed@npm:^1.1.2":
-  version: 1.1.72
-  resolution: "@gluestack-ui/themed@npm:1.1.72"
+  version: 1.1.73
+  resolution: "@gluestack-ui/themed@npm:1.1.73"
   dependencies:
     "@expo/html-elements": "npm:latest"
     "@gluestack-style/animation-resolver": "npm:1.0.4"
     "@gluestack-style/legend-motion-animation-driver": "npm:1.0.3"
     "@gluestack-ui/accordion": "npm:1.0.14"
-    "@gluestack-ui/actionsheet": "npm:0.2.52"
+    "@gluestack-ui/actionsheet": "npm:0.2.53"
     "@gluestack-ui/alert": "npm:0.1.16"
     "@gluestack-ui/alert-dialog": "npm:0.1.38"
     "@gluestack-ui/avatar": "npm:0.1.18"
@@ -3392,7 +3393,7 @@ __metadata:
     "@gluestack-ui/spinner": "npm:0.1.15"
     "@gluestack-ui/switch": "npm:0.1.29"
     "@gluestack-ui/tabs": "npm:0.1.24"
-    "@gluestack-ui/textarea": "npm:0.1.24"
+    "@gluestack-ui/textarea": "npm:0.1.25"
     "@gluestack-ui/toast": "npm:1.0.9"
     "@gluestack-ui/tooltip": "npm:0.1.44"
     "@legendapp/motion": "npm:latest"
@@ -3404,7 +3405,7 @@ __metadata:
     react-native: ">=0.72"
     react-native-svg: ">=13.4.0"
     react-native-web: ">=0.19"
-  checksum: 10c0/2ff16d66cdae0fff308f0088d0e2b78b819ed445d3d36e920970c1c55a4c236164ec08e1b54ab6675f87097b0e2477e9f9a7993eb81527334fc316f47daf68a2
+  checksum: 10c0/a22fd814e79de5796abc079dffab29054340574cd905ff4036dedd4d5a3335c75d4b70e19e272234737b7ff347c5283e6b851b3cc957a5447125da5afdd4c86b
   languageName: node
   linkType: hard
 
@@ -6055,7 +6056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-aria/interactions@npm:0.2.16":
+"@react-native-aria/interactions@npm:0.2.16, @react-native-aria/interactions@npm:^0.2.16":
   version: 0.2.16
   resolution: "@react-native-aria/interactions@npm:0.2.16"
   dependencies:
