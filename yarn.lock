@@ -17501,7 +17501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.82.1, metro-resolver@npm:^0.82.0":
+"metro-resolver@npm:0.82.1":
   version: 0.82.1
   resolution: "metro-resolver@npm:0.82.1"
   dependencies:
@@ -17510,7 +17510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.82.2":
+"metro-resolver@npm:0.82.2, metro-resolver@npm:^0.82.0":
   version: 0.82.2
   resolution: "metro-resolver@npm:0.82.2"
   dependencies:
