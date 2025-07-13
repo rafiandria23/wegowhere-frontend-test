@@ -6349,7 +6349,7 @@ __metadata:
     jest-expo: "npm:^53.0.0"
     lodash: "npm:^4.17.21"
     metro: "npm:^0.83.0"
-    metro-resolver: "npm:^0.82.0"
+    metro-resolver: "npm:^0.83.0"
     mongoose: "npm:^8.1.1"
     nx: "npm:^21.0.0"
     prettier: "npm:^3.0.0"
@@ -19211,7 +19211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.82.5, metro-resolver@npm:^0.82.0":
+"metro-resolver@npm:0.82.5":
   version: 0.82.5
   resolution: "metro-resolver@npm:0.82.5"
   dependencies:
@@ -19220,7 +19220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.83.0":
+"metro-resolver@npm:0.83.0, metro-resolver@npm:^0.83.0":
   version: 0.83.0
   resolution: "metro-resolver@npm:0.83.0"
   dependencies:
