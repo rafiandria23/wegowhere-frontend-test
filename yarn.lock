@@ -12676,8 +12676,8 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^16.0.0":
-  version: 16.17.0
-  resolution: "eas-cli@npm:16.17.0"
+  version: 16.17.3
+  resolution: "eas-cli@npm:16.17.3"
   dependencies:
     "@expo/apple-utils": "npm:2.1.12"
     "@expo/code-signing-certificates": "npm:0.0.5"
@@ -12720,7 +12720,7 @@ __metadata:
     fast-deep-equal: "npm:3.1.3"
     fast-glob: "npm:3.3.2"
     figures: "npm:3.2.0"
-    form-data: "npm:4.0.0"
+    form-data: "npm:^4.0.4"
     fs-extra: "npm:11.2.0"
     getenv: "npm:1.0.0"
     gradle-to-js: "npm:2.0.1"
@@ -12764,8 +12764,8 @@ __metadata:
     yaml: "npm:2.6.0"
     zod: "npm:^3.23.8"
   bin:
-    eas: bin/run
-  checksum: 10c0/3410394d4f8f7927942ebc4db0a58ed8ab4ed9098973d8e621128329a802985addaff3e527d8a3c918944c094fc89d5c8c093a03eb9f3854e112addf14d933b0
+    eas: ./bin/run
+  checksum: 10c0/93b615f39242b5280d134447bbb2cd8c6c6edc668927b9dc0fc867c9f9a499ab2cbf72181c554ad1f42eeb40aa1f997ac0e816505a66187ce17cfe6a1995cdbb
   languageName: node
   linkType: hard
 
@@ -14633,17 +14633,6 @@ __metadata:
     vue-template-compiler:
       optional: true
   checksum: 10c0/e6ca712c818956e5ed0837cef5e0bbf9ce453c7a82e2efa56a01343d566b330580c6d3bbbfed33705df2987e71398a46c4af901dfcdffe09edfece3f195f6ebd
-  languageName: node
-  linkType: hard
-
-"form-data@npm:4.0.0":
-  version: 4.0.0
-  resolution: "form-data@npm:4.0.0"
-  dependencies:
-    asynckit: "npm:^0.4.0"
-    combined-stream: "npm:^1.0.8"
-    mime-types: "npm:^2.1.12"
-  checksum: 10c0/cb6f3ac49180be03ff07ba3ff125f9eba2ff0b277fb33c7fc47569fc5e616882c5b1c69b9904c4c4187e97dd0419dd03b134174756f296dec62041e6527e2c6e
   languageName: node
   linkType: hard
 
