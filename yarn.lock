@@ -22889,8 +22889,8 @@ __metadata:
   linkType: hard
 
 "react-native-screens@npm:^4.0.0":
-  version: 4.15.0
-  resolution: "react-native-screens@npm:4.15.0"
+  version: 4.15.1
+  resolution: "react-native-screens@npm:4.15.1"
   dependencies:
     react-freeze: "npm:^1.0.0"
     react-native-is-edge-to-edge: "npm:^1.2.1"
@@ -22898,7 +22898,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/3327617a17844b056339f218e99bf16bbe7a3efb7085520ab3f22fbe7657bb8423266ca1b8170bae09e646307ba83ae5def5f334566c4d59d4590a0f40e3d512
+  checksum: 10c0/81cd614a4ad22139ade9554970f0a84d5707060a7ed55581bba85eea37c6921c30ebcd605e443f1eaa131c8ad3cedd53c9f32352131be5728d58c62248a18df6
   languageName: node
   linkType: hard
 
