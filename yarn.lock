@@ -2572,9 +2572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/eas-json@npm:16.13.2":
-  version: 16.13.2
-  resolution: "@expo/eas-json@npm:16.13.2"
+"@expo/eas-json@npm:16.18.0":
+  version: 16.18.0
+  resolution: "@expo/eas-json@npm:16.18.0"
   dependencies:
     "@babel/code-frame": "npm:7.23.5"
     "@expo/eas-build-job": "npm:1.0.173"
@@ -2587,7 +2587,7 @@ __metadata:
     semver: "npm:7.5.2"
     terminal-link: "npm:2.1.1"
     tslib: "npm:2.4.1"
-  checksum: 10c0/5cb22286308a645977b48301b8989234d54949f426da172f31546b454a2d24d58d63d92c399248467525f0beb728e3a5e8016131ce503bf7c945ce5a60145a11
+  checksum: 10c0/b7168d5d5b049a6032da44283846bace1fddea4297a351c73f348d6a53bf59c9463b35a9e77e549256fe284f48abceda2839a1a0257def07c51c8c98ff5359a3
   languageName: node
   linkType: hard
 
@@ -13397,15 +13397,15 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^16.0.0":
-  version: 16.17.4
-  resolution: "eas-cli@npm:16.17.4"
+  version: 16.18.0
+  resolution: "eas-cli@npm:16.18.0"
   dependencies:
     "@expo/apple-utils": "npm:2.1.12"
     "@expo/code-signing-certificates": "npm:0.0.5"
     "@expo/config": "npm:10.0.6"
     "@expo/config-plugins": "npm:9.0.12"
     "@expo/eas-build-job": "npm:1.0.173"
-    "@expo/eas-json": "npm:16.13.2"
+    "@expo/eas-json": "npm:16.18.0"
     "@expo/env": "npm:^1.0.0"
     "@expo/json-file": "npm:8.3.3"
     "@expo/logger": "npm:1.0.117"
@@ -13486,7 +13486,7 @@ __metadata:
     zod: "npm:^3.23.8"
   bin:
     eas: ./bin/run
-  checksum: 10c0/d8368969769bb4c93a10727a36230c098b2f3c4226822ca6388ccba5ba0cdbd2f734d2e1e3320075bd4f63fea5cf387bbb00eab80c3bcbc58678b15930dadf54
+  checksum: 10c0/2fbe120b7d934f1db54f933d47a4bfbb9d1255b9a18a4bfb124676700229b1887f75df4d53f42f0fb84d33f3002ed9bcc3c4f07508d41166f39777b09bcb8519
   languageName: node
   linkType: hard
 
