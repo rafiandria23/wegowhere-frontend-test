@@ -2284,9 +2284,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:0.24.21":
-  version: 0.24.21
-  resolution: "@expo/cli@npm:0.24.21"
+"@expo/cli@npm:0.24.22":
+  version: 0.24.22
+  resolution: "@expo/cli@npm:0.24.22"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.8"
     "@babel/runtime": "npm:^7.20.0"
@@ -2301,7 +2301,7 @@ __metadata:
     "@expo/osascript": "npm:^2.2.5"
     "@expo/package-manager": "npm:^1.8.6"
     "@expo/plist": "npm:^0.3.5"
-    "@expo/prebuild-config": "npm:^9.0.11"
+    "@expo/prebuild-config": "npm:^9.0.12"
     "@expo/schema-utils": "npm:^0.1.0"
     "@expo/spawn-async": "npm:^1.7.2"
     "@expo/ws-tunnel": "npm:^1.0.1"
@@ -2352,7 +2352,7 @@ __metadata:
     ws: "npm:^8.12.1"
   bin:
     expo-internal: build/bin/cli
-  checksum: 10c0/6ae1b20b23045192a8a72194212f8eaeb7d239d6b4ae7d9875cf736c31bf96493ffa69e1273feb5ee0cd99b610909fb1f22f901908b5d4de9935f35583e6f8b5
+  checksum: 10c0/6096c311640499b5bdccee7919b3fefa6b6c376af1995a2c0d7af33c82b224f39cf8ea1c41f80d19ceae5691890e2c1fc9dd6f1e06406c616c17a0581f7788a0
   languageName: node
   linkType: hard
 
@@ -2992,11 +2992,11 @@ __metadata:
   linkType: hard
 
 "@expo/metro-runtime@npm:^5.0.0":
-  version: 5.0.4
-  resolution: "@expo/metro-runtime@npm:5.0.4"
+  version: 5.0.5
+  resolution: "@expo/metro-runtime@npm:5.0.5"
   peerDependencies:
     react-native: "*"
-  checksum: 10c0/3522e7e95c13679a4f150d7cce78253e928adea5593c77af6cda0b56c34f2cb4d4a6d057a8bd455b3e3f63439e321c6b80cd1a7bdfdfa04b2ab1fcc034b3736f
+  checksum: 10c0/fba80998a17b46ea21079fe416ca2a3ece665e19c3d55ccc46e3dac7f6f20e86d7e898e4fab1145deb1620abcfa3dbcc4da3ebba9324c3e7d2390803d1de9af3
   languageName: node
   linkType: hard
 
@@ -3242,21 +3242,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/prebuild-config@npm:^9.0.11":
-  version: 9.0.11
-  resolution: "@expo/prebuild-config@npm:9.0.11"
+"@expo/prebuild-config@npm:^9.0.12":
+  version: 9.0.12
+  resolution: "@expo/prebuild-config@npm:9.0.12"
   dependencies:
     "@expo/config": "npm:~11.0.13"
     "@expo/config-plugins": "npm:~10.1.2"
     "@expo/config-types": "npm:^53.0.5"
     "@expo/image-utils": "npm:^0.7.6"
     "@expo/json-file": "npm:^9.1.5"
-    "@react-native/normalize-colors": "npm:0.79.5"
+    "@react-native/normalize-colors": "npm:0.79.6"
     debug: "npm:^4.3.1"
     resolve-from: "npm:^5.0.0"
     semver: "npm:^7.6.0"
     xml2js: "npm:0.6.0"
-  checksum: 10c0/63eb9be6744e2100362c8f7597daf1d4cbfdf4165ae6313c0b5759dbc63e95f8952cfb4634f4e1e0b593e6113100406a1a7972f5231f3fc6c2f7b05c7e0ef708
+  checksum: 10c0/7b0f8a9898e8a6d7cc1d15c6a4397ee8e6f3d7c1529eaed4e2c2fb764428820a35fc93aa93a521d286528e9eb52f9ea7c41f12be38a0bc53faa26fac3b063921
   languageName: node
   linkType: hard
 
@@ -7582,6 +7582,13 @@ __metadata:
   version: 0.79.5
   resolution: "@react-native/normalize-colors@npm:0.79.5"
   checksum: 10c0/d5b97f3ff7c0f6117ab92ae888611f2f7d6aa7f090e44f72658a7103582cc7d47fbb56c9e61fb9c6b44186c97b0f165425c032cf8d217ebf8955fe9f7ac41dea
+  languageName: node
+  linkType: hard
+
+"@react-native/normalize-colors@npm:0.79.6":
+  version: 0.79.6
+  resolution: "@react-native/normalize-colors@npm:0.79.6"
+  checksum: 10c0/2bc662b6846a92fe62bc54be34204ad90eeceb9747fdd6f439f3262a8b93a47c1a9f574368749c07636a9a746e2d5b842e9492f55bbfcbe164a1b7385f467ac1
   languageName: node
   linkType: hard
 
@@ -15131,11 +15138,11 @@ __metadata:
   linkType: hard
 
 "expo@npm:^53.0.0":
-  version: 53.0.22
-  resolution: "expo@npm:53.0.22"
+  version: 53.0.23
+  resolution: "expo@npm:53.0.23"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@expo/cli": "npm:0.24.21"
+    "@expo/cli": "npm:0.24.22"
     "@expo/config": "npm:~11.0.13"
     "@expo/config-plugins": "npm:~10.1.2"
     "@expo/fingerprint": "npm:0.13.4"
@@ -15168,7 +15175,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/e476744d0df61a73d9805836073061146ca309956c78d11287441cecd1592f60776c767a7d4eca921d6ce9d7c702e7ddfc126ce7dcc31a61becf443212272ad8
+  checksum: 10c0/ec452c32c2e636b8b810ac7e04a818dfbb9ab692f3dd82bcb899de1a72a37cd147f29226aea0e0047e5b77960079bced26241021e85a37ae97968fa4544630d8
   languageName: node
   linkType: hard
 
