@@ -15022,29 +15022,29 @@ __metadata:
   linkType: hard
 
 "expo-dev-client@npm:^6.0.0":
-  version: 6.0.14
-  resolution: "expo-dev-client@npm:6.0.14"
+  version: 6.0.15
+  resolution: "expo-dev-client@npm:6.0.15"
   dependencies:
-    expo-dev-launcher: "npm:6.0.14"
+    expo-dev-launcher: "npm:6.0.15"
     expo-dev-menu: "npm:7.0.14"
     expo-dev-menu-interface: "npm:2.0.0"
     expo-manifests: "npm:~1.0.8"
     expo-updates-interface: "npm:~2.0.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/d9a0a2f1b5abd1444f5a4650c475a06116954b7913423d407253390e23da8cfee72391ecf17526dc8f29140b96ab7c3e29ed3a24f185139fd82324130b6db900
+  checksum: 10c0/c8be3e36a50ff92b2c562a546ef0702c51202f30a42481e7f74318f60456b879e0e6b27289848808f1123ec28b23f883c4f9175056a329773d55a057f0eb58ae
   languageName: node
   linkType: hard
 
-"expo-dev-launcher@npm:6.0.14":
-  version: 6.0.14
-  resolution: "expo-dev-launcher@npm:6.0.14"
+"expo-dev-launcher@npm:6.0.15":
+  version: 6.0.15
+  resolution: "expo-dev-launcher@npm:6.0.15"
   dependencies:
-    expo-dev-menu: "npm:7.0.13"
+    expo-dev-menu: "npm:7.0.14"
     expo-manifests: "npm:~1.0.8"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/0e1b12f1cd8c51801c57436d912ae6cdb4c54df80f2a302b39ba284e008ee34d57c25a1bcdb3a8655a934dc24bea58d45a25e9c5b84420fd3a1b4db82b1ffcfb
+  checksum: 10c0/930f4241aeea4e35cf5d32d03f66057a78d5198b18515a7e9e2020ee08115733dabaf1c451acf5bc3437dc3c836b1bd1f0229a3222a4ce83c13a76469e5e5fae
   languageName: node
   linkType: hard
 
@@ -15054,17 +15054,6 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 10c0/ef85287262acce5822cd274f91b908bccbc590d3eba2fb34f037271f6f7d6d9e312655c72fca82f890035ed5954e47c58e4509ad5b925737da61d656c48170a4
-  languageName: node
-  linkType: hard
-
-"expo-dev-menu@npm:7.0.13":
-  version: 7.0.13
-  resolution: "expo-dev-menu@npm:7.0.13"
-  dependencies:
-    expo-dev-menu-interface: "npm:2.0.0"
-  peerDependencies:
-    expo: "*"
-  checksum: 10c0/41fc34d30ba5412d05c83029a04a27608dd65f7965fa32ad7a098be1fed6ed119bb0534963728d4295cbf69b53859e32bf8b87c75de627e99763e5405fb9970b
   languageName: node
   linkType: hard
 
