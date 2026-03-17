@@ -18136,10 +18136,10 @@ __metadata:
   linkType: hard
 
 "jest-expo@npm:^55.0.0":
-  version: 55.0.9
-  resolution: "jest-expo@npm:55.0.9"
+  version: 55.0.10
+  resolution: "jest-expo@npm:55.0.10"
   dependencies:
-    "@expo/config": "npm:~55.0.8"
+    "@expo/config": "npm:~55.0.9"
     "@expo/json-file": "npm:^10.0.12"
     "@jest/create-cache-key-function": "npm:^29.2.1"
     "@jest/globals": "npm:^29.2.1"
@@ -18162,7 +18162,7 @@ __metadata:
       optional: true
   bin:
     jest: bin/jest.js
-  checksum: 10c0/7513fbff41efc6485374b8ca8e085f1f57f271151aaa4ed0550da439187ad00193336910cf2a80d3e81cddddfe8d0e7cf01aa3983a2560a7d69dfaec6ddcd0be
+  checksum: 10c0/ad52c0bad6762c7826af97ac6c6456df91f6085d71bb509266801e43176a1156f9fbb7eff37bf0288c4d62404c19da2c746b7756be20fd4e682275379c6dfdb7
   languageName: node
   linkType: hard
 
