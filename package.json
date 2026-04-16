@@ -106,5 +106,5 @@
     "typescript": "^6.0.0",
     "url-loader": "^4.1.1"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.14.0"
 }
