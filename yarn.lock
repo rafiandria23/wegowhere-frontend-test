@@ -3372,9 +3372,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/steps@npm:18.8.0":
-  version: 18.8.0
-  resolution: "@expo/steps@npm:18.8.0"
+"@expo/steps@npm:18.9.0":
+  version: 18.9.0
+  resolution: "@expo/steps@npm:18.9.0"
   dependencies:
     "@expo/eas-build-job": "npm:18.8.0"
     "@expo/logger": "npm:18.5.0"
@@ -3387,7 +3387,7 @@ __metadata:
     lodash.get: "npm:^4.4.2"
     uuid: "npm:^9.0.1"
     yaml: "npm:^2.4.3"
-  checksum: 10c0/066f531e566606cbe22cbfb6a91355791192e708886802f759124c407fef25b0ff3cc68c96317cec6d5d8b7cd6c344fc8b761e8934af61a236cfdb64f9fcbfa8
+  checksum: 10c0/f069d5476fe78b7dd055dffbd083464c891892a7646e79317a29f45cdf11b987d601a9a75b784d641d6258a2eb806d0e69c0b134c04486d11ee3bd48235e7830
   languageName: node
   linkType: hard
 
@@ -14218,8 +14218,8 @@ __metadata:
   linkType: hard
 
 "eas-cli@npm:^18.0.0":
-  version: 18.8.1
-  resolution: "eas-cli@npm:18.8.1"
+  version: 18.9.1
+  resolution: "eas-cli@npm:18.9.1"
   dependencies:
     "@expo/apple-utils": "npm:2.1.19"
     "@expo/code-signing-certificates": "npm:0.0.5"
@@ -14241,7 +14241,7 @@ __metadata:
     "@expo/results": "npm:1.0.0"
     "@expo/rudder-sdk-node": "npm:1.1.1"
     "@expo/spawn-async": "npm:1.7.2"
-    "@expo/steps": "npm:18.8.0"
+    "@expo/steps": "npm:18.9.0"
     "@expo/timeago.js": "npm:1.0.0"
     "@oclif/core": "npm:^4.8.3"
     "@oclif/plugin-autocomplete": "npm:^3.2.40"
@@ -14309,7 +14309,7 @@ __metadata:
     zod: "npm:^4.1.3"
   bin:
     eas: bin/run
-  checksum: 10c0/9bf070b8a2b25463afc15b7890c4881f52ddce5338384f806bddd9d5efc1e7e88a207a7eb54ad8927a088214cab5ea4fa1325791b9a99c276a32dbacd8ea92e8
+  checksum: 10c0/828b5b6185faed5f03a879fb227328df09da8aa0adf050d3970848b883ecfe28a73b772d501465fb8f833712bfd80c54a8fa5677a1a2817ec9714daf4c5a36ca
   languageName: node
   linkType: hard
 
